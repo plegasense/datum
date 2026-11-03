@@ -1,0 +1,9 @@
+[
+ {"out":"play/phone_en/01-assemblies.png","shot":"shots/en_step_ex.png","tag":"STEP · IGES","title":"Full CAD assemblies","sub":"Exploded view, part tree, colours and measurements"},
+ {"out":"play/phone_en/02-3dprint.png","shot":"shots/en_fdm.png","tag":"3D PRINT G-CODE","title":"See your print layer by layer","sub":"Time, filament and the type of every move"},
+ {"out":"play/phone_en/03-cnc.png","shot":"shots/en_cnc.png","tag":"CNC G-CODE","title":"Simulate milling before you cut","sub":"Tools, feed rates and the stock that is left"},
+ {"out":"play/phone_en/04-stl.png","shot":"shots/en_stl_sheet.png","tag":"STL · 3MF · OBJ","title":"Check the model before printing","sub":"Weight, filament and whether it fits your printer"},
+ {"out":"play/phone_en/05-textures.png","shot":"shots/en_gltf.png","tag":"glTF · OBJ · VRML","title":"Textures and animations","sub":"Models with colour, materials and motion"},
+ {"out":"play/phone_en/06-clouds.png","shot":"shots/en_cloud.png","tag":"LAS · LAZ · E57","title":"Scanner point clouds","sub":"Colour by height, intensity or class"},
+ {"out":"play/phone_en/07-dxf.png","shot":"shots/en_dxf_cut.png","tag":"DXF · SVG · HPGL","title":"2D drawings with cutting data","sub":"Length, pierces and sheet yield"}
+]

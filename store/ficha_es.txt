@@ -1,0 +1,45 @@
+Dovexa: visor CAD, STEP y 3D
+
+Visor CAD y 3D gratis y sin anuncios: STEP, DXF, STL y G-code, sin conexión
+
+Dovexa abre los archivos de ingeniería y fabricación que te llegan al móvil y te ayuda a entenderlos, no solo a mirarlos. Es totalmente gratis: sin anuncios, sin cuenta, sin suscripciones y sin compras. Funciona sin conexión y no tiene permiso de Internet: tus archivos nunca salen del teléfono.
+
+ABRE LO QUE TE ENVÍEN
+• CAD: STEP, IGES y STPZ, con ensamblajes completos, colores y nombres de pieza.
+• Dibujos 2D: DXF, SVG y plotter HPGL.
+• Impresión 3D: STL, 3MF, OBJ, PLY, glTF/GLB y G-code, incluido el binario de Prusa (bgcode).
+• Fresado y CNC: G-code con herramientas, ciclos y simulación del material.
+• Escaneos 3D: nubes de puntos LAS, LAZ, COPC, E57, PCD, PTS y XYZ.
+• Escenas VRML y X3D, con animaciones.
+• Paquetes ZIP con un modelo y sus texturas, y piezas BREP de Open CASCADE.
+
+EXTENSIONES ADMITIDAS
+.step .stp .stpz .iges .igs .brep · .dxf .svg .plt .hpgl .hgl .hpg · .stl .3mf .obj .ply .gltf .glb .wrl .wrz .x3d .x3dv · .gcode .gco .gc .nc .ngc .tap .cnc .bgcode · .las .laz .e57 .pcd .pts .xyz · .zip
+
+PARA CADA FORMATO, LO QUE IMPORTA
+• Ensamblajes STEP: árbol de piezas, búsqueda por nombre, lista de piezas con recuentos, aislar, ocultar y atenuar, vista explosionada, cotas y tolerancias (PMI) del archivo, detección de agujeros.
+• DXF: capas, unidades, medidas y datos de corte (longitud, perforaciones, contornos abiertos, aprovechamiento de chapa). Guarda un DXF solo con las capas que elijas.
+• G-code de impresora 3D: capas, tiempo y filamento estimados, retracciones, movimientos rápidos, anchura real de extrusión y volumen de la cama.
+• G-code de CNC: herramientas, avances, bajadas en rápido, desplazamientos de trabajo y simulación de la pieza que queda.
+• STL y mallas: revisión de la malla (agujeros, normales invertidas, caras duplicadas), espesor de pared, voladizos, peso estimado, autointersecciones y secciones.
+• 3MF: placas, piezas, materiales y secciones.
+• glTF y OBJ: texturas, variantes de material, cámaras y animaciones del archivo.
+• Nubes de puntos: color por altura, intensidad, clase o retorno; relieve con sombreado de bordes; sistema de coordenadas y cortes por eje.
+
+HERRAMIENTAS EN TODOS
+• Girar, desplazar y hacer zoom con fluidez; vistas estándar, frontal, planta e isométrica.
+• Sombreado, aristas y alambre.
+• Medir entre dos puntos y ver el tamaño total en las unidades del archivo.
+• Secciones con tapa.
+• Interfaz oscura, cómoda para el taller y para mirar piezas con detalle.
+
+PRIVADO Y HONESTO
+• Sin anuncios, sin cuenta, sin analítica y sin conexión a Internet.
+• Si un archivo se abre con limitaciones o está dañado, Dovexa te lo explica en vez de fallar en silencio.
+
+QUÉ NO ES
+Dovexa es un visor: no edita ni modela. No abre DWG ni los formatos propios de cada programa; exporta desde él a STEP, DXF o STL. Los ensamblajes muy grandes pueden tardar unos segundos en abrirse la primera vez.
+
+Las capturas usan archivos públicos de muestra (por ejemplo, Cesium Milk Truck, CC BY 4.0, de Cesium).
+
+Esta es una versión de prueba cerrada: tus comentarios nos ayudan a mejorarla. Escríbenos a plegasense@gmail.com.

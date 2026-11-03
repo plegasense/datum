@@ -1,0 +1,47 @@
+# Single source of the English Play listing. Run to validate lengths.
+TITLE = "Dovexa: CAD, STEP & 3D Viewer"
+SHORT = "Free CAD & 3D viewer, no ads: STEP, DXF, STL & G-code, works offline"
+LONG = """Dovexa opens the engineering and manufacturing files that land on your phone and helps you understand them, not just look at them. It is completely free: no ads, no account, no subscriptions and no purchases. It works offline and has no Internet permission: your files never leave your phone.
+
+OPEN WHAT YOU GET SENT
+• CAD: STEP, IGES and STPZ, with full assemblies, colours and part names.
+• 2D drawings: DXF, SVG and HPGL plotter files.
+• 3D printing: STL, 3MF, OBJ, PLY, glTF/GLB and G-code, including Prusa's binary bgcode.
+• Milling and CNC: G-code with tools, canned cycles and stock simulation.
+• 3D scans: LAS, LAZ, COPC, E57, PCD, PTS and XYZ point clouds.
+• VRML and X3D scenes, with animations.
+• ZIP packages with a model and its textures, and Open CASCADE BREP parts.
+
+SUPPORTED EXTENSIONS
+.step .stp .stpz .iges .igs .brep · .dxf .svg .plt .hpgl .hgl .hpg · .stl .3mf .obj .ply .gltf .glb .wrl .wrz .x3d .x3dv · .gcode .gco .gc .nc .ngc .tap .cnc .bgcode · .las .laz .e57 .pcd .pts .xyz · .zip
+
+WHAT MATTERS FOR EACH FORMAT
+• STEP assemblies: part tree, search by name, parts list with counts, isolate, hide and dim, exploded view, the file's dimensions and tolerances (PMI), hole detection.
+• DXF: layers, units, measurements and cutting data (length, pierces, open contours, sheet yield). Save a DXF with only the layers you choose.
+• 3D-printer G-code: layers, estimated time and filament, retractions, travel moves, real extrusion width and bed volume.
+• CNC G-code: tools, feed rates, rapid plunges, work offsets and a simulation of the remaining stock.
+• STL and meshes: mesh check (holes, inverted normals, duplicate faces), wall thickness, overhangs, estimated weight, self-intersections and sections.
+• 3MF: plates, parts, materials and sections.
+• glTF and OBJ: textures, material variants, cameras and animations stored in the file.
+• Point clouds: colour by height, intensity, class or return; edge-shaded relief; coordinate system and axis clipping.
+
+TOOLS FOR EVERYTHING
+• Smooth orbit, pan and zoom; standard, front, top and isometric views.
+• Shaded, edges and wireframe.
+• Measure between two points and see the overall size in the file's units.
+• Sections with caps.
+• A dark interface that is easy on the eyes in the workshop and when inspecting parts.
+
+PRIVATE AND HONEST
+• No ads, no account, no analytics, no Internet connection.
+• If a file opens with limitations or is damaged, Dovexa tells you instead of failing silently.
+
+WHAT IT IS NOT
+Dovexa is a viewer: it does not edit or model. It does not open DWG or the native formats of each program; export from there to STEP, DXF or STL. Very large assemblies can take a few seconds to open the first time.
+
+Screenshots use public sample files (for example Cesium Milk Truck, CC BY 4.0, by Cesium).
+
+This is a closed test version: your feedback helps us improve it. Write to plegasense@gmail.com."""
+if __name__ == "__main__":
+    print(len(TITLE), len(SHORT), len(LONG))
+    assert len(TITLE) <= 30 and len(SHORT) <= 80 and len(LONG) <= 4000

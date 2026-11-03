@@ -1,0 +1,39 @@
+ui/viewer_page.dart|PERF fotogramas=${…} construcción=${…} ms 
+ui/viewer_page.dart|PERF fotogramas=${…} construcción=${…} ms raster=${…} ms
+ui/viewer_page.dart|REVIEW ${…} ms · ${…} triángulos
+ui/viewer_page.dart|STOCKPLAY 90 pasos en ${…} ms · simulación+malla máx ${…} ms · 
+io/threemf_model.dart|demasiada subdivisión
+io/vrml_loader.dart|VRML tokens $tTok ms · árbol ${…} ms
+io/vrml_loader.dart|  forma $label: geometría $tGeo ms · malla ${…} ms
+# model/ui_cam: textos de mapas const que se traducen al usarlos con tr()
+model/cloud_info.dart|Cable (protección)
+model/cloud_info.dart|Clave del modelo
+model/cloud_info.dart|Estructura aérea
+model/cloud_info.dart|Exclusión temporal
+model/cloud_info.dart|Torre de transmisión
+model/cloud_info.dart|Vegetación alta
+model/cloud_info.dart|Vegetación baja
+model/cloud_info.dart|Vegetación media
+model/pmi.dart|Diámetro
+model/pmi.dart|Diámetro esférico
+model/pmi.dart|Diámetro mayor del toro
+model/pmi.dart|Diámetro menor del toro
+model/pmi.dart|Oscilación circular
+model/pmi.dart|Oscilación total
+model/pmi.dart|Perfil de línea
+model/pmi.dart|Posición
+model/pmi.dart|Radio esférico
+model/pmi.dart|Simetría
+model/pmi.dart|Ángulo
+model/toolpath.dart|Superficie sólida
+model/units.dart|centímetros
+model/units.dart|milímetros
+model/units.dart|píxeles a 96 ppp
+ui/threemf_tools.dart|Altura de capa
+ui/threemf_tools.dart|No se imprime
+ui/threemf_tools.dart|Orden de impresión
+ui/threemf_tools.dart|Patrón de relleno
+ui/threemf_tools.dart|Perímetros
+ui/threemf_tools.dart|Posición de la costura
+ui/threemf_tools.dart|Volumen negativo (vacía)
+ui/stl_tools.dart|ESPESOR ${…} ms · ${…} caras · mín ${…} mm

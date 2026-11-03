@@ -1,0 +1,72 @@
+{
+ "title": "Dovexa: CAD, STEP & 3D Viewer",
+ "short": "Trình xem CAD & 3D miễn phí, không quảng cáo: STEP, DXF, STL, G-code, offline",
+ "long": "Dovexa mở các tệp kỹ thuật và sản xuất gửi đến điện thoại của bạn và giúp bạn hiểu chúng, chứ không chỉ xem. Ứng dụng hoàn toàn miễn phí: không quảng cáo, không tài khoản, không đăng ký trả phí và không mua trong ứng dụng. Hoạt động ngoại tuyến và không có quyền Internet: tệp của bạn không bao giờ rời khỏi điện thoại.\n\nHệ mét và hệ Anh: xem kích thước theo mm hoặc inch.\n\nMỞ NHỮNG GÌ BẠN ĐƯỢC GỬI\n• CAD: STEP, IGES và STPZ, với đầy đủ cụm lắp ráp, màu sắc và tên chi tiết.\n• Bản vẽ 2D: DXF, SVG và tệp plotter HPGL.\n• In 3D: STL, 3MF, OBJ, PLY, glTF/GLB và G-code, gồm cả bgcode nhị phân của Prusa.\n• Phay và CNC: G-code với dụng cụ, chu trình cố định và mô phỏng phôi.\n• Quét 3D: đám mây điểm LAS, LAZ, COPC, E57, PCD, PTS và XYZ.\n• Cảnh VRML và X3D, có hoạt ảnh.\n• Gói ZIP chứa mô hình và texture, cùng chi tiết Open CASCADE BREP.\n\nCÁC PHẦN MỞ RỘNG ĐƯỢC HỖ TRỢ\n.step .stp .stpz .iges .igs .brep · .dxf .svg .plt .hpgl .hgl .hpg · .stl .3mf .obj .ply .gltf .glb .wrl .wrz .x3d .x3dv · .gcode .gco .gc .nc .ngc .tap .cnc .bgcode · .las .laz .e57 .pcd .pts .xyz · .zip\n\nĐIỀU QUAN TRỌNG VỚI TỪNG ĐỊNH DẠNG\n• Cụm lắp ráp STEP: cây chi tiết, tìm theo tên, danh sách chi tiết có số lượng, tách riêng, ẩn và làm mờ, góc nhìn tách rời, kích thước và dung sai của tệp (PMI), nhận diện lỗ.\n• DXF: layer, đơn vị, số đo và dữ liệu cắt (chiều dài, điểm xuyên, đường viền hở, hiệu suất tấm vật liệu). Lưu DXF chỉ với các layer bạn chọn.\n• G-code máy in 3D: layer, thời gian và sợi nhựa ước tính, retraction, di chuyển không đùn, độ rộng đùn thực tế và thể tích bàn in.\n• G-code CNC: dụng cụ, tốc độ tiến dao, lao nhanh vào vật liệu, gốc tọa độ phôi và mô phỏng phôi còn lại.\n• STL và lưới: kiểm tra lưới (lỗ hở, pháp tuyến đảo, mặt trùng lặp), độ dày thành, phần nhô, khối lượng ước tính, tự giao nhau và mặt cắt.\n• 3MF: bàn in, chi tiết, vật liệu và mặt cắt.\n• glTF và OBJ: texture, biến thể vật liệu, camera và hoạt ảnh lưu trong tệp.\n• Đám mây điểm: tô màu theo chiều cao, cường độ, lớp phân loại hoặc lần phản hồi; đổ bóng cạnh tạo độ nổi; hệ tọa độ và cắt theo trục.\n\nCÔNG CỤ CHO MỌI NHU CẦU\n• Xoay, kéo và thu phóng mượt mà; góc nhìn chuẩn, mặt trước, mặt trên và trục đo.\n• Tô bóng, hiện cạnh và khung dây.\n• Đo giữa hai điểm và xem kích thước tổng thể theo đơn vị của tệp.\n• Mặt cắt có che lấp.\n• Giao diện tối dễ chịu cho mắt trong xưởng và khi kiểm tra chi tiết.\n\nRIÊNG TƯ VÀ TRUNG THỰC\n• Không quảng cáo, không tài khoản, không phân tích dữ liệu, không kết nối Internet.\n• Nếu tệp mở được nhưng có hạn chế hoặc bị hỏng, Dovexa sẽ báo cho bạn thay vì lặng lẽ thất bại.\n\nNHỮNG ĐIỀU ỨNG DỤNG KHÔNG LÀM\nDatum là trình xem: không chỉnh sửa hay dựng mô hình. Ứng dụng không mở DWG hay định dạng gốc của từng phần mềm; hãy xuất sang STEP, DXF hoặc STL từ đó. Các cụm lắp ráp rất lớn có thể mất vài giây để mở lần đầu.\n\nẢnh chụp màn hình dùng các tệp mẫu công khai (ví dụ Cesium Milk Truck, CC BY 4.0, của Cesium).\n\nĐây là phiên bản thử nghiệm kín: phản hồi của bạn giúp chúng tôi cải thiện. Hãy viết cho plegasense@gmail.com.",
+ "slides": [
+  {
+   "tag": "STEP · IGES",
+   "title": "Cụm lắp ráp CAD đầy đủ",
+   "sub": "Góc nhìn tách rời, cây chi tiết, màu sắc và số đo"
+  },
+  {
+   "tag": "G-CODE IN 3D",
+   "title": "Xem bản in từng layer",
+   "sub": "Thời gian, sợi nhựa và loại của từng chuyển động"
+  },
+  {
+   "tag": "G-CODE CNC",
+   "title": "Mô phỏng phay trước khi cắt",
+   "sub": "Dụng cụ, tốc độ tiến dao và phôi còn lại"
+  },
+  {
+   "tag": "STL · 3MF · OBJ",
+   "title": "Kiểm tra mô hình trước khi in",
+   "sub": "Khối lượng, sợi nhựa và có vừa máy in của bạn không"
+  },
+  {
+   "tag": "glTF · OBJ · VRML",
+   "title": "Texture và hoạt ảnh",
+   "sub": "Mô hình có màu sắc, vật liệu và chuyển động"
+  },
+  {
+   "tag": "LAS · LAZ · E57",
+   "title": "Đám mây điểm từ máy quét",
+   "sub": "Tô màu theo chiều cao, cường độ hoặc lớp"
+  },
+  {
+   "tag": "DXF · SVG · HPGL",
+   "title": "Bản vẽ 2D kèm dữ liệu cắt",
+   "sub": "Chiều dài, điểm xuyên và hiệu suất tấm vật liệu"
+  }
+ ],
+ "free": {
+  "tagline": "Trình xem CAD & 3D",
+  "items": [
+   [
+    "Miễn phí thật sự",
+    "Không đăng ký trả phí hay mua trong ứng dụng"
+   ],
+   [
+    "Không quảng cáo",
+    "Không có gì làm phiền hay gián đoạn bạn"
+   ],
+   [
+    "Không tài khoản",
+    "Mở và làm việc ngay, không cần đăng ký"
+   ],
+   [
+    "Ngoại tuyến",
+    "Không có quyền Internet: tệp không bao giờ rời điện thoại"
+   ]
+  ],
+  "foot": [
+   "Các tệp xưởng được gửi đến bạn,",
+   "mở ngay trên điện thoại."
+  ]
+ },
+ "feature": {
+  "tagline": "Trình xem CAD & 3D",
+  "line": "Miễn phí · Không quảng cáo · Ngoại tuyến",
+  "formats": "STEP · DXF · STL · 3MF · G-code · đám mây điểm"
+ }
+}

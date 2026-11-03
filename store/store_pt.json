@@ -1,0 +1,72 @@
+{
+ "title": "Dovexa: CAD, STEP e Visor 3D",
+ "short": "Visor CAD e 3D grátis, sem anúncios: STEP, DXF, STL e G-code, funciona offline",
+ "long": "O Dovexa abre os arquivos de engenharia e fabricação que chegam ao seu celular e ajuda você a entendê-los, não só a vê-los. É totalmente gratuito: sem anúncios, sem conta, sem assinaturas e sem compras. Funciona offline e não tem permissão de Internet: seus arquivos nunca saem do seu celular.\n\nABRA O QUE TE ENVIAREM\n• CAD: STEP, IGES e STPZ, com montagens completas, cores e nomes das peças.\n• Desenhos 2D: DXF, SVG e arquivos de plotter HPGL.\n• Impressão 3D: STL, 3MF, OBJ, PLY, glTF/GLB e G-code, inclusive o bgcode binário da Prusa.\n• Fresagem e CNC: G-code com ferramentas, ciclos fixos e simulação do material restante.\n• Escaneamentos 3D: nuvens de pontos LAS, LAZ, COPC, E57, PCD, PTS e XYZ.\n• Cenas VRML e X3D, com animações.\n• Pacotes ZIP com um modelo e suas texturas, e peças BREP do Open CASCADE.\n\nEXTENSÕES SUPORTADAS\n.step .stp .stpz .iges .igs .brep · .dxf .svg .plt .hpgl .hgl .hpg · .stl .3mf .obj .ply .gltf .glb .wrl .wrz .x3d .x3dv · .gcode .gco .gc .nc .ngc .tap .cnc .bgcode · .las .laz .e57 .pcd .pts .xyz · .zip\n\nO QUE IMPORTA EM CADA FORMATO\n• Montagens STEP: árvore de peças, busca por nome, lista de peças com quantidades, isolar, ocultar e atenuar, vista explodida, cotas e tolerâncias do arquivo (PMI), detecção de furos.\n• DXF: camadas, unidades, medições e dados de corte (comprimento, perfurações, contornos abertos, rendimento de chapa). Salve um DXF só com as camadas que escolher.\n• G-code de impressora 3D: camadas, tempo e filamento estimados, retrações, deslocamentos, largura real de extrusão e volume da mesa.\n• G-code de CNC: ferramentas, avanços, mergulhos em rápido, origens de trabalho e simulação do material restante.\n• STL e malhas: verificação da malha (furos, normais invertidas, faces duplicadas), espessura de parede, saliências, peso estimado, autointersecções e seções.\n• 3MF: placas, peças, materiais e seções.\n• glTF e OBJ: texturas, variantes de material, câmeras e animações guardadas no arquivo.\n• Nuvens de pontos: cor por altura, intensidade, classe ou retorno; relevo com sombreamento de borda; sistema de coordenadas e corte por eixo.\n\nFERRAMENTAS PARA TUDO\n• Órbita, pan e zoom fluidos; vistas padrão, frontal, superior e isométrica.\n• Sombreado, arestas e aramado.\n• Meça entre dois pontos e veja o tamanho total nas unidades do arquivo.\n• Seções com tampa.\n• Uma interface escura, que cansa menos a vista na oficina e na inspeção de peças.\n\nPRIVADO E TRANSPARENTE\n• Sem anúncios, sem conta, sem análises, sem conexão com a Internet.\n• Se um arquivo abre com limitações ou está danificado, o Dovexa avisa você em vez de falhar em silêncio.\n\nO QUE ELE NÃO É\nO Dovexa é um visualizador: não edita nem modela. Não abre DWG nem os formatos nativos de cada programa; exporte de lá para STEP, DXF ou STL. Montagens muito grandes podem levar alguns segundos para abrir na primeira vez.\n\nAs capturas de tela usam arquivos de exemplo públicos (por exemplo, Cesium Milk Truck, CC BY 4.0, da Cesium).\n\nEsta é uma versão de teste fechado: seu feedback nos ajuda a melhorar. Escreva para plegasense@gmail.com.",
+ "slides": [
+  {
+   "tag": "STEP · IGES",
+   "title": "Montagens CAD completas",
+   "sub": "Vista explodida, árvore de peças, cores e medições"
+  },
+  {
+   "tag": "G-CODE DE IMPRESSÃO 3D",
+   "title": "Veja a impressão camada a camada",
+   "sub": "Tempo, filamento e o tipo de cada movimento"
+  },
+  {
+   "tag": "G-CODE CNC",
+   "title": "Simule a fresagem antes de cortar",
+   "sub": "Ferramentas, avanços e o material que sobra"
+  },
+  {
+   "tag": "STL · 3MF · OBJ",
+   "title": "Confira o modelo antes de imprimir",
+   "sub": "Peso, filamento e se cabe na sua impressora"
+  },
+  {
+   "tag": "glTF · OBJ · VRML",
+   "title": "Texturas e animações",
+   "sub": "Modelos com cor, materiais e movimento"
+  },
+  {
+   "tag": "LAS · LAZ · E57",
+   "title": "Nuvens de pontos de escâner",
+   "sub": "Cor por altura, intensidade ou classe"
+  },
+  {
+   "tag": "DXF · SVG · HPGL",
+   "title": "Desenhos 2D com dados de corte",
+   "sub": "Comprimento, perfurações e rendimento de chapa"
+  }
+ ],
+ "free": {
+  "tagline": "Visor CAD e 3D",
+  "items": [
+   [
+    "Grátis de verdade",
+    "Sem assinaturas nem compras no app"
+   ],
+   [
+    "Sem anúncios",
+    "Nada para dispensar nem que te interrompa"
+   ],
+   [
+    "Sem conta",
+    "Abra e trabalhe, sem cadastro"
+   ],
+   [
+    "Offline",
+    "Sem permissão de Internet: seus arquivos nunca saem do celular"
+   ]
+  ],
+  "foot": [
+   "Os arquivos de oficina que te enviam,",
+   "abertos no seu celular."
+  ]
+ },
+ "feature": {
+  "tagline": "Visor CAD e 3D",
+  "line": "Grátis · Sem anúncios · Funciona offline",
+  "formats": "STEP · DXF · STL · 3MF · G-code · nuvens de pontos"
+ }
+}
