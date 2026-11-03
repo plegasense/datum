@@ -40,3 +40,6 @@ testdata/_externos/
 
 # Configuración local de asistentes
 .claude/
+
+# Binarios publicados (no se versionan)
+releases/
