@@ -1,0 +1,72 @@
+{
+ "title": "Datum: przeglądarka CAD i 3D",
+ "short": "Darmowa przeglądarka CAD i 3D bez reklam: STEP, DXF, STL, G-code, offline",
+ "long": "Datum otwiera pliki inżynierskie i produkcyjne, które trafiają na Twój telefon, i pomaga je zrozumieć, a nie tylko obejrzeć. Jest całkowicie darmowy: bez reklam, bez konta, bez subskrypcji i bez zakupów. Działa offline i nie ma uprawnienia do internetu: Twoje pliki nigdy nie opuszczają telefonu.\n\nOTWÓRZ TO, CO DOSTAJESZ\n• CAD: STEP, IGES i STPZ, z pełnymi zespołami, kolorami i nazwami części.\n• Rysunki 2D: DXF, SVG i pliki plotera HPGL.\n• Druk 3D: STL, 3MF, OBJ, PLY, glTF/GLB i G-code, w tym binarny bgcode od Prusa.\n• Frezowanie i CNC: G-code z narzędziami, cyklami stałymi i symulacją materiału.\n• Skany 3D: chmury punktów LAS, LAZ, COPC, E57, PCD, PTS i XYZ.\n• Sceny VRML i X3D, z animacjami.\n• Paczki ZIP z modelem i teksturami oraz części Open CASCADE BREP.\n\nOBSŁUGIWANE ROZSZERZENIA\n.step .stp .stpz .iges .igs .brep · .dxf .svg .plt .hpgl .hgl .hpg · .stl .3mf .obj .ply .gltf .glb .wrl .wrz .x3d .x3dv · .gcode .gco .gc .nc .ngc .tap .cnc .bgcode · .las .laz .e57 .pcd .pts .xyz · .zip\n\nCO LICZY SIĘ W KAŻDYM FORMACIE\n• Zespoły STEP: drzewo części, wyszukiwanie po nazwie, lista części z ilościami, izolowanie, ukrywanie i przyciemnianie, widok rozstrzelony, wymiary i tolerancje z pliku (PMI), wykrywanie otworów.\n• DXF: warstwy, jednostki, pomiary i dane cięcia (długość, przebicia, kontury otwarte, wydajność blachy). Zapisz DXF tylko z wybranymi warstwami.\n• G-code drukarki 3D: warstwy, szacowany czas i filament, retrakcje, ruchy jałowe, rzeczywista szerokość ekstruzji i obszar stołu.\n• G-code CNC: narzędzia, posuwy, zanurzenia na posuwie szybkim, przesunięcia układów współrzędnych i symulacja pozostałego materiału.\n• STL i siatki: kontrola siatki (otwory, odwrócone normalne, powielone ściany), grubość ścianek, nawisy, szacowana waga, samoprzecięcia i przekroje.\n• 3MF: płyty, części, materiały i przekroje.\n• glTF i OBJ: tekstury, warianty materiałów, kamery i animacje zapisane w pliku.\n• Chmury punktów: kolor wg wysokości, intensywności, klasy lub odbicia; cieniowanie krawędzi; układ współrzędnych i przycinanie osiami.\n\nNARZĘDZIA DO WSZYSTKIEGO\n• Płynne obracanie, przesuwanie i powiększanie; widoki standardowy, z przodu, z góry i izometryczny.\n• Cieniowanie, krawędzie i szkielet.\n• Pomiar między dwoma punktami i wymiary całkowite w jednostkach pliku.\n• Przekroje z zakrywaniem.\n• Ciemny interfejs, wygodny dla oczu w warsztacie i podczas kontroli części.\n\nPRYWATNIE I UCZCIWIE\n• Bez reklam, bez konta, bez analityki, bez połączenia z internetem.\n• Jeśli plik otwiera się z ograniczeniami lub jest uszkodzony, Datum Cię o tym informuje, zamiast cicho zawieść.\n\nCZEGO TO NIE JEST\nDatum to przeglądarka: nie edytuje ani nie modeluje. Nie otwiera DWG ani natywnych formatów poszczególnych programów; wyeksportuj stamtąd do STEP, DXF lub STL. Bardzo duże zespoły mogą przy pierwszym otwarciu potrzebować kilku sekund.\n\nZrzuty ekranu używają publicznych plików przykładowych (np. Cesium Milk Truck, CC BY 4.0, autor: Cesium).\n\nTo zamknięta wersja testowa: Twoje uwagi pomagają nam ją ulepszać. Napisz na plegasense@gmail.com.",
+ "slides": [
+  {
+   "tag": "STEP · IGES",
+   "title": "Pełne zespoły CAD",
+   "sub": "Widok rozstrzelony, drzewo części, kolory i pomiary"
+  },
+  {
+   "tag": "G-CODE DRUK 3D",
+   "title": "Zobacz wydruk warstwa po warstwie",
+   "sub": "Czas, filament i typ każdego ruchu"
+  },
+  {
+   "tag": "G-CODE CNC",
+   "title": "Symuluj frezowanie przed cięciem",
+   "sub": "Narzędzia, posuwy i pozostały materiał"
+  },
+  {
+   "tag": "STL · 3MF · OBJ",
+   "title": "Sprawdź model przed drukiem",
+   "sub": "Waga, filament i czy zmieści się na drukarce"
+  },
+  {
+   "tag": "glTF · OBJ · VRML",
+   "title": "Tekstury i animacje",
+   "sub": "Modele z kolorem, materiałami i ruchem"
+  },
+  {
+   "tag": "LAS · LAZ · E57",
+   "title": "Chmury punktów ze skanera",
+   "sub": "Kolor wg wysokości, intensywności lub klasy"
+  },
+  {
+   "tag": "DXF · SVG · HPGL",
+   "title": "Rysunki 2D z danymi cięcia",
+   "sub": "Długość, przebicia i wydajność blachy"
+  }
+ ],
+ "free": {
+  "tagline": "Przeglądarka CAD i 3D",
+  "items": [
+   [
+    "Naprawdę za darmo",
+    "Bez subskrypcji i zakupów w aplikacji"
+   ],
+   [
+    "Bez reklam",
+    "Nic, co trzeba zamykać ani co przeszkadza"
+   ],
+   [
+    "Bez konta",
+    "Otwórz i pracuj, bez rejestracji"
+   ],
+   [
+    "Offline",
+    "Bez uprawnienia do internetu: pliki nigdy nie opuszczają telefonu"
+   ]
+  ],
+  "foot": [
+   "Pliki z warsztatu, które do Ciebie trafiają,",
+   "otwarte na telefonie."
+  ]
+ },
+ "feature": {
+  "tagline": "Przeglądarka CAD i 3D",
+  "line": "Za darmo · Bez reklam · Działa offline",
+  "formats": "STEP · DXF · STL · 3MF · G-code · chmury punktów"
+ }
+}

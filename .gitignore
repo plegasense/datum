@@ -1,0 +1,42 @@
+# macOS
+.DS_Store
+
+# Android / Gradle
+*.iml
+.gradle/
+local.properties
+build/
+.cxx/
+captures/
+*.apk
+*.aab
+*.keystore
+*.jks
+keystore.properties
+
+# IDE
+.idea/
+.vscode/
+
+# Núcleo C++ en escritorio
+core/build*/
+cmake-build-*/
+
+# Dependencias grandes (se descargan con tools/)
+third_party/occt/
+third_party/_downloads/
+testdata/_big/
+
+# Salidas temporales
+*.log
+branding/explore/
+
+third_party/_build/
+third_party/_install/
+
+app/build
+app/.dart_tool/
+testdata/_externos/
+
+# Configuración local de asistentes
+.claude/

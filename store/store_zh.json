@@ -1,0 +1,72 @@
+{
+ "title": "Datum：CAD、STEP 与 3D 查看器",
+ "short": "免费 CAD 与 3D 查看器，无广告：STEP、DXF、STL、G-code，离线可用",
+ "long": "Datum 可打开发到你手机上的工程和制造文件，并帮你看懂它们，而不只是看一眼。它完全免费：无广告、无需账号、无订阅、无内购。离线可用，且没有联网权限：你的文件不会离开手机。\n\n打开收到的各种文件\n• CAD：STEP、IGES 和 STPZ，完整支持装配体、颜色和零件名称。\n• 2D 图纸：DXF、SVG 和 HPGL 绘图仪文件。\n• 3D 打印：STL、3MF、OBJ、PLY、glTF/GLB 和 G-code，包括 Prusa 的二进制 bgcode。\n• 铣削与 CNC：G-code，含刀具、固定循环和毛坯模拟。\n• 3D 扫描：LAS、LAZ、COPC、E57、PCD、PTS 和 XYZ 点云。\n• VRML 和 X3D 场景，含动画。\n• 含模型及纹理的 ZIP 包，以及 Open CASCADE BREP 零件。\n\n支持的扩展名\n.step .stp .stpz .iges .igs .brep · .dxf .svg .plt .hpgl .hgl .hpg · .stl .3mf .obj .ply .gltf .glb .wrl .wrz .x3d .x3dv · .gcode .gco .gc .nc .ngc .tap .cnc .bgcode · .las .laz .e57 .pcd .pts .xyz · .zip\n\n各格式的看点\n• STEP 装配体：零件树、按名称搜索、带数量的零件清单、隔离、隐藏与淡化、爆炸视图、文件内的尺寸与公差 (PMI)、孔检测。\n• DXF：图层、单位、测量和切割数据（长度、穿孔、开放轮廓、板材利用率）。可只保存所选图层为 DXF。\n• 3D 打印 G-code：分层、预计时间和耗材、回抽、空行程、真实挤出宽度和热床体积。\n• CNC G-code：刀具、进给速度、快速下刀、工件坐标偏置，以及剩余毛坯的模拟。\n• STL 与网格：网格检查（孔洞、反向法线、重复面）、壁厚、悬垂、预估重量、自相交和截面。\n• 3MF：打印板、零件、材料和截面。\n• glTF 与 OBJ：文件内含的纹理、材质变体、相机和动画。\n• 点云：按高度、强度、类别或回波着色；边缘着色浮雕；坐标系和轴向剪裁。\n\n万能工具\n• 流畅的旋转、平移和缩放；标准、前视、俯视和等轴测视图。\n• 着色、边线和线框显示。\n• 两点测量，并以文件单位显示整体尺寸。\n• 带封口的截面。\n• 深色界面，在车间和检查零件时更护眼。\n\n注重隐私，坦诚透明\n• 无广告、无账号、无统计分析、无网络连接。\n• 如果文件打开时有限制或已损坏，Datum 会明确告诉你，而不是悄悄失败。\n\n它不是什么\nDatum 是查看器：不能编辑或建模。它不能打开 DWG 或各软件的原生格式；请在原软件中导出为 STEP、DXF 或 STL。超大装配体首次打开可能需要几秒钟。\n\n截图使用公开的示例文件（例如 Cesium 的 Cesium Milk Truck，CC BY 4.0，作者 Cesium）。\n\n这是封闭测试版：你的反馈能帮助我们改进。请联系 plegasense@gmail.com。",
+ "slides": [
+  {
+   "tag": "STEP · IGES",
+   "title": "完整的 CAD 装配体",
+   "sub": "爆炸视图、零件树、颜色和测量"
+  },
+  {
+   "tag": "3D 打印 G-CODE",
+   "title": "逐层查看你的打印",
+   "sub": "时间、耗材和每种移动的类型"
+  },
+  {
+   "tag": "CNC G-CODE",
+   "title": "切削前先模拟铣削",
+   "sub": "刀具、进给速度和剩余毛坯"
+  },
+  {
+   "tag": "STL · 3MF · OBJ",
+   "title": "打印前先检查模型",
+   "sub": "重量、耗材，以及打印机能否放下"
+  },
+  {
+   "tag": "glTF · OBJ · VRML",
+   "title": "纹理与动画",
+   "sub": "带颜色、材质和动作的模型"
+  },
+  {
+   "tag": "LAS · LAZ · E57",
+   "title": "扫描仪点云",
+   "sub": "按高度、强度或类别着色"
+  },
+  {
+   "tag": "DXF · SVG · HPGL",
+   "title": "带切割数据的 2D 图纸",
+   "sub": "长度、穿孔和板材利用率"
+  }
+ ],
+ "free": {
+  "tagline": "CAD 与 3D 查看器",
+  "items": [
+   [
+    "真正免费",
+    "无订阅，无内购"
+   ],
+   [
+    "无广告",
+    "没有需要关闭或打断你的内容"
+   ],
+   [
+    "无需账号",
+    "无需注册，打开即用"
+   ],
+   [
+    "离线",
+    "无联网权限：文件不会离开手机"
+   ]
+  ],
+  "foot": [
+   "你收到的车间文件，",
+   "在手机上直接打开。"
+  ]
+ },
+ "feature": {
+  "tagline": "CAD 与 3D 查看器",
+  "line": "免费 · 无广告 · 离线可用",
+  "formats": "STEP · DXF · STL · 3MF · G-code · 点云"
+ }
+}

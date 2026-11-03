@@ -1,0 +1,4054 @@
+[
+{
+"es": "glTF binario (GLB)",
+"en": "glTF binary (GLB)"
+},
+{
+"es": "glTF (texto)",
+"en": "glTF (text)"
+},
+{
+"es": "PLY texto",
+"en": "PLY text"
+},
+{
+"es": "PLY binario",
+"en": "PLY binary"
+},
+{
+"es": "PLY binario (big endian)",
+"en": "PLY binary (big endian)"
+},
+{
+"es": "Unidades",
+"en": "Units"
+},
+{
+"es": "Unidades: {u}",
+"en": "Units: {u}"
+},
+{
+"es": "Métrico (mm)",
+"en": "Metric (mm)"
+},
+{
+"es": "Imperial (in)",
+"en": "Imperial (in)"
+},
+{
+"es": "Cómo se muestran las medidas; los archivos no cambian.",
+"en": "How measurements are shown; files are not changed."
+},
+{
+"es": "Según el país del dispositivo",
+"en": "Based on the device region"
+},
+{
+"es": "Milímetros, gramos y metros",
+"en": "Millimetres, grams and metres"
+},
+{
+"es": "Pulgadas, onzas y libras",
+"en": "Inches, ounces and pounds"
+},
+{
+"es": "{m} · {l} ft de filamento 1,75 mm",
+"en": "{m} · {l} ft of 1.75 mm filament"
+},
+{
+"es": "Estimación con paredes de {w}; el laminador dará la cifra exacta.",
+"en": "Estimate with {w} walls; the slicer will give the exact figure."
+},
+{
+"es": "Programado en pulgadas",
+"en": "Programmed in inches"
+},
+{
+"es": "Programado en mm (mostrado en pulgadas)",
+"en": "Programmed in mm (shown in inches)"
+},
+{
+"es": "≈ {a} puntos/ft² · separación ≈ {b} in",
+"en": "≈ {a} points/ft² · spacing ≈ {b} in"
+},
+{
+"es": "No se pudo iniciar LASzip",
+"en": "Could not start LASzip"
+},
+{
+"es": "No se pudo abrir el LAZ",
+"en": "Could not open the LAZ"
+},
+{
+"es": "Formato de punto LAS desconocido",
+"en": "Unknown LAS point format"
+},
+{
+"es": "Error al descomprimir el LAZ",
+"en": "Error decompressing the LAZ"
+},
+{
+"es": "No es un archivo .bgcode válido",
+"en": "Not a valid .bgcode file"
+},
+{
+"es": "Versión de .bgcode no soportada: {v}",
+"en": "Unsupported .bgcode version: {v}"
+},
+{
+"es": "Compresión .bgcode desconocida: {c}",
+"en": "Unknown .bgcode compression: {c}"
+},
+{
+"es": "El .bgcode no contiene G-code",
+"en": "The .bgcode contains no G-code"
+},
+{
+"es": "El archivo .bgcode está dañado (bloque comprimido no válido)",
+"en": "The .bgcode file is damaged (invalid compressed block)"
+},
+{
+"es": "El archivo .bgcode está incompleto o dañado",
+"en": "The .bgcode file is incomplete or damaged"
+},
+{
+"es": "El archivo no es un ZIP",
+"en": "The file is not a ZIP"
+},
+{
+"es": "ZIP dañado",
+"en": "Damaged ZIP"
+},
+{
+"es": "Falta {n}",
+"en": "Missing {n}"
+},
+{
+"es": "Compresión ZIP no soportada ({m})",
+"en": "Unsupported ZIP compression ({m})"
+},
+{
+"es": "Este 3MF no contiene G-code (no está laminado)",
+"en": "This 3MF contains no G-code (it has not been sliced)"
+},
+{
+"es": "El archivo está vacío",
+"en": "The file is empty"
+},
+{
+"es": "No se han encontrado movimientos de trabajo: ¿es realmente un G-code?",
+"en": "No cutting or printing moves found: is this really G-code?"
+},
+{
+"es": "No se pudo descomprimir Draco: {m}",
+"en": "Could not decompress Draco: {m}"
+},
+{
+"es": "error desconocido",
+"en": "unknown error"
+},
+{
+"es": "El bloque Draco no es una malla de triángulos",
+"en": "The Draco block is not a triangle mesh"
+},
+{
+"es": "El LAZ está dañado o cortado ({t})",
+"en": "The LAZ file is damaged or truncated ({t})"
+},
+{
+"es": "No se pudo descomprimir el LAZ: {m}",
+"en": "Could not decompress the LAZ: {m}"
+},
+{
+"es": "El archivo de nube está dañado o no tiene el formato esperado ({t})",
+"en": "The point cloud file is damaged or not in the expected format ({t})"
+},
+{
+"es": "LZF corrupto",
+"en": "Corrupt LZF data"
+},
+{
+"es": "LZF: tamaño inesperado",
+"en": "LZF: unexpected size"
+},
+{
+"es": "El PCD está dañado o cortado ({t})",
+"en": "The PCD file is damaged or truncated ({t})"
+},
+{
+"es": "Cabecera PCD no válida",
+"en": "Invalid PCD header"
+},
+{
+"es": "Variante de PCD comprimido no reconocida: {d}",
+"en": "Unrecognized compressed PCD variant: {d}"
+},
+{
+"es": "El PCD no tiene campos x, y, z",
+"en": "The PCD has no x, y, z fields"
+},
+{
+"es": "Los archivos .dwg son formato nativo de AutoCAD y todavía no se pueden abrir.",
+"en": ".dwg files are AutoCAD native format and cannot be opened yet."
+},
+{
+"es": "Guárdalo como DXF (Guardar como → DXF) y ábrelo aquí.",
+"en": "Save it as DXF (Save As → DXF) and open it here."
+},
+{
+"es": "Formato .{e} no soportado todavía.",
+"en": "The .{e} format is not supported yet."
+},
+{
+"es": "Los archivos .{e} son formato nativo de {s} y no se pueden abrir directamente.",
+"en": ".{e} files are {s} native format and cannot be opened directly."
+},
+{
+"es": "Expórtalo a STEP (.step) desde {s} y ábrelo aquí.",
+"en": "Export it to STEP (.step) from {s} and open it here."
+},
+{
+"es": "El archivo no contiene geometría",
+"en": "The file contains no geometry"
+},
+{
+"es": "El ZIP descomprimido es demasiado grande (más de 1,5 GB)",
+"en": "The decompressed ZIP is too large (over 1.5 GB)"
+},
+{
+"es": "El ZIP no contiene ningún modelo que Datum sepa abrir",
+"en": "The ZIP contains no model that Datum can open"
+},
+{
+"es": "No se pudo abrir el archivo",
+"en": "Could not open the file"
+},
+{
+"es": "El archivo está vacío.",
+"en": "The file is empty."
+},
+{
+"es": "Este archivo no parece un STEP (no empieza con ISO-10303-21).",
+"en": "This file does not look like a STEP file (it does not start with ISO-10303-21)."
+},
+{
+"es": "Comprueba que no sea un archivo de otro formato con la extensión cambiada.",
+"en": "Check that it is not a file of another format with a changed extension."
+},
+{
+"es": "El archivo está incompleto: termina antes de tiempo.",
+"en": "The file is incomplete: it ends too early."
+},
+{
+"es": "¿Se cortó la descarga o la copia? Vuelve a descargarlo o exportarlo.",
+"en": "Was the download or copy interrupted? Download or export it again."
+},
+{
+"es": "Error de Open CASCADE: {m}",
+"en": "Open CASCADE error: {m}"
+},
+{
+"es": "No se pudo leer el archivo (formato inválido o no soportado)",
+"en": "Could not read the file (invalid or unsupported format)"
+},
+{
+"es": "Error desconocido al leer el archivo",
+"en": "Unknown error reading the file"
+},
+{
+"es": "Este archivo no parece un DXF (no tiene secciones).",
+"en": "This file does not look like a DXF file (it has no sections)."
+},
+{
+"es": "Comprueba que no sea otro formato con la extensión cambiada.",
+"en": "Check that it is not another format with a changed extension."
+},
+{
+"es": "{l} (relleno)",
+"en": "{l} (hatch)"
+},
+{
+"es": "El DXF no tiene dibujo en el espacio modelo ni en el papel",
+"en": "The DXF has no drawing in model space or paper space"
+},
+{
+"es": "(solo define bloques, capas o tablas).",
+"en": "(it only defines blocks, layers or tables)."
+},
+{
+"es": "Viajes (pluma arriba)",
+"en": "Travel moves (pen up)"
+},
+{
+"es": "El HPGL no se puede interpretar ({t})",
+"en": "The HPGL cannot be interpreted ({t})"
+},
+{
+"es": "Unidades del plóter: 40 por milímetro ({d} mm).",
+"en": "Plotter units: 40 per millimetre ({d} mm)."
+},
+{
+"es": "El HPGL no dibuja ningún trazo (solo coloca la pluma)",
+"en": "The HPGL draws no strokes (it only positions the pen)"
+},
+{
+"es": "El archivo usa SC sin IP: la escala del plóter se ha supuesto, el tamaño puede no ser el real.",
+"en": "The file uses SC without IP: the plotter scale has been assumed, so the size may not be the real one."
+},
+{
+"es": "{n} rótulo (LB): el plóter los traza con su tipo de letra interno; aquí se muestran como texto, sin trazos que cortar.",
+"en": "{n} label (LB): the plotter draws it with its built-in font; here it is shown as text, with no strokes to cut."
+},
+{
+"es": "{n} rótulos (LB): el plóter los traza con su tipo de letra interno; aquí se muestran como texto, sin trazos que cortar.",
+"en": "{n} labels (LB): the plotter draws them with its built-in font; here they are shown as text, with no strokes to cut."
+},
+{
+"es": "El {p} % del recorrido es con la pluma levantada: ordenar los trazos acortaría el trabajo.",
+"en": "{p} % of the path is with the pen up: ordering the strokes would shorten the job."
+},
+{
+"es": "Instrucciones sin interpretar: {c}.",
+"en": "Uninterpreted instructions: {c}."
+},
+{
+"es": "Pluma {n}",
+"en": "Pen {n}"
+},
+{
+"es": "degradados o patrones",
+"en": "gradients or patterns"
+},
+{
+"es": "anidamiento excesivo",
+"en": "excessive nesting"
+},
+{
+"es": "elementos ocultos",
+"en": "hidden elements"
+},
+{
+"es": "transformaciones inválidas",
+"en": "invalid transforms"
+},
+{
+"es": "recortes aplicados",
+"en": "clips applied"
+},
+{
+"es": "recortes (clip-path)",
+"en": "clips (clip-path)"
+},
+{
+"es": "máscaras",
+"en": "masks"
+},
+{
+"es": "filtros",
+"en": "filters"
+},
+{
+"es": "sin contorno ni relleno",
+"en": "no stroke or fill"
+},
+{
+"es": "trazos discontinuos",
+"en": "dashed strokes"
+},
+{
+"es": "capas de Inkscape",
+"en": "Inkscape layers"
+},
+{
+"es": "referencias externas",
+"en": "external references"
+},
+{
+"es": "referencias circulares",
+"en": "circular references"
+},
+{
+"es": "instancias (use)",
+"en": "instances (use)"
+},
+{
+"es": "trazados",
+"en": "paths"
+},
+{
+"es": "trazados con datos erróneos",
+"en": "paths with bad data"
+},
+{
+"es": "formas básicas",
+"en": "basic shapes"
+},
+{
+"es": "textos",
+"en": "text elements"
+},
+{
+"es": "imágenes",
+"en": "images"
+},
+{
+"es": "{n} texto sin convertir a trazados: una cortadora no los verá. En Inkscape: Trazado ▸ Objeto a trazado.",
+"en": "{n} text element not converted to paths: a cutter will not see it. In Inkscape: Path ▸ Object to Path."
+},
+{
+"es": "{n} textos sin convertir a trazados: una cortadora no los verá. En Inkscape: Trazado ▸ Objeto a trazado.",
+"en": "{n} text elements not converted to paths: a cutter will not see them. In Inkscape: Path ▸ Object to Path."
+},
+{
+"es": "{n} imagen incrustada: no se dibujan (no son vectores).",
+"en": "{n} embedded image: images are not drawn (they are not vectors)."
+},
+{
+"es": "{n} imágenes incrustadas: no se dibujan (no son vectores).",
+"en": "{n} embedded images: images are not drawn (they are not vectors)."
+},
+{
+"es": "Hay recortes o máscaras: se dibuja la geometría completa, sin recortar.",
+"en": "There are clips or masks: the full geometry is drawn, without clipping."
+},
+{
+"es": "{n} trazos discontinuos se dibujan continuos (suelen ser líneas de plegado o de guía).",
+"en": "{n} dashed strokes are drawn solid (they are usually fold or guide lines)."
+},
+{
+"es": "Degradados y patrones se dibujan con un color liso.",
+"en": "Gradients and patterns are drawn in a solid colour."
+},
+{
+"es": "{n} trazados tienen datos erróneos: se dibujan hasta el error.",
+"en": "{n} paths have bad data: they are drawn up to the error."
+},
+{
+"es": "Hay referencias a otros archivos que no se cargan.",
+"en": "There are references to other files that are not loaded."
+},
+{
+"es": "El SVG no contiene trazados que se puedan dibujar",
+"en": "The SVG contains no paths that can be drawn"
+},
+{
+"es": "Solo hay texto: no hay ninguna línea que cortar.",
+"en": "There is only text: there are no lines to cut."
+},
+{
+"es": "El SVG tiene demasiados elementos (más de 3 millones)",
+"en": "The SVG has too many elements (over 3 million)"
+},
+{
+"es": "Dibujo",
+"en": "Drawing"
+},
+{
+"es": "{c} sin contorno",
+"en": "{c} no outline"
+},
+{
+"es": "Capa",
+"en": "Layer"
+},
+{
+"es": "Generado por programa",
+"en": "Generated by a program"
+},
+{
+"es": "El SVG no se puede interpretar ({t})",
+"en": "The SVG cannot be interpreted ({t})"
+},
+{
+"es": "El SVG está mal formado: {m}",
+"en": "The SVG is malformed: {m}"
+},
+{
+"es": "El archivo no es un SVG (falta el elemento raíz «svg»)",
+"en": "The file is not an SVG (the «svg» root element is missing)"
+},
+{
+"es": "Tamaño declarado por el archivo: se leen las medidas en milímetros reales.",
+"en": "Size declared by the file: dimensions are read in real millimetres."
+},
+{
+"es": "El archivo no declara un tamaño físico: se toma 1 unidad = 1 px a 96 ppp (Inkscape, navegadores). Illustrator antiguo usa 72 ppp: cámbialo en «Datos de corte» si no cuadra.",
+"en": "The file does not declare a physical size: 1 unit = 1 px at 96 dpi is assumed (Inkscape, browsers). Old Illustrator uses 72 dpi: change it in «Cutting data» if it does not match."
+},
+{
+"es": "Tamaño de vértice meshopt no válido",
+"en": "Invalid meshopt vertex size"
+},
+{
+"es": "Datos meshopt vacíos",
+"en": "Empty meshopt data"
+},
+{
+"es": "Cabecera meshopt de vértices no válida",
+"en": "Invalid meshopt vertex header"
+},
+{
+"es": "Versión meshopt de vértices no soportada",
+"en": "Unsupported meshopt vertex version"
+},
+{
+"es": "Datos meshopt truncados",
+"en": "Truncated meshopt data"
+},
+{
+"es": "Datos meshopt dañados",
+"en": "Corrupt meshopt data"
+},
+{
+"es": "Canal meshopt no válido",
+"en": "Invalid meshopt channel"
+},
+{
+"es": "Filtro octaédrico con tamaño no válido",
+"en": "Octahedral filter with invalid size"
+},
+{
+"es": "Filtro de cuaternión con tamaño no válido",
+"en": "Quaternion filter with invalid size"
+},
+{
+"es": "Filtro de color con tamaño no válido",
+"en": "Color filter with invalid size"
+},
+{
+"es": "Índices meshopt no válidos",
+"en": "Invalid meshopt indices"
+},
+{
+"es": "Cabecera meshopt de índices no válida",
+"en": "Invalid meshopt index header"
+},
+{
+"es": "Versión meshopt de índices no soportada",
+"en": "Unsupported meshopt index version"
+},
+{
+"es": "Datos meshopt de índices dañados",
+"en": "Corrupt meshopt index data"
+},
+{
+"es": "Cabecera meshopt de secuencia no válida",
+"en": "Invalid meshopt sequence header"
+},
+{
+"es": "Datos meshopt de secuencia dañados",
+"en": "Corrupt meshopt sequence data"
+},
+{
+"es": "Modo meshopt desconocido: {mode}",
+"en": "Unknown meshopt mode: {mode}"
+},
+{
+"es": "Filtro meshopt no soportado: {filter}",
+"en": "Unsupported meshopt filter: {filter}"
+},
+{
+"es": "El archivo no contiene puntos",
+"en": "The file contains no points"
+},
+{
+"es": "El archivo tiene más puntos de los que se muestran: se ha tomado una muestra uniforme.",
+"en": "The file has more points than are shown: a uniform sample was taken."
+},
+{
+"es": "Grupo {n}",
+"en": "Group {n}"
+},
+{
+"es": "El archivo STL no contiene triángulos (¿está vacío o dañado?).",
+"en": "The STL file contains no triangles (is it empty or corrupt?)."
+},
+{
+"es": "No se han encontrado triángulos en este STL de texto. ¿Es realmente un STL?",
+"en": "No triangles were found in this text STL. Is it really an STL?"
+},
+{
+"es": "El PLY está cortado: no tiene «end_header»",
+"en": "The PLY is cut off: it has no «end_header»"
+},
+{
+"es": "No es un archivo PLY válido (falta la marca «ply»)",
+"en": "Not a valid PLY file (missing the «ply» marker)"
+},
+{
+"es": "El PLY tiene una cabecera dañada (recuento imposible)",
+"en": "The PLY has a corrupt header (impossible count)"
+},
+{
+"es": "El PLY no tiene coordenadas x, y, z",
+"en": "The PLY has no x, y, z coordinates"
+},
+{
+"es": "PLY truncado en los vértices",
+"en": "PLY truncated in the vertices"
+},
+{
+"es": "PLY truncado en las caras",
+"en": "PLY truncated in the faces"
+},
+{
+"es": "PLY dañado en las caras",
+"en": "PLY corrupt in the faces"
+},
+{
+"es": "PLY truncado en las bandas de triángulos",
+"en": "PLY truncated in the triangle strips"
+},
+{
+"es": "PLY dañado en las bandas de triángulos",
+"en": "PLY corrupt in the triangle strips"
+},
+{
+"es": "PLY truncado",
+"en": "PLY truncated"
+},
+{
+"es": "PLY dañado",
+"en": "Corrupt PLY"
+},
+{
+"es": "El PLY no contiene vértices",
+"en": "The PLY contains no vertices"
+},
+{
+"es": "El PLY no contiene triángulos válidos",
+"en": "The PLY contains no valid triangles"
+},
+{
+"es": "Aristas",
+"en": "Edges"
+},
+{
+"es": "Tipo PLY desconocido: {t}",
+"en": "Unknown PLY type: {t}"
+},
+{
+"es": "El PLY está dañado ({e})",
+"en": "The PLY is corrupt ({e})"
+},
+{
+"es": "Formato PLY desconocido: {format}",
+"en": "Unknown PLY format: {format}"
+},
+{
+"es": "{n} aristas (edge): se dibujan como tubos finos.",
+"en": "{n} edges: drawn as thin tubes."
+},
+{
+"es": "Caras con índices de vértice no válidos: se omiten.",
+"en": "Faces with invalid vertex indices: skipped."
+},
+{
+"es": "El OBJ está vacío: no tiene vértices ni caras",
+"en": "The OBJ is empty: it has no vertices or faces"
+},
+{
+"es": "Solo algunos vértices traen color.",
+"en": "Only some vertices have color."
+},
+{
+"es": "Líneas",
+"en": "Lines"
+},
+{
+"es": "El OBJ está dañado ({e})",
+"en": "The OBJ is corrupt ({e})"
+},
+{
+"es": "Material «{name}» no definido en el MTL.",
+"en": "Material «{name}» is not defined in the MTL."
+},
+{
+"es": "{n} segmentos de línea (l): se dibujan como tubos finos.",
+"en": "{n} line segments (l): drawn as thin tubes."
+},
+{
+"es": "El 3MF no contiene ningún modelo",
+"en": "The 3MF contains no model"
+},
+{
+"es": "El 3MF no contiene geometría",
+"en": "The 3MF contains no geometry"
+},
+{
+"es": "Contiene cortes (extensión de capas): se muestra solo la malla.",
+"en": "Contains slices (layer extension): only the mesh is shown."
+},
+{
+"es": "Materiales compuestos o multipropiedad: se muestra el color base.",
+"en": "Composite or multi-property materials: the base color is shown."
+},
+{
+"es": "Contiene texturas de imagen: no se aplican (se ve el color base).",
+"en": "Contains image textures: not applied (the base color is shown)."
+},
+{
+"es": "Falta el modelo {n}",
+"en": "Missing model {n}"
+},
+{
+"es": "Pieza {n}",
+"en": "Part {n}"
+},
+{
+"es": "Placa {n}",
+"en": "Plate {n}"
+},
+{
+"es": "Un accesor sale de su vista de datos",
+"en": "An accessor goes outside its data view"
+},
+{
+"es": "El GLB está cortado",
+"en": "The GLB is cut off"
+},
+{
+"es": "El GLB no tiene la parte JSON",
+"en": "The GLB has no JSON chunk"
+},
+{
+"es": "Texturas KTX2/Basis: no se pueden leer, se ven sin textura.",
+"en": "KTX2/Basis textures: cannot be read, shown without texture."
+},
+{
+"es": "Falta el bloque binario del GLB",
+"en": "The GLB binary chunk is missing"
+},
+{
+"es": "especular-brillo aproximado con el color difuso",
+"en": "specular-glossiness approximated with the diffuse color"
+},
+{
+"es": "transmisión aproximada con transparencia",
+"en": "transmission approximated with transparency"
+},
+{
+"es": "metal/rugosidad",
+"en": "metal/roughness"
+},
+{
+"es": "normales",
+"en": "normals"
+},
+{
+"es": "oclusión",
+"en": "occlusion"
+},
+{
+"es": "emisión",
+"en": "emission"
+},
+{
+"es": "Un canal de animación está dañado y se omite.",
+"en": "An animation channel is corrupt and is skipped."
+},
+{
+"es": "El glTF no contiene mallas de triángulos",
+"en": "The glTF contains no triangle meshes"
+},
+{
+"es": "Una vista de datos sale del buffer ({end} > {size})",
+"en": "A data view goes outside the buffer ({end} > {size})"
+},
+{
+"es": "El glTF está dañado ({e})",
+"en": "The glTF is corrupt ({e})"
+},
+{
+"es": "El archivo no es un glTF válido ({e})",
+"en": "The file is not a valid glTF ({e})"
+},
+{
+"es": "glTF {ver} no está soportado (solo 2.0)",
+"en": "glTF {ver} is not supported (2.0 only)"
+},
+{
+"es": "Falta el archivo de datos: {file}",
+"en": "Missing data file: {file}"
+},
+{
+"es": "imagen {n}",
+"en": "image {n}"
+},
+{
+"es": "«{name}» es KTX2/Basis: no se puede decodificar.",
+"en": "«{name}» is KTX2/Basis: it cannot be decoded."
+},
+{
+"es": "Material {n}",
+"en": "Material {n}"
+},
+{
+"es": "efecto {name}",
+"en": "{name} effect"
+},
+{
+"es": "Índices fuera de rango en «{label}»: se omiten esos triángulos.",
+"en": "Indices out of range in «{label}»: those triangles are skipped."
+},
+{
+"es": "Nodo {n}",
+"en": "Node {n}"
+},
+{
+"es": "Hay {n} escenas: se muestra la predeterminada.",
+"en": "There are {n} scenes: the default one is shown."
+},
+{
+"es": "Animación {n}",
+"en": "Animation {n}"
+},
+{
+"es": "{n} primitivas de puntos o líneas no se dibujan.",
+"en": "{n} point or line primitives are not drawn."
+},
+{
+"es": "Instanciado por GPU: {n} instancias.",
+"en": "GPU instancing: {n} instances."
+},
+{
+"es": "No se aplican: {list}.",
+"en": "Not applied: {list}."
+},
+{
+"es": "Variante {n}",
+"en": "Variant {n}"
+},
+{
+"es": "Nube",
+"en": "Cloud"
+},
+{
+"es": "{name} (por cara)",
+"en": "{name} (per face)"
+},
+{
+"es": "1 texto (Text) sin dibujar: el visor no traza tipos de letra de VRML.",
+"en": "1 text (Text) not drawn: the viewer does not render VRML fonts."
+},
+{
+"es": "Animaciones: se reproducen las de posición, giro y escala; el resto de interpoladores se ignora.",
+"en": "Animations: position, rotation and scale animations are played; other interpolators are ignored."
+},
+{
+"es": "Cabecera LAS dañada",
+"en": "LAS header is damaged"
+},
+{
+"es": "DEF sin nodo",
+"en": "DEF without a node"
+},
+{
+"es": "Demasiadas instancias de PROTO",
+"en": "Too many PROTO instances"
+},
+{
+"es": "ED50 / UTM zona {z} N",
+"en": "ED50 / UTM zone {z}N"
+},
+{
+"es": "ETRS89 (geográfico)",
+"en": "ETRS89 (geographic)"
+},
+{
+"es": "ETRS89 / LAEA Europa",
+"en": "ETRS89 / LAEA Europe"
+},
+{
+"es": "ETRS89 / UTM zona {z} N",
+"en": "ETRS89 / UTM zone {z}N"
+},
+{
+"es": "El E57 está cortado (falta una página)",
+"en": "The E57 is truncated (a page is missing)"
+},
+{
+"es": "El E57 está dañado: la suma de control (CRC) del XML no coincide",
+"en": "The E57 is damaged: the XML checksum (CRC) does not match"
+},
+{
+"es": "El E57 está incompleto o alterado: debería medir {a} bytes y mide {b}",
+"en": "The E57 is incomplete or altered: it should be {a} bytes but is {b}"
+},
+{
+"es": "El E57 no contiene escaneos 3D (falta data3D)",
+"en": "The E57 contains no 3D scans (data3D is missing)"
+},
+{
+"es": "El E57 no contiene ningún escaneo con puntos",
+"en": "The E57 contains no scan with points"
+},
+{
+"es": "El E57 no contiene puntos",
+"en": "The E57 contains no points"
+},
+{
+"es": "El E57 no contiene puntos válidos",
+"en": "The E57 contains no valid points"
+},
+{
+"es": "El E57 no se puede interpretar ({t})",
+"en": "The E57 cannot be interpreted ({t})"
+},
+{
+"es": "El E57 usa un códec de compresión que no está admitido",
+"en": "The E57 uses an unsupported compression codec"
+},
+{
+"es": "El LAS está dañado o cortado ({t})",
+"en": "The LAS is damaged or truncated ({t})"
+},
+{
+"es": "El VRML comprimido (.wrz) está dañado",
+"en": "The compressed VRML (.wrz) is damaged"
+},
+{
+"es": "El VRML no contiene geometría",
+"en": "The VRML contains no geometry"
+},
+{
+"es": "El VRML no contiene geometría que se pueda dibujar (hay: {l})",
+"en": "The VRML contains no drawable geometry (found: {l})"
+},
+{
+"es": "El VRML tiene demasiados nodos",
+"en": "The VRML has too many nodes"
+},
+{
+"es": "El X3D está mal formado: {m}",
+"en": "The X3D is malformed: {m}"
+},
+{
+"es": "El X3D no tiene escena (falta el elemento Scene)",
+"en": "The X3D has no scene (the Scene element is missing)"
+},
+{
+"es": "El X3D tiene demasiados nodos",
+"en": "The X3D has too many nodes"
+},
+{
+"es": "El XML del E57 está mal formado: {m}",
+"en": "The E57 XML is malformed: {m}"
+},
+{
+"es": "El archivo VRML es demasiado grande",
+"en": "The VRML file is too large"
+},
+{
+"es": "El archivo VRML está dañado o no tiene el formato esperado ({t})",
+"en": "The VRML file is damaged or not in the expected format ({t})"
+},
+{
+"es": "El archivo contiene {n} imágenes 2D que no se muestran.",
+"en": "The file contains {n} 2D images that are not shown."
+},
+{
+"es": "El archivo es demasiado corto para ser un E57",
+"en": "The file is too short to be an E57"
+},
+{
+"es": "El archivo es demasiado corto para ser un LAS",
+"en": "The file is too short to be a LAS"
+},
+{
+"es": "El archivo está animado ({n} interpoladores o relojes), pero no se ha podido enlazar ninguna animación: se muestra su estado inicial.",
+"en": "The file is animated ({n} interpolators or timers), but no animation could be linked: its initial state is shown."
+},
+{
+"es": "El archivo no contiene puntos válidos",
+"en": "The file contains no valid points"
+},
+{
+"es": "El archivo no indica la unidad de longitud de su sistema de coordenadas: se suponen metros.",
+"en": "The file does not specify the length unit of its coordinate system: meters are assumed."
+},
+{
+"es": "El archivo no indica su sistema de coordenadas ni sus unidades: se suponen metros.",
+"en": "The file specifies neither its coordinate system nor its units: meters are assumed."
+},
+{
+"es": "El archivo tiene {n} escaneos: se muestran todos juntos, cada uno con su posición.",
+"en": "The file has {n} scans: they are shown together, each at its own position."
+},
+{
+"es": "El número de flujos del paquete no coincide con el prototipo",
+"en": "The number of streams in the packet does not match the prototype"
+},
+{
+"es": "Estructura del VRML no válida",
+"en": "Invalid VRML structure"
+},
+{
+"es": "Estructura del VRML no válida (llave o corchete inesperado)",
+"en": "Invalid VRML structure (unexpected brace or bracket)"
+},
+{
+"es": "Faltan {n} archivos citados por Inline: {l}.",
+"en": "{n} files referenced by Inline are missing: {l}."
+},
+{
+"es": "Forma {n}",
+"en": "Shape {n}"
+},
+{
+"es": "Formato de punto LAS {f} desconocido",
+"en": "Unknown LAS point format {f}"
+},
+{
+"es": "Hay {n} páginas con la suma de control (CRC) incorrecta: el archivo puede estar dañado.",
+"en": "{n} pages have an incorrect checksum (CRC): the file may be damaged."
+},
+{
+"es": "LAZ: este archivo está comprimido y necesita el descompresor",
+"en": "LAZ: this file is compressed and needs the decompressor"
+},
+{
+"es": "La cabecera dice {n} puntos pero el archivo sólo contiene {total}: puede estar cortado.",
+"en": "The header states {n} points but the file only contains {total}: it may be truncated."
+},
+{
+"es": "La caja de la cabecera no coincide con los puntos (cabecera desactualizada).",
+"en": "The header bounding box does not match the points (outdated header)."
+},
+{
+"es": "La caja de la cabecera no es válida; se ha calculado de los puntos.",
+"en": "The header bounding box is invalid; it was computed from the points."
+},
+{
+"es": "La escala del LAS no es válida",
+"en": "The LAS scale is invalid"
+},
+{
+"es": "La longitud de registro ({rl}) es menor que la del formato {f}",
+"en": "The record length ({rl}) is smaller than that of format {f}"
+},
+{
+"es": "La sección XML del E57 no es válida",
+"en": "The E57 XML section is invalid"
+},
+{
+"es": "Las coordenadas están en grados (sistema geográfico): las distancias en metros no son fiables hasta proyectarlas.",
+"en": "Coordinates are in degrees (geographic CRS): distances in meters are unreliable until the data is projected."
+},
+{
+"es": "NAD83 (geográfico)",
+"en": "NAD83 (geographic)"
+},
+{
+"es": "NAD83 / Nueva York Long Island (ft EE. UU.)",
+"en": "NAD83 / New York Long Island (US ft)"
+},
+{
+"es": "NAD83 / UTM zona {z} N",
+"en": "NAD83 / UTM zone {z}N"
+},
+{
+"es": "NAD83(2011) / UTM zona {z} N",
+"en": "NAD83(2011) / UTM zone {z}N"
+},
+{
+"es": "No es un archivo E57 (falta la marca «ASTM-E57»)",
+"en": "Not an E57 file (the \"ASTM-E57\" signature is missing)"
+},
+{
+"es": "No es un archivo LAS (falta la marca «LASF»)",
+"en": "Not a LAS file (the \"LASF\" signature is missing)"
+},
+{
+"es": "Nodos sin soporte (no se dibujan): {l}.",
+"en": "Unsupported nodes (not drawn): {l}."
+},
+{
+"es": "OSGB36 / Red Nacional Británica",
+"en": "OSGB36 / British National Grid"
+},
+{
+"es": "PROTO externos que no se pueden leer: {l}.",
+"en": "External PROTOs that cannot be read: {l}."
+},
+{
+"es": "Paquete de E57 dañado",
+"en": "Damaged E57 packet"
+},
+{
+"es": "Rango del campo {name} no válido",
+"en": "Invalid range for field {name}"
+},
+{
+"es": "Se muestra una de cada {n} puntos (muestra uniforme) para que la vista sea fluida.",
+"en": "Showing one in every {n} points (uniform sample) to keep the view smooth."
+},
+{
+"es": "Sección binaria de E57 no válida",
+"en": "Invalid E57 binary section"
+},
+{
+"es": "Sistema local del escáner (metros)",
+"en": "Local scanner coordinate system (meters)"
+},
+{
+"es": "Tamaño de página del E57 no válido",
+"en": "Invalid E57 page size"
+},
+{
+"es": "TextureTransform con centro distinto de cero: la textura puede quedar desplazada.",
+"en": "TextureTransform with a non-zero center: the texture may appear shifted."
+},
+{
+"es": "Tipo de campo E57 no admitido: {k}",
+"en": "Unsupported E57 field type: {k}"
+},
+{
+"es": "Tipo de paquete de E57 desconocido",
+"en": "Unknown E57 packet type"
+},
+{
+"es": "USE sin nombre",
+"en": "USE without a name"
+},
+{
+"es": "Un escaneo declara {n} puntos pero sólo se han podido leer {done}: el archivo puede estar cortado.",
+"en": "A scan declares {n} points but only {done} could be read: the file may be truncated."
+},
+{
+"es": "Un escaneo no trae coordenadas cartesianas ni esféricas y se ha omitido.",
+"en": "A scan has neither Cartesian nor spherical coordinates and was skipped."
+},
+{
+"es": "VRML con anidamiento excesivo",
+"en": "VRML nested too deeply"
+},
+{
+"es": "VRML no guarda unidades (por norma son metros) y este archivo mide {n} unidades: ¿están en milímetros? Las medidas se dan en las unidades del archivo.",
+"en": "VRML stores no units (meters by specification) and this file measures {n} units: are they in millimeters? Measurements are given in the file units."
+},
+{
+"es": "VRML no guarda unidades (por norma son metros) y este archivo mide {n} unidades: ¿están en otra unidad? Las medidas se dan en las unidades del archivo.",
+"en": "VRML stores no units (meters by specification) and this file measures {n} units: are they in another unit? Measurements are given in the file units."
+},
+{
+"es": "Versión de E57 no admitida: {v}",
+"en": "Unsupported E57 version: {v}"
+},
+{
+"es": "Versión de LAS no admitida: {v}",
+"en": "Unsupported LAS version: {v}"
+},
+{
+"es": "Vista {n}",
+"en": "View {n}"
+},
+{
+"es": "WGS 84 (geográfico)",
+"en": "WGS 84 (geographic)"
+},
+{
+"es": "WGS 84 / UTM zona {z} N",
+"en": "WGS 84 / UTM zone {z}N"
+},
+{
+"es": "WGS 84 / UTM zona {z} S",
+"en": "WGS 84 / UTM zone {z}S"
+},
+{
+"es": "X3D con anidamiento excesivo",
+"en": "X3D nested too deeply"
+},
+{
+"es": "formato 0 (posición e intensidad)",
+"en": "format 0 (position and intensity)"
+},
+{
+"es": "formato 1 (con tiempo GPS)",
+"en": "format 1 (with GPS time)"
+},
+{
+"es": "formato 10 (LAS 1.4, color, infrarrojo y onda)",
+"en": "format 10 (LAS 1.4, color, NIR and waveform)"
+},
+{
+"es": "formato 2 (con color)",
+"en": "format 2 (with color)"
+},
+{
+"es": "formato 3 (tiempo GPS y color)",
+"en": "format 3 (GPS time and color)"
+},
+{
+"es": "formato 4 (tiempo GPS y onda)",
+"en": "format 4 (GPS time and waveform)"
+},
+{
+"es": "formato 5 (tiempo GPS, color y onda)",
+"en": "format 5 (GPS time, color and waveform)"
+},
+{
+"es": "formato 6 (LAS 1.4, tiempo GPS)",
+"en": "format 6 (LAS 1.4, GPS time)"
+},
+{
+"es": "formato 7 (LAS 1.4, tiempo GPS y color)",
+"en": "format 7 (LAS 1.4, GPS time and color)"
+},
+{
+"es": "formato 8 (LAS 1.4, color e infrarrojo)",
+"en": "format 8 (LAS 1.4, color and NIR)"
+},
+{
+"es": "formato 9 (LAS 1.4, onda)",
+"en": "format 9 (LAS 1.4, waveform)"
+},
+{
+"es": "ft EE. UU.",
+"en": "US ft"
+},
+{
+"es": "imagen incrustada",
+"en": "embedded image"
+},
+{
+"es": "{n} caras con índices no válidos se han omitido.",
+"en": "{n} faces with invalid indices were skipped."
+},
+{
+"es": "{n} nodos de interacción (Script, sensores, sonido) se ignoran.",
+"en": "{n} interaction nodes (Script, sensors, sound) are ignored."
+},
+{
+"es": "{n} puntos con coordenadas no válidas se han descartado.",
+"en": "{n} points with invalid coordinates were discarded."
+},
+{
+"es": "{n} puntos marcados como no válidos por el escáner se han omitido.",
+"en": "{n} points flagged as invalid by the scanner were skipped."
+},
+{
+"es": "{n} textos (Text) sin dibujar: el visor no traza tipos de letra de VRML.",
+"en": "{n} texts (Text) not drawn: the viewer does not render VRML fonts."
+},
+{
+"es": "Tipo",
+"en": "Type"
+},
+{
+"es": "Filamento",
+"en": "Filament"
+},
+{
+"es": "Velocidad",
+"en": "Speed"
+},
+{
+"es": "Flujo",
+"en": "Flow"
+},
+{
+"es": "Altura",
+"en": "Height"
+},
+{
+"es": "Liso",
+"en": "Flat"
+},
+{
+"es": "Pausar",
+"en": "Pause"
+},
+{
+"es": "Reproducir la impresión",
+"en": "Play the print"
+},
+{
+"es": "Mostrar todas las capas",
+"en": "Show all layers"
+},
+{
+"es": "Solo esta capa",
+"en": "This layer only"
+},
+{
+"es": "Ficha de impresión",
+"en": "Print summary"
+},
+{
+"es": "Ficha del programa",
+"en": "Program summary"
+},
+{
+"es": "RESUMEN",
+"en": "SUMMARY"
+},
+{
+"es": "Tiempo de impresión",
+"en": "Print time"
+},
+{
+"es": "Tiempo estimado",
+"en": "Estimated time"
+},
+{
+"es": "Coste de material",
+"en": "Material cost"
+},
+{
+"es": "Tamaño",
+"en": "Size"
+},
+{
+"es": "Capas",
+"en": "Layers"
+},
+{
+"es": "Retracciones",
+"en": "Retractions"
+},
+{
+"es": "MATERIALES",
+"en": "MATERIALS"
+},
+{
+"es": "MATERIAL",
+"en": "MATERIAL"
+},
+{
+"es": "cama {n}°",
+"en": "bed {n}°"
+},
+{
+"es": "LAMINADO",
+"en": "SLICING"
+},
+{
+"es": "Altura de capa",
+"en": "Layer height"
+},
+{
+"es": "1ª: {h}",
+"en": "1st: {h}"
+},
+{
+"es": "Boquilla",
+"en": "Nozzle"
+},
+{
+"es": "Paredes",
+"en": "Walls"
+},
+{
+"es": "Relleno",
+"en": "Infill"
+},
+{
+"es": "Soportes",
+"en": "Supports"
+},
+{
+"es": "Sí",
+"en": "Yes"
+},
+{
+"es": "No",
+"en": "No"
+},
+{
+"es": "Ventilador máx.",
+"en": "Max. fan"
+},
+{
+"es": "{p} % sobre la boquilla",
+"en": "{p} % over the nozzle"
+},
+{
+"es": "ANCHURA REAL DE EXTRUSIÓN (ESTIMADA)",
+"en": "ACTUAL EXTRUSION WIDTH (ESTIMATED)"
+},
+{
+"es": "PARADAS PARA CAMBIAR FILAMENTO",
+"en": "STOPS TO CHANGE FILAMENT"
+},
+{
+"es": "Capa {n}",
+"en": "Layer {n}"
+},
+{
+"es": "tras {t}",
+"en": "after {t}"
+},
+{
+"es": "TIEMPO POR CAPA",
+"en": "TIME PER LAYER"
+},
+{
+"es": "QUÉ MOSTRAR",
+"en": "WHAT TO SHOW"
+},
+{
+"es": "DATOS DEL ARCHIVO",
+"en": "FILE DATA"
+},
+{
+"es": "Avance",
+"en": "Feed rate"
+},
+{
+"es": "Profundidad",
+"en": "Depth"
+},
+{
+"es": "Herramienta",
+"en": "Tool"
+},
+{
+"es": "Inicio",
+"en": "Home"
+},
+{
+"es": "Línea {n}",
+"en": "Line {n}"
+},
+{
+"es": "Simular el recorrido",
+"en": "Simulate the toolpath"
+},
+{
+"es": "Material",
+"en": "Material"
+},
+{
+"es": "Diámetro de la herramienta T{n}",
+"en": "Tool diameter T{n}"
+},
+{
+"es": "Cancelar",
+"en": "Cancel"
+},
+{
+"es": "Aceptar",
+"en": "OK"
+},
+{
+"es": "Bajada en rápido (G0) dentro del material",
+"en": "Rapid move (G0) plunge into the material"
+},
+{
+"es": "1 vez, primera en la línea {l}",
+"en": "1 time, first at line {l}"
+},
+{
+"es": "{n} veces, primera en la línea {l}",
+"en": "{n} times, first at line {l}"
+},
+{
+"es": "El programa no enciende el husillo",
+"en": "The program does not start the spindle"
+},
+{
+"es": "No hay M3 ni M4",
+"en": "There is no M3 or M4"
+},
+{
+"es": "No declara unidades",
+"en": "No units declared"
+},
+{
+"es": "Se interpretan como mm (falta G20/G21)",
+"en": "Interpreted as mm (G20/G21 missing)"
+},
+{
+"es": "Usa {n} sistemas de coordenadas (G54…)",
+"en": "Uses {n} coordinate systems (G54…)"
+},
+{
+"es": "Se dibujan todos sobre el mismo origen: no se aplica su desplazamiento",
+"en": "All are drawn on the same origin: their offset is not applied"
+},
+{
+"es": "Tamaño muy pequeño para mm",
+"en": "Size very small for mm"
+},
+{
+"es": "¿Está en pulgadas? Sin G20/G21 no se puede saber",
+"en": "Is it in inches? Without G20/G21 there is no way to tell"
+},
+{
+"es": "Compensación de radio (G41/G42)",
+"en": "Cutter compensation (G41/G42)"
+},
+{
+"es": "El material se talla desplazando la fresa un radio; las líneas muestran el trazado programado",
+"en": "The stock is cut with the cutter offset by one radius; the lines show the programmed path"
+},
+{
+"es": "Lógica de programa no soportada",
+"en": "Program logic not supported"
+},
+{
+"es": "El recorrido puede estar incompleto",
+"en": "The toolpath may be incomplete"
+},
+{
+"es": "Programado en pulgadas (mostrado en mm)",
+"en": "Programmed in inches (shown in mm)"
+},
+{
+"es": "Programado en mm",
+"en": "Programmed in mm"
+},
+{
+"es": "AVISOS",
+"en": "WARNINGS"
+},
+{
+"es": "Sin avisos",
+"en": "No warnings"
+},
+{
+"es": "Recorrido de corte",
+"en": "Cutting path"
+},
+{
+"es": "Recorrido en rápido",
+"en": "Rapid path"
+},
+{
+"es": "LÍMITES (mm)",
+"en": "LIMITS (mm)"
+},
+{
+"es": "HERRAMIENTAS",
+"en": "TOOLS"
+},
+{
+"es": "El programa no cambia de herramienta",
+"en": "The program does not change tools"
+},
+{
+"es": "(supuesto)",
+"en": "(assumed)"
+},
+{
+"es": "PARÁMETROS",
+"en": "PARAMETERS"
+},
+{
+"es": "Husillo",
+"en": "Spindle"
+},
+{
+"es": "Refrigerante",
+"en": "Coolant"
+},
+{
+"es": "Sí (M7/M8)",
+"en": "Yes (M7/M8)"
+},
+{
+"es": "Más lenta: capa {n} ({t})",
+"en": "Slowest: layer {n} ({t})"
+},
+{
+"es": "Otros",
+"en": "Other"
+},
+{
+"es": "Pared exterior",
+"en": "Outer wall"
+},
+{
+"es": "Pared interior",
+"en": "Inner wall"
+},
+{
+"es": "Superficie sólida",
+"en": "Solid surface"
+},
+{
+"es": "Soporte",
+"en": "Support"
+},
+{
+"es": "Puente / voladizo",
+"en": "Bridge / overhang"
+},
+{
+"es": "Falda / purga",
+"en": "Skirt / purge"
+},
+{
+"es": "Distancia {d}  ·  ΔX {x}  ·  ΔY {y}  ·  ΔZ {z}",
+"en": "Distance {d}  ·  ΔX {x}  ·  ΔY {y}  ·  ΔZ {z}"
+},
+{
+"es": "filamento {n}",
+"en": "filament {n}"
+},
+{
+"es": "Automático",
+"en": "Automatic"
+},
+{
+"es": "Sin borde",
+"en": "No brim"
+},
+{
+"es": "Solo exterior",
+"en": "Outer only"
+},
+{
+"es": "Solo interior",
+"en": "Inner only"
+},
+{
+"es": "Exterior e interior",
+"en": "Outer and inner"
+},
+{
+"es": "Pintado",
+"en": "Painted"
+},
+{
+"es": "Normal (auto)",
+"en": "Normal (auto)"
+},
+{
+"es": "Árbol (auto)",
+"en": "Tree (auto)"
+},
+{
+"es": "Normal (manual)",
+"en": "Normal (manual)"
+},
+{
+"es": "Árbol (manual)",
+"en": "Tree (manual)"
+},
+{
+"es": "Pieza a pieza",
+"en": "Object by object"
+},
+{
+"es": "Capa a capa",
+"en": "Layer by layer"
+},
+{
+"es": "Sin balsa",
+"en": "No raft"
+},
+{
+"es": "{n} capas",
+"en": "{n} layers"
+},
+{
+"es": "Primera capa",
+"en": "First layer"
+},
+{
+"es": "Perímetros",
+"en": "Perimeters"
+},
+{
+"es": "Capas superiores",
+"en": "Top layers"
+},
+{
+"es": "Capas inferiores",
+"en": "Bottom layers"
+},
+{
+"es": "Patrón de relleno",
+"en": "Infill pattern"
+},
+{
+"es": "Tipo de soporte",
+"en": "Support type"
+},
+{
+"es": "Estilo de soporte",
+"en": "Support style"
+},
+{
+"es": "Borde de adherencia",
+"en": "Adhesion brim"
+},
+{
+"es": "Ancho del borde",
+"en": "Brim width"
+},
+{
+"es": "Balsa",
+"en": "Raft"
+},
+{
+"es": "Placa de cama",
+"en": "Bed plate"
+},
+{
+"es": "Orden de impresión",
+"en": "Print order"
+},
+{
+"es": "Torre de purga",
+"en": "Prime tower"
+},
+{
+"es": "Solape relleno-pared",
+"en": "Infill-wall overlap"
+},
+{
+"es": "Relleno de esqueleto",
+"en": "Skeleton infill"
+},
+{
+"es": "Relleno de piel",
+"en": "Skin infill"
+},
+{
+"es": "Relleno de huecos",
+"en": "Gap fill"
+},
+{
+"es": "Posición de la costura",
+"en": "Seam position"
+},
+{
+"es": "Velocidad pared exterior",
+"en": "Outer wall speed"
+},
+{
+"es": "Planchado",
+"en": "Ironing"
+},
+{
+"es": "Pieza",
+"en": "Part"
+},
+{
+"es": "Modificador",
+"en": "Modifier"
+},
+{
+"es": "Volumen negativo (vacía)",
+"en": "Negative volume (hollows)"
+},
+{
+"es": "Bloqueador de soportes",
+"en": "Support blocker"
+},
+{
+"es": "Forzador de soportes",
+"en": "Support enforcer"
+},
+{
+"es": "No se imprime",
+"en": "Not printed"
+},
+{
+"es": "{n} placas",
+"en": "{n} plates"
+},
+{
+"es": "Placa {n} de {m}",
+"en": "Plate {n} of {m}"
+},
+{
+"es": "1 pieza",
+"en": "1 part"
+},
+{
+"es": "{n} piezas",
+"en": "{n} parts"
+},
+{
+"es": "Se sale de la cama {n} mm",
+"en": "Extends {n} mm beyond the bed"
+},
+{
+"es": "Cabe en la cama",
+"en": "Fits on the bed"
+},
+{
+"es": "hasta {m}",
+"en": "up to {m}"
+},
+{
+"es": "{n} filamentos",
+"en": "{n} filaments"
+},
+{
+"es": "Todas",
+"en": "All"
+},
+{
+"es": "Filamentos",
+"en": "Filaments"
+},
+{
+"es": "Todas las placas",
+"en": "All plates"
+},
+{
+"es": "Aviso",
+"en": "Warning"
+},
+{
+"es": "Material total",
+"en": "Total material"
+},
+{
+"es": "Capas con más de un color",
+"en": "Layers with more than one color"
+},
+{
+"es": "Hay piezas fuera de la cama",
+"en": "Some parts are outside the bed"
+},
+{
+"es": "Ver el recorrido (G-code)",
+"en": "View the toolpath (G-code)"
+},
+{
+"es": "FILAMENTOS DEL PROYECTO",
+"en": "PROJECT FILAMENTS"
+},
+{
+"es": "Este archivo no define filamentos.",
+"en": "This file defines no filaments."
+},
+{
+"es": "{g} · {m} m (laminado)",
+"en": "{g} · {m} m (sliced)"
+},
+{
+"es": "hasta {m} macizo · {v}",
+"en": "up to {m} solid · {v}"
+},
+{
+"es": "sin usar en esta vista",
+"en": "unused in this view"
+},
+{
+"es": "Filamento {n}",
+"en": "Filament {n}"
+},
+{
+"es": "Sin laminar: el peso es el del material macizo (volumen × densidad del filamento), una cota máxima. El real depende del relleno, las paredes y los soportes.",
+"en": "Not sliced: the weight is that of solid material (volume × filament density), an upper bound. The real weight depends on infill, walls and supports."
+},
+{
+"es": "Piezas",
+"en": "Parts"
+},
+{
+"es": "Todo el proyecto",
+"en": "Whole project"
+},
+{
+"es": "Ver solo esta pieza",
+"en": "View only this part"
+},
+{
+"es": "Mostrar",
+"en": "Show"
+},
+{
+"es": "Ocultar",
+"en": "Hide"
+},
+{
+"es": "{d} · {k} triáng.",
+"en": "{d} · {k} tri."
+},
+{
+"es": "placa {n}",
+"en": "plate {n}"
+},
+{
+"es": "no se imprime",
+"en": "not printed"
+},
+{
+"es": "Ajustes propios: {a}",
+"en": "Own settings: {a}"
+},
+{
+"es": "Mostrar volúmenes auxiliares",
+"en": "Show auxiliary volumes"
+},
+{
+"es": "Modificadores, negativos y bloqueadores de soportes",
+"en": "Modifiers, negatives and support blockers"
+},
+{
+"es": "Proyecto 3MF",
+"en": "3MF project"
+},
+{
+"es": "Diseñador",
+"en": "Designer"
+},
+{
+"es": "Licencia",
+"en": "License"
+},
+{
+"es": "Derechos",
+"en": "Copyright"
+},
+{
+"es": "Creado",
+"en": "Created"
+},
+{
+"es": "Modificado",
+"en": "Modified"
+},
+{
+"es": "Descripción",
+"en": "Description"
+},
+{
+"es": "Unidad del archivo",
+"en": "File unit"
+},
+{
+"es": "IMPRESIÓN",
+"en": "PRINTING"
+},
+{
+"es": "Impresora",
+"en": "Printer"
+},
+{
+"es": "Cama",
+"en": "Bed"
+},
+{
+"es": "Perfil",
+"en": "Profile"
+},
+{
+"es": "CAMBIOS DE COLOR POR ALTURA",
+"en": "COLOR CHANGES BY HEIGHT"
+},
+{
+"es": "EXTENSIONES DEL FORMATO",
+"en": "FORMAT EXTENSIONS"
+},
+{
+"es": "micras",
+"en": "microns"
+},
+{
+"es": "milímetros",
+"en": "millimeters"
+},
+{
+"es": "centímetros",
+"en": "centimeters"
+},
+{
+"es": "metros",
+"en": "meters"
+},
+{
+"es": "pulgadas",
+"en": "inches"
+},
+{
+"es": "pies",
+"en": "feet"
+},
+{
+"es": "producción",
+"en": "production"
+},
+{
+"es": "materiales",
+"en": "materials"
+},
+{
+"es": "retícula de vigas",
+"en": "beam lattice"
+},
+{
+"es": "cortes",
+"en": "slices"
+},
+{
+"es": "Clase {c} (definida por el usuario)",
+"en": "Class {c} (user defined)"
+},
+{
+"es": "Nunca clasificado",
+"en": "Never classified"
+},
+{
+"es": "Sin clasificar",
+"en": "Unclassified"
+},
+{
+"es": "Suelo",
+"en": "Ground"
+},
+{
+"es": "Vegetación baja",
+"en": "Low vegetation"
+},
+{
+"es": "Vegetación media",
+"en": "Medium vegetation"
+},
+{
+"es": "Vegetación alta",
+"en": "High vegetation"
+},
+{
+"es": "Edificio",
+"en": "Building"
+},
+{
+"es": "Ruido bajo",
+"en": "Low noise"
+},
+{
+"es": "Clave del modelo",
+"en": "Model key point"
+},
+{
+"es": "Agua",
+"en": "Water"
+},
+{
+"es": "Ferrocarril",
+"en": "Rail"
+},
+{
+"es": "Superficie de carretera",
+"en": "Road surface"
+},
+{
+"es": "Solape",
+"en": "Overlap"
+},
+{
+"es": "Cable (protección)",
+"en": "Wire (guard)"
+},
+{
+"es": "Cable (conductor)",
+"en": "Wire (conductor)"
+},
+{
+"es": "Torre de transmisión",
+"en": "Transmission tower"
+},
+{
+"es": "Conector de cable",
+"en": "Wire connector"
+},
+{
+"es": "Puente",
+"en": "Bridge"
+},
+{
+"es": "Ruido alto",
+"en": "High noise"
+},
+{
+"es": "Estructura aérea",
+"en": "Overhead structure"
+},
+{
+"es": "Suelo ignorado",
+"en": "Ignored ground"
+},
+{
+"es": "Nieve",
+"en": "Snow"
+},
+{
+"es": "Exclusión temporal",
+"en": "Temporal exclusion"
+},
+{
+"es": "1 línea repetida: se cortarían dos veces",
+"en": "1 duplicate line: it would be cut twice"
+},
+{
+"es": "{n} líneas repetidas: se cortarían dos veces",
+"en": "{n} duplicate lines: they would be cut twice"
+},
+{
+"es": "1 segmento diminuto: suelen ser restos de edición",
+"en": "1 tiny segment: usually editing leftovers"
+},
+{
+"es": "{n} segmentos diminutos: suelen ser restos de edición",
+"en": "{n} tiny segments: usually editing leftovers"
+},
+{
+"es": "Contorno abierto: falta cerrar un hueco de {d}",
+"en": "Open contour: a gap of {d} needs closing"
+},
+{
+"es": "Contorno abierto de {d} de longitud",
+"en": "Open contour, {d} long"
+},
+{
+"es": "Anotación",
+"en": "Annotation"
+},
+{
+"es": "Cota",
+"en": "Dimension"
+},
+{
+"es": "Tolerancia",
+"en": "Tolerance"
+},
+{
+"es": "Referencia",
+"en": "Datum"
+},
+{
+"es": "Referencia {t}",
+"en": "Datum {t}"
+},
+{
+"es": " mín.",
+"en": " min."
+},
+{
+"es": " máx.",
+"en": " max."
+},
+{
+"es": " medio",
+"en": " mean"
+},
+{
+"es": "Anotación gráfica",
+"en": "Graphic annotation"
+},
+{
+"es": "Distancia curva",
+"en": "Curved distance"
+},
+{
+"es": "Distancia",
+"en": "Distance"
+},
+{
+"es": "Distancia (centro a exterior)",
+"en": "Distance (center to outer)"
+},
+{
+"es": "Distancia (centro a interior)",
+"en": "Distance (center to inner)"
+},
+{
+"es": "Distancia (exterior a centro)",
+"en": "Distance (outer to center)"
+},
+{
+"es": "Distancia (exterior a exterior)",
+"en": "Distance (outer to outer)"
+},
+{
+"es": "Distancia (exterior a interior)",
+"en": "Distance (outer to inner)"
+},
+{
+"es": "Distancia (interior a centro)",
+"en": "Distance (inner to center)"
+},
+{
+"es": "Distancia (interior a exterior)",
+"en": "Distance (inner to outer)"
+},
+{
+"es": "Distancia (interior a interior)",
+"en": "Distance (inner to inner)"
+},
+{
+"es": "Ángulo",
+"en": "Angle"
+},
+{
+"es": "Distancia orientada",
+"en": "Directed distance"
+},
+{
+"es": "Distancia con trayectoria",
+"en": "Distance along path"
+},
+{
+"es": "Longitud de curva",
+"en": "Curve length"
+},
+{
+"es": "Diámetro",
+"en": "Diameter"
+},
+{
+"es": "Diámetro esférico",
+"en": "Spherical diameter"
+},
+{
+"es": "Radio",
+"en": "Radius"
+},
+{
+"es": "Radio esférico",
+"en": "Spherical radius"
+},
+{
+"es": "Diámetro menor del toro",
+"en": "Torus minor diameter"
+},
+{
+"es": "Diámetro mayor del toro",
+"en": "Torus major diameter"
+},
+{
+"es": "Radio menor del toro",
+"en": "Torus minor radius"
+},
+{
+"es": "Radio mayor del toro",
+"en": "Torus major radius"
+},
+{
+"es": "Espesor",
+"en": "Thickness"
+},
+{
+"es": "Angularidad",
+"en": "Angularity"
+},
+{
+"es": "Oscilación circular",
+"en": "Circular runout"
+},
+{
+"es": "Redondez",
+"en": "Roundness"
+},
+{
+"es": "Coaxialidad",
+"en": "Coaxiality"
+},
+{
+"es": "Concentricidad",
+"en": "Concentricity"
+},
+{
+"es": "Cilindricidad",
+"en": "Cylindricity"
+},
+{
+"es": "Planitud",
+"en": "Flatness"
+},
+{
+"es": "Paralelismo",
+"en": "Parallelism"
+},
+{
+"es": "Perpendicularidad",
+"en": "Perpendicularity"
+},
+{
+"es": "Posición",
+"en": "Position"
+},
+{
+"es": "Perfil de línea",
+"en": "Line profile"
+},
+{
+"es": "Perfil de superficie",
+"en": "Surface profile"
+},
+{
+"es": "Rectitud",
+"en": "Straightness"
+},
+{
+"es": "Simetría",
+"en": "Symmetry"
+},
+{
+"es": "Oscilación total",
+"en": "Total runout"
+},
+{
+"es": "Perfil de material",
+"en": "Material profile"
+},
+{
+"es": "Plato",
+"en": "Plate"
+},
+{
+"es": "Borde (brim)",
+"en": "Brim"
+},
+{
+"es": "Vel. pared exterior",
+"en": "Outer wall speed"
+},
+{
+"es": "banda {b}",
+"en": "band {b}"
+},
+{
+"es": "paredes",
+"en": "walls"
+},
+{
+"es": "bruto",
+"en": "stock"
+},
+{
+"es": "Acero",
+"en": "Steel"
+},
+{
+"es": "Acero inoxidable",
+"en": "Stainless steel"
+},
+{
+"es": "Aluminio",
+"en": "Aluminum"
+},
+{
+"es": "Latón",
+"en": "Brass"
+},
+{
+"es": "Cobre",
+"en": "Copper"
+},
+{
+"es": "Titanio",
+"en": "Titanium"
+},
+{
+"es": "Plástico ABS",
+"en": "ABS plastic"
+},
+{
+"es": "Nailon",
+"en": "Nylon"
+},
+{
+"es": "píxeles a 96 ppp",
+"en": "pixels at 96 dpi"
+},
+{
+"es": "puntos a 72 ppp",
+"en": "points at 72 dpi"
+},
+{
+"es": "Abrir archivo",
+"en": "Open file"
+},
+{
+"es": "Ver formatos compatibles",
+"en": "Supported formats"
+},
+{
+"es": "Formatos compatibles",
+"en": "Supported formats"
+},
+{
+"es": "Piezas y ensamblajes",
+"en": "Parts and assemblies"
+},
+{
+"es": "Planos y dibujos",
+"en": "Drawings and plans"
+},
+{
+"es": "Fabricación",
+"en": "Manufacturing"
+},
+{
+"es": "Nubes de puntos",
+"en": "Point clouds"
+},
+{
+"es": "G-code · BGCODE · NC · NGC · TAP · 3MF de impresora",
+"en": "G-code · BGCODE · NC · NGC · TAP · printer 3MF"
+},
+{
+"es": "Dibujo 2D",
+"en": "2D drawing"
+},
+{
+"es": "Nube de puntos",
+"en": "Point cloud"
+},
+{
+"es": "CAD · B-rep",
+"en": "CAD · B-rep"
+},
+{
+"es": "Malla 3D",
+"en": "3D mesh"
+},
+{
+"es": "ahora",
+"en": "now"
+},
+{
+"es": "hace {n} min",
+"en": "{n} min ago"
+},
+{
+"es": "hace {n} h",
+"en": "{n} h ago"
+},
+{
+"es": "hace {n} d",
+"en": "{n} d ago"
+},
+{
+"es": "Archivo grande ({mb} MB)\nPuede tardar unos {s} segundos{extra}",
+"en": "Large file ({mb} MB)\nIt may take about {s} seconds{extra}"
+},
+{
+"es": "\n(ya se abrió antes: más rápido)",
+"en": "\n(opened before: faster)"
+},
+{
+"es": "\nLa próxima vez abrirá mucho antes",
+"en": "\nNext time it will open much faster"
+},
+{
+"es": "Abriendo… {s} s",
+"en": "Opening… {s} s"
+},
+{
+"es": "No se pudo cargar {b}",
+"en": "Could not load {b}"
+},
+{
+"es": "{n} instancias",
+"en": "{n} instances"
+},
+{
+"es": "{n} cotas y tolerancias",
+"en": "{n} dimensions and tolerances"
+},
+{
+"es": "triángulos",
+"en": "triangles"
+},
+{
+"es": "puntos",
+"en": "points"
+},
+{
+"es": "{a} de {b}",
+"en": "{a} of {b}"
+},
+{
+"es": "unidad sin indicar",
+"en": "unit not specified"
+},
+{
+"es": "dibujo {l}",
+"en": "drawing {l}"
+},
+{
+"es": "Listo para cortar",
+"en": "Ready to cut"
+},
+{
+"es": "1 aviso",
+"en": "1 warning"
+},
+{
+"es": "{n} avisos",
+"en": "{n} warnings"
+},
+{
+"es": "1 pluma",
+"en": "1 pen"
+},
+{
+"es": "{n} plumas",
+"en": "{n} pens"
+},
+{
+"es": "1 nota",
+"en": "1 note"
+},
+{
+"es": "{n} notas",
+"en": "{n} notes"
+},
+{
+"es": "1 herramienta",
+"en": "1 tool"
+},
+{
+"es": "{n} herramientas",
+"en": "{n} tools"
+},
+{
+"es": "Avisos",
+"en": "Warnings"
+},
+{
+"es": "Revisando la malla…",
+"en": "Checking the mesh…"
+},
+{
+"es": "Sin revisar",
+"en": "Not checked"
+},
+{
+"es": "Estanca",
+"en": "Watertight"
+},
+{
+"es": "1 problema",
+"en": "1 issue"
+},
+{
+"es": "{n} problemas",
+"en": "{n} issues"
+},
+{
+"es": "Unidad dudosa",
+"en": "Unit uncertain"
+},
+{
+"es": "con color",
+"en": "with color"
+},
+{
+"es": "Seleccionado: {x}",
+"en": "Selected: {x}"
+},
+{
+"es": "Toca un punto de la pieza",
+"en": "Tap a point on the part"
+},
+{
+"es": "Toca el segundo punto",
+"en": "Tap the second point"
+},
+{
+"es": "Toca un punto de la nube",
+"en": "Tap a point in the cloud"
+},
+{
+"es": "Borrar medida",
+"en": "Clear measurement"
+},
+{
+"es": "Punto  ·  X {x}  ·  Y {y}  ·  toca otro para medir la distancia",
+"en": "Point  ·  X {x}  ·  Y {y}  ·  tap another to measure the distance"
+},
+{
+"es": "Círculo  ·  Ø {d}  ·  R {r}  ·  centro ({x}, {y})",
+"en": "Circle  ·  Ø {d}  ·  R {r}  ·  center ({x}, {y})"
+},
+{
+"es": "Arco  ·  R {r}  ·  {a}°  ·  longitud {l}",
+"en": "Arc  ·  R {r}  ·  {a}°  ·  length {l}"
+},
+{
+"es": "Línea  ·  longitud {l}  ·  ΔX {dx}  ·  ΔY {dy}  ·  {a}°",
+"en": "Line  ·  length {l}  ·  ΔX {dx}  ·  ΔY {dy}  ·  {a}°"
+},
+{
+"es": "Rectángulo  ·  {w} × {h}  ·  área {a}",
+"en": "Rectangle  ·  {w} × {h}  ·  area {a}"
+},
+{
+"es": "Contorno cerrado  ·  {w} × {h}  ·  perímetro {p}  ·  área {a}",
+"en": "Closed contour  ·  {w} × {h}  ·  perimeter {p}  ·  area {a}"
+},
+{
+"es": "Polilínea  ·  longitud {l}  ·  {n} tramos",
+"en": "Polyline  ·  length {l}  ·  {n} segments"
+},
+{
+"es": "Distancia {d}  ·  ΔX {dx}  ·  ΔY {dy}  ·  {a}°",
+"en": "Distance {d}  ·  ΔX {dx}  ·  ΔY {dy}  ·  {a}°"
+},
+{
+"es": "Aviso {i} de {n}",
+"en": "Warning {i} of {n}"
+},
+{
+"es": "Aviso anterior",
+"en": "Previous warning"
+},
+{
+"es": "Aviso siguiente",
+"en": "Next warning"
+},
+{
+"es": "Cerrar",
+"en": "Close"
+},
+{
+"es": "Abrir",
+"en": "Open"
+},
+{
+"es": "Centrar",
+"en": "Center"
+},
+{
+"es": "Vistas",
+"en": "Views"
+},
+{
+"es": "Medir",
+"en": "Measure"
+},
+{
+"es": "Agujeros",
+"en": "Holes"
+},
+{
+"es": "Sección",
+"en": "Section"
+},
+{
+"es": "Cotas y tolerancias",
+"en": "Dimensions and tolerances"
+},
+{
+"es": "Explosionar",
+"en": "Explode"
+},
+{
+"es": "Atenuar el resto",
+"en": "Dim the rest"
+},
+{
+"es": "Información",
+"en": "Information"
+},
+{
+"es": "Árbol de piezas",
+"en": "Part tree"
+},
+{
+"es": "Qué trae el archivo",
+"en": "What the file contains"
+},
+{
+"es": "Piezas y eje vertical",
+"en": "Parts and vertical axis"
+},
+{
+"es": "Variantes de material",
+"en": "Material variants"
+},
+{
+"es": "Vistas del archivo",
+"en": "File views"
+},
+{
+"es": "Ver solo la forma",
+"en": "Show shape only"
+},
+{
+"es": "Ver texturas y colores",
+"en": "Show textures and colors"
+},
+{
+"es": "Medir entre dos puntos",
+"en": "Measure between two points"
+},
+{
+"es": "Cambiar el eje vertical ({x})",
+"en": "Change the vertical axis ({x})"
+},
+{
+"es": "Piezas del proyecto",
+"en": "Project parts"
+},
+{
+"es": "Filamentos y laminado",
+"en": "Filaments and slicing"
+},
+{
+"es": "Proyecto y ajustes",
+"en": "Project and settings"
+},
+{
+"es": "Cama y volumen de impresión",
+"en": "Bed and print volume"
+},
+{
+"es": "Isométrica",
+"en": "Isometric"
+},
+{
+"es": "Frontal",
+"en": "Front"
+},
+{
+"es": "Planta",
+"en": "Top"
+},
+{
+"es": "Alambre",
+"en": "Wireframe"
+},
+{
+"es": "Revisión de la malla",
+"en": "Mesh review"
+},
+{
+"es": "Impresión: peso, cama y voladizos",
+"en": "Printing: weight, bed and overhangs"
+},
+{
+"es": "Color del archivo",
+"en": "File color"
+},
+{
+"es": "Voladizos",
+"en": "Overhangs"
+},
+{
+"es": "Ajustar",
+"en": "Fit"
+},
+{
+"es": "Girar el plano",
+"en": "Rotate the drawing"
+},
+{
+"es": "Datos de corte",
+"en": "Cutting data"
+},
+{
+"es": "Sobre el archivo",
+"en": "About the file"
+},
+{
+"es": "Revisión del archivo",
+"en": "File review"
+},
+{
+"es": "Rellenar contornos",
+"en": "Fill contours"
+},
+{
+"es": "Información y filtros",
+"en": "Information and filters"
+},
+{
+"es": "Movimientos rápidos",
+"en": "Rapid moves"
+},
+{
+"es": "Vista: color, tamaño y filtros",
+"en": "View: color, size and filters"
+},
+{
+"es": "Ninguna",
+"en": "None"
+},
+{
+"es": "{n} segmentos",
+"en": "{n} segments"
+},
+{
+"es": "Buscar por nombre",
+"en": "Search by name"
+},
+{
+"es": "Árbol",
+"en": "Tree"
+},
+{
+"es": "Lista de piezas",
+"en": "Parts list"
+},
+{
+"es": "Mostrar todo",
+"en": "Show all"
+},
+{
+"es": "Aislar",
+"en": "Isolate"
+},
+{
+"es": "Sin resultados",
+"en": "No results"
+},
+{
+"es": "{n} piezas distintas · {t} en total",
+"en": "{n} distinct parts · {t} in total"
+},
+{
+"es": "Copiar",
+"en": "Copy"
+},
+{
+"es": "En bucle",
+"en": "Looping"
+},
+{
+"es": "Una vez",
+"en": "Once"
+},
+{
+"es": "Distancia mínima",
+"en": "Minimum distance"
+},
+{
+"es": "Mínima entre superficies",
+"en": "Minimum between surfaces"
+},
+{
+"es": "Arista recta · {l}",
+"en": "Straight edge · {l}"
+},
+{
+"es": "Circunferencia · Ø {d}",
+"en": "Circle · Ø {d}"
+},
+{
+"es": "Arco · R {r} · {l}",
+"en": "Arc · R {r} · {l}"
+},
+{
+"es": "Arista · {l}",
+"en": "Edge · {l}"
+},
+{
+"es": "Plano · {a}",
+"en": "Plane · {a}"
+},
+{
+"es": "Agujero · Ø {d} · prof. {p}",
+"en": "Hole · Ø {d} · depth {p}"
+},
+{
+"es": "Cilindro · Ø {d}",
+"en": "Cylinder · Ø {d}"
+},
+{
+"es": "Avellanado · cono",
+"en": "Countersink · cone"
+},
+{
+"es": "Cono",
+"en": "Cone"
+},
+{
+"es": "Esfera · Ø {d}",
+"en": "Sphere · Ø {d}"
+},
+{
+"es": "Toroide · R {r}",
+"en": "Torus · R {r}"
+},
+{
+"es": "Superficie · {a}",
+"en": "Surface · {a}"
+},
+{
+"es": "Distancia entre planos",
+"en": "Distance between planes"
+},
+{
+"es": "Eje a plano",
+"en": "Axis to plane"
+},
+{
+"es": "Distancia entre ejes",
+"en": "Distance between axes"
+},
+{
+"es": "Medida",
+"en": "Measurement"
+},
+{
+"es": "No disponible",
+"en": "Not available"
+},
+{
+"es": "Toca una cara, un agujero o una arista",
+"en": "Tap a face, a hole or an edge"
+},
+{
+"es": "Toca otra para medir entre las dos",
+"en": "Tap another to measure between the two"
+},
+{
+"es": "Posterior",
+"en": "Back"
+},
+{
+"es": "Izquierda",
+"en": "Left"
+},
+{
+"es": "Derecha",
+"en": "Right"
+},
+{
+"es": "Superior",
+"en": "Top"
+},
+{
+"es": "Inferior",
+"en": "Bottom"
+},
+{
+"es": "Vista ortográfica",
+"en": "Orthographic view"
+},
+{
+"es": "Sin perspectiva: las medidas se ven a escala",
+"en": "No perspective: measurements appear to scale"
+},
+{
+"es": "Corta la pieza con un plano para ver el interior",
+"en": "Cut the part with a plane to see the inside"
+},
+{
+"es": "Posición {a} = {v}",
+"en": "Position {a} = {v}"
+},
+{
+"es": "Quitar sección",
+"en": "Remove section"
+},
+{
+"es": "Separa las piezas desde el centro del conjunto",
+"en": "Moves the parts apart from the center of the assembly"
+},
+{
+"es": "Montado",
+"en": "Assembled"
+},
+{
+"es": "Separación ×{n}",
+"en": "Spacing ×{n}"
+},
+{
+"es": "Montar",
+"en": "Assemble"
+},
+{
+"es": "Conjunto completo",
+"en": "Complete assembly"
+},
+{
+"es": "Calculando…",
+"en": "Calculating…"
+},
+{
+"es": "Masa (según el archivo)",
+"en": "Mass (per file)"
+},
+{
+"es": "Masa estimada",
+"en": "Estimated mass"
+},
+{
+"es": "Archivo",
+"en": "File"
+},
+{
+"es": "Formato",
+"en": "Format"
+},
+{
+"es": "Comprobación de volumen",
+"en": "Volume check"
+},
+{
+"es": "Coincide con el archivo",
+"en": "Matches the file"
+},
+{
+"es": "No coincide con el archivo",
+"en": "Doesn't match the file"
+},
+{
+"es": "{n} encontrados",
+"en": "{n} found"
+},
+{
+"es": "No hay agujeros cilíndricos",
+"en": "No cylindrical holes"
+},
+{
+"es": "Profundidad {d}",
+"en": "Depth {d}"
+},
+{
+"es": "Profundidad {d} · parcial",
+"en": "Depth {d} · partial"
+},
+{
+"es": "Las del archivo, tal como las definió quien lo creó",
+"en": "The ones in the file, as defined by its author"
+},
+{
+"es": "Todas {n}",
+"en": "All {n}"
+},
+{
+"es": "Cotas {n}",
+"en": "Dimensions {n}"
+},
+{
+"es": "Tolerancias {n}",
+"en": "Tolerances {n}"
+},
+{
+"es": "Referencias {n}",
+"en": "Datums {n}"
+},
+{
+"es": "Dibujarlas sobre el modelo",
+"en": "Draw them on the model"
+},
+{
+"es": "{n} cara",
+"en": "{n} face"
+},
+{
+"es": "{n} caras",
+"en": "{n} faces"
+},
+{
+"es": "Pieza;Cantidad;Largo ({u});Ancho ({u});Alto ({u});Volumen ({u}³)",
+"en": "Part;Quantity;Length ({u});Width ({u});Height ({u});Volume ({u}³)"
+},
+{
+"es": "Lista de materiales copiada (pégala en Excel)",
+"en": "Parts list copied (paste it into Excel)"
+},
+{
+"es": "FRONT",
+"en": "FRONT"
+},
+{
+"es": "POST",
+"en": "BACK"
+},
+{
+"es": "DER",
+"en": "RIGHT"
+},
+{
+"es": "IZQ",
+"en": "LEFT"
+},
+{
+"es": "SUP",
+"en": "TOP"
+},
+{
+"es": "INF",
+"en": "BOT"
+},
+{
+"es": "Horizontal",
+"en": "Horizontal"
+},
+{
+"es": "Desnivel",
+"en": "Elevation difference"
+},
+{
+"es": "Pendiente",
+"en": "Slope"
+},
+{
+"es": "Intensidad",
+"en": "Intensity"
+},
+{
+"es": "Clasificación",
+"en": "Classification"
+},
+{
+"es": "Retornos",
+"en": "Returns"
+},
+{
+"es": "{n} mil",
+"en": "{n}k"
+},
+{
+"es": "Vista de la nube",
+"en": "Point cloud view"
+},
+{
+"es": "Se muestran {n} puntos de {t}",
+"en": "Showing {n} of {t} points"
+},
+{
+"es": "Se muestran {n} puntos",
+"en": "Showing {n} points"
+},
+{
+"es": "COLOR",
+"en": "COLOR"
+},
+{
+"es": "{h}  (rango del archivo {a}–{b})",
+"en": "{h}  (file range {a}–{b})"
+},
+{
+"es": "≈ {n}",
+"en": "≈ {n}"
+},
+{
+"es": "Retorno único",
+"en": "Single return"
+},
+{
+"es": "Primero de varios",
+"en": "First of many"
+},
+{
+"es": "Intermedio",
+"en": "Intermediate"
+},
+{
+"es": "Último de varios",
+"en": "Last of many"
+},
+{
+"es": "TAMAÑO DE PUNTO",
+"en": "POINT SIZE"
+},
+{
+"es": "SOMBREADO DE BORDE",
+"en": "EDGE SHADING"
+},
+{
+"es": "Oscurece los puntos que tienen otros más cerca: da relieve sin necesitar normales.",
+"en": "Darkens points that have others closer to the viewer: gives depth without needing normals."
+},
+{
+"es": "CORTE Y PERFIL",
+"en": "CLIP AND PROFILE"
+},
+{
+"es": "Eje {n}",
+"en": "{n} axis"
+},
+{
+"es": "Z (altura)",
+"en": "Z (height)"
+},
+{
+"es": "Puntos",
+"en": "Points"
+},
+{
+"es": "Extensión",
+"en": "Extent"
+},
+{
+"es": "Mínimo",
+"en": "Minimum"
+},
+{
+"es": "Máximo",
+"en": "Maximum"
+},
+{
+"es": "Densidad",
+"en": "Density"
+},
+{
+"es": "≈ {a} puntos/m² · separación ≈ {b} cm",
+"en": "≈ {a} points/m² · spacing ≈ {b} cm"
+},
+{
+"es": "SISTEMA DE COORDENADAS",
+"en": "COORDINATE SYSTEM"
+},
+{
+"es": "Sistema",
+"en": "System"
+},
+{
+"es": "sin indicar",
+"en": "not specified"
+},
+{
+"es": "Unidad",
+"en": "Unit"
+},
+{
+"es": "grados",
+"en": "degrees"
+},
+{
+"es": "Precisión (escala)",
+"en": "Precision (scale)"
+},
+{
+"es": "Color",
+"en": "Color"
+},
+{
+"es": "no",
+"en": "no"
+},
+{
+"es": "{n} clases",
+"en": "{n} classes"
+},
+{
+"es": "Tiempo GPS",
+"en": "GPS time"
+},
+{
+"es": "ORIGEN",
+"en": "SOURCE"
+},
+{
+"es": "Software",
+"en": "Software"
+},
+{
+"es": "Equipo",
+"en": "Equipment"
+},
+{
+"es": "Fecha",
+"en": "Date"
+},
+{
+"es": "El archivo está incompleto: termina antes de tiempo. ¿Se cortó la descarga o la copia? Falta parte del dibujo.",
+"en": "The file is incomplete: it ends prematurely. Was the download or copy cut short? Part of the drawing is missing."
+},
+{
+"es": "El archivo no indica sus unidades: se supone {u}. Compruébalo antes de cortar.",
+"en": "The file doesn't specify its units: assuming {u}. Check this before cutting."
+},
+{
+"es": "{n} pieza",
+"en": "{n} part"
+},
+{
+"es": "{n} agujero",
+"en": "{n} hole"
+},
+{
+"es": "{n} agujeros",
+"en": "{n} holes"
+},
+{
+"es": "{n} abierto",
+"en": "{n} open"
+},
+{
+"es": "{n} abiertos",
+"en": "{n} open"
+},
+{
+"es": "Sin contornos",
+"en": "No contours"
+},
+{
+"es": "Capa;Piezas;Agujeros;Abiertos;Longitud de corte ({u});Perforaciones",
+"en": "Layer;Parts;Holes;Open;Cut length ({u});Pierces"
+},
+{
+"es": "TOTAL (capas incluidas)",
+"en": "TOTAL (included layers)"
+},
+{
+"es": "Unidades del archivo: {u}",
+"en": "File units: {u}"
+},
+{
+"es": "El archivo no indica unidades: se supone {u}",
+"en": "The file doesn't specify units: assuming {u}"
+},
+{
+"es": "Longitud de corte",
+"en": "Cut length"
+},
+{
+"es": "Perforaciones",
+"en": "Pierces"
+},
+{
+"es": "{n}  ({m} distintas)",
+"en": "{n}  ({m} distinct)"
+},
+{
+"es": "Contornos abiertos",
+"en": "Open contours"
+},
+{
+"es": "Rendimiento de chapa",
+"en": "Sheet yield"
+},
+{
+"es": "Caja envolvente",
+"en": "Bounding box"
+},
+{
+"es": "Área neta",
+"en": "Net area"
+},
+{
+"es": "Guardar DXF de las capas marcadas",
+"en": "Save DXF of selected layers"
+},
+{
+"es": "CAPAS QUE SE CORTAN",
+"en": "LAYERS TO CUT"
+},
+{
+"es": "(sin nombre)",
+"en": "(unnamed)"
+},
+{
+"es": "LOS NÚMEROS DEL ARCHIVO ESTÁN EN",
+"en": "THE FILE'S NUMBERS ARE IN"
+},
+{
+"es": "Datos copiados (pégalos en Excel)",
+"en": "Data copied (paste it into Excel)"
+},
+{
+"es": "Copiar datos",
+"en": "Copy data"
+},
+{
+"es": "Listo para cortar: todos los contornos están cerrados y no hay líneas repetidas.",
+"en": "Ready to cut: all contours are closed and there are no duplicate lines."
+},
+{
+"es": "{n} aviso que conviene revisar antes de cortar.",
+"en": "{n} warning to review before cutting."
+},
+{
+"es": "{n} avisos que conviene revisar antes de cortar.",
+"en": "{n} warnings to review before cutting."
+},
+{
+"es": "Ver",
+"en": "View"
+},
+{
+"es": "Distancia {d}  ·  ΔX {x}  ·  ΔY {y}  ·  ΔZ {z}   (unidades del archivo)",
+"en": "Distance {d}  ·  ΔX {x}  ·  ΔY {y}  ·  ΔZ {z}   (file units)"
+},
+{
+"es": "{n} textura",
+"en": "{n} texture"
+},
+{
+"es": "{n} texturas",
+"en": "{n} textures"
+},
+{
+"es": "color por vértice",
+"en": "vertex color"
+},
+{
+"es": "{n} animación",
+"en": "{n} animation"
+},
+{
+"es": "{n} animaciones",
+"en": "{n} animations"
+},
+{
+"es": "Faltan {n} archivo",
+"en": "{n} file missing"
+},
+{
+"es": "Faltan {n} archivos",
+"en": "{n} files missing"
+},
+{
+"es": "Creado con",
+"en": "Created with"
+},
+{
+"es": "Título",
+"en": "Title"
+},
+{
+"es": "Autor",
+"en": "Author"
+},
+{
+"es": "GEOMETRÍA",
+"en": "GEOMETRY"
+},
+{
+"es": "Triángulos",
+"en": "Triangles"
+},
+{
+"es": "Vértices",
+"en": "Vertices"
+},
+{
+"es": "Polígonos con más de 3 lados",
+"en": "Polygons with more than 3 sides"
+},
+{
+"es": "{n} (triangulados)",
+"en": "{n} (triangulated)"
+},
+{
+"es": "Normales",
+"en": "Normals"
+},
+{
+"es": "del archivo",
+"en": "from file"
+},
+{
+"es": "calculadas (el archivo no las trae)",
+"en": "computed (not in the file)"
+},
+{
+"es": "Coordenadas de textura",
+"en": "Texture coordinates"
+},
+{
+"es": "Color por vértice",
+"en": "Vertex color"
+},
+{
+"es": "Esqueletos",
+"en": "Skeletons"
+},
+{
+"es": "Formas de morfo",
+"en": "Morph targets"
+},
+{
+"es": "Eje vertical",
+"en": "Up axis"
+},
+{
+"es": "{u} (supuesto por la forma)",
+"en": "{u} (guessed from shape)"
+},
+{
+"es": "{u} (según el formato)",
+"en": "{u} (per the format)"
+},
+{
+"es": "Campo escalar",
+"en": "Scalar field"
+},
+{
+"es": "«{n}» {a} – {b} (pintado como color)",
+"en": "«{n}» {a} – {b} (painted as color)"
+},
+{
+"es": "REVISIÓN DE LA MALLA",
+"en": "MESH REVIEW"
+},
+{
+"es": "MATERIALES ({n})",
+"en": "MATERIALS ({n})"
+},
+{
+"es": "recorte",
+"en": "cutout"
+},
+{
+"es": "mezcla",
+"en": "blend"
+},
+{
+"es": "2 caras",
+"en": "2-sided"
+},
+{
+"es": "sin luz",
+"en": "unlit"
+},
+{
+"es": "emisivo",
+"en": "emissive"
+},
+{
+"es": "… y {n} más",
+"en": "… and {n} more"
+},
+{
+"es": "TEXTURAS ({n})",
+"en": "TEXTURES ({n})"
+},
+{
+"es": "falta",
+"en": "missing"
+},
+{
+"es": "Memoria de texturas",
+"en": "Texture memory"
+},
+{
+"es": "ANIMACIONES",
+"en": "ANIMATIONS"
+},
+{
+"es": "{s} s · {n} canales",
+"en": "{s} s · {n} channels"
+},
+{
+"es": "EXTENSIONES",
+"en": "EXTENSIONS"
+},
+{
+"es": "{e} (obligatoria)",
+"en": "{e} (required)"
+},
+{
+"es": "ARCHIVOS QUE FALTAN",
+"en": "MISSING FILES"
+},
+{
+"es": "Añadir los archivos que faltan",
+"en": "Add the missing files"
+},
+{
+"es": "El modelo cita texturas o materiales que no están junto al archivo. Elígelos en la carpeta donde los tengas.",
+"en": "The model references textures or materials that aren't next to the file. Pick them from the folder where you have them."
+},
+{
+"es": "Revisando…",
+"en": "Checking…"
+},
+{
+"es": "Revisar la malla",
+"en": "Check the mesh"
+},
+{
+"es": "Aristas no-manifold",
+"en": "Non-manifold edges"
+},
+{
+"es": "Aristas con normales opuestas",
+"en": "Edges with opposing normals"
+},
+{
+"es": "Triángulos sin área",
+"en": "Zero-area triangles"
+},
+{
+"es": "Cascos sueltos",
+"en": "Loose shells"
+},
+{
+"es": "Superficie",
+"en": "Surface area"
+},
+{
+"es": "{n} (unidades² del archivo)",
+"en": "{n} (file units²)"
+},
+{
+"es": "Volumen",
+"en": "Volume"
+},
+{
+"es": "{n} (unidades³ del archivo)",
+"en": "{n} (file units³)"
+},
+{
+"es": "Revisado en",
+"en": "Checked in"
+},
+{
+"es": "{n} con geometría",
+"en": "{n} with geometry"
+},
+{
+"es": "tri",
+"en": "tris"
+},
+{
+"es": "Corta el modelo con un plano para ver el interior",
+"en": "Cut the model with a plane to see the inside"
+},
+{
+"es": "Corta las piezas con un plano para ver el interior",
+"en": "Cut the parts with a plane to see the inside"
+},
+{
+"es": "Plano {n}",
+"en": "{n} plane"
+},
+{
+"es": "Sin sección",
+"en": "No section"
+},
+{
+"es": "Tapar el corte",
+"en": "Cap the cut"
+},
+{
+"es": "Solo para mallas cerradas (sólidos); en superficies abiertas deja manchas",
+"en": "Only for closed meshes (solids); open surfaces show artifacts"
+},
+{
+"es": "Solo para mallas cerradas; en superficies abiertas deja manchas",
+"en": "Only for closed meshes; open surfaces show artifacts"
+},
+{
+"es": "Invertir lado",
+"en": "Flip side"
+},
+{
+"es": "{n} vista guardada por quien lo creó",
+"en": "{n} saved view from its author"
+},
+{
+"es": "{n} vistas guardadas por quien lo creó",
+"en": "{n} saved views from its author"
+},
+{
+"es": "Encuadrar todo",
+"en": "Fit all"
+},
+{
+"es": "El archivo trae {n} formas de vestir el mismo modelo",
+"en": "The file has {n} ways of dressing the same model"
+},
+{
+"es": "Apoyada sobre la cara {a}",
+"en": "Resting on face {a}"
+},
+{
+"es": "Medidas muy pequeñas: ¿el archivo está en metros?",
+"en": "Very small dimensions: is the file in meters?"
+},
+{
+"es": "Medidas muy pequeñas: ¿está en pulgadas?",
+"en": "Very small dimensions: is it in inches?"
+},
+{
+"es": "Medidas muy grandes: ¿está en micras?",
+"en": "Very large dimensions: is it in microns?"
+},
+{
+"es": "Tal como está",
+"en": "As is"
+},
+{
+"es": "Tumbada sobre {a}",
+"en": "Lying on {a}"
+},
+{
+"es": "No se pudo revisar la malla.",
+"en": "The mesh could not be checked."
+},
+{
+"es": "{t} triángulos · {v} vértices · {s}",
+"en": "{t} triangles · {v} vertices · {s}"
+},
+{
+"es": "{n} casco",
+"en": "{n} shell"
+},
+{
+"es": "{n} cascos",
+"en": "{n} shells"
+},
+{
+"es": "Malla cerrada y bien orientada: lista para laminar.",
+"en": "Closed, correctly oriented mesh: ready to slice."
+},
+{
+"es": "La malla es estanca; hay detalles menores.",
+"en": "The mesh is watertight; there are minor issues."
+},
+{
+"es": "La malla tiene defectos: un laminador puede fallar o tener que repararla.",
+"en": "The mesh has defects: a slicer may fail or need to repair it."
+},
+{
+"es": "Sin agujeros",
+"en": "No holes"
+},
+{
+"es": "{n} agujero ({e} aristas abiertas)",
+"en": "{n} hole ({e} open edges)"
+},
+{
+"es": "{n} agujeros ({e} aristas abiertas)",
+"en": "{n} holes ({e} open edges)"
+},
+{
+"es": "Cada arista une dos triángulos.",
+"en": "Every edge joins two triangles."
+},
+{
+"es": "Aristas con un solo triángulo: la superficie no se cierra.",
+"en": "Edges with a single triangle: the surface doesn't close."
+},
+{
+"es": "Sin aristas compartidas por más de dos triángulos",
+"en": "No edges shared by more than two triangles"
+},
+{
+"es": "{n} aristas no-manifold",
+"en": "{n} non-manifold edges"
+},
+{
+"es": "La malla es una variedad.",
+"en": "The mesh is manifold."
+},
+{
+"es": "Tres o más triángulos comparten una arista (geometría pegada o solapada).",
+"en": "Three or more triangles share an edge (merged or overlapping geometry)."
+},
+{
+"es": "Normales hacia dentro",
+"en": "Inward-facing normals"
+},
+{
+"es": "{n} aristas con orientación mezclada",
+"en": "{n} edges with mixed orientation"
+},
+{
+"es": "Normales orientadas hacia fuera",
+"en": "Outward-facing normals"
+},
+{
+"es": "El volumen sale negativo: la malla está del revés.",
+"en": "The volume is negative: the mesh is inside out."
+},
+{
+"es": "Triángulos vecinos con el sentido invertido: el laminador no sabe qué es dentro.",
+"en": "Neighboring triangles with inverted winding: the slicer can't tell what is inside."
+},
+{
+"es": "El volumen es positivo y el sentido es coherente.",
+"en": "The volume is positive and the winding is consistent."
+},
+{
+"es": "Sin triángulos degenerados ni repetidos",
+"en": "No degenerate or duplicate triangles"
+},
+{
+"es": "{a} degenerados · {b} repetidos",
+"en": "{a} degenerate · {b} duplicate"
+},
+{
+"es": "Triángulos sin área o copiados; suelen venir de exportaciones con errores.",
+"en": "Zero-area or duplicated triangles; they usually come from faulty exports."
+},
+{
+"es": "Un solo casco",
+"en": "A single shell"
+},
+{
+"es": "{n} cascos sueltos ({c} diminutos)",
+"en": "{n} loose shells ({c} tiny)"
+},
+{
+"es": "{n} cascos sueltos",
+"en": "{n} loose shells"
+},
+{
+"es": "Una sola pieza.",
+"en": "A single part."
+},
+{
+"es": "Piezas separadas en el mismo archivo; los diminutos suelen ser restos.",
+"en": "Separate parts in the same file; tiny ones are usually debris."
+},
+{
+"es": "  Casco {n}",
+"en": "  Shell {n}"
+},
+{
+"es": "{t} tri · {v} cm³",
+"en": "{t} tris · {v} cm³"
+},
+{
+"es": " · abierto",
+"en": " · open"
+},
+{
+"es": "ARCHIVO",
+"en": "FILE"
+},
+{
+"es": "STL binario",
+"en": "Binary STL"
+},
+{
+"es": "Sólidos",
+"en": "Solids"
+},
+{
+"es": "Cabecera",
+"en": "Header"
+},
+{
+"es": "El archivo trae color por triángulo",
+"en": "The file has per-triangle color"
+},
+{
+"es": "Revisión",
+"en": "Review"
+},
+{
+"es": "Impresión",
+"en": "Printing"
+},
+{
+"es": "Archivo en {u}",
+"en": "File in {u}"
+},
+{
+"es": "MATERIAL Y PESO",
+"en": "MATERIAL AND WEIGHT"
+},
+{
+"es": "PLA",
+"en": "PLA"
+},
+{
+"es": "PETG",
+"en": "PETG"
+},
+{
+"es": "ABS",
+"en": "ABS"
+},
+{
+"es": "ASA",
+"en": "ASA"
+},
+{
+"es": "TPU",
+"en": "TPU"
+},
+{
+"es": "Resina",
+"en": "Resin"
+},
+{
+"es": "Masa maciza",
+"en": "Solid mass"
+},
+{
+"es": "Con ese relleno (estimación)",
+"en": "With that infill (estimate)"
+},
+{
+"es": "{m} · {l} m de filamento 1,75 mm",
+"en": "{m} · {l} m of 1.75 mm filament"
+},
+{
+"es": "Estimación con paredes de 1,2 mm; el laminador dará la cifra exacta.",
+"en": "Estimate with 1.2 mm walls; the slicer will give the exact figure."
+},
+{
+"es": "¿CABE EN MI IMPRESORA?",
+"en": "WILL IT FIT MY PRINTER?"
+},
+{
+"es": "Cabe tal como está ({x} × {y} × {z} mm)",
+"en": "Fits as is ({x} × {y} × {z} mm)"
+},
+{
+"es": "Cabe {l} ({x} × {y} × {z} mm)",
+"en": "Fits {l} ({x} × {y} × {z} mm)"
+},
+{
+"es": "No cabe: sobran {o} mm incluso {l}.",
+"en": "Doesn't fit: {o} mm too big even {l}."
+},
+{
+"es": "MEJOR ORIENTACIÓN PARA IMPRIMIR",
+"en": "BEST PRINT ORIENTATION"
+},
+{
+"es": "VOLADIZOS",
+"en": "OVERHANGS"
+},
+{
+"es": "Ángulo máximo",
+"en": "Maximum angle"
+},
+{
+"es": "Naranja: necesita soporte ({a} cm²) · verde: apoyo en la cama ({b} cm²)",
+"en": "Orange: needs support ({a} cm²) · green: resting on the bed ({b} cm²)"
+},
+{
+"es": "Colorea las caras que miran hacia abajo más allá de ese ángulo.",
+"en": "Colors the downward-facing faces beyond that angle."
+},
+{
+"es": "ESPESOR DE PARED",
+"en": "WALL THICKNESS"
+},
+{
+"es": "Mínimo deseado",
+"en": "Desired minimum"
+},
+{
+"es": "Midiendo desde cada cara hacia dentro…",
+"en": "Measuring inward from each face…"
+},
+{
+"es": "Pared más fina: {t} mm · rojo: por debajo ({a} % de la superficie) · amarillo: justo ({b} %)",
+"en": "Thinnest wall: {t} mm · red: below ({a} % of the surface) · yellow: borderline ({b} %)"
+},
+{
+"es": " · medido en una muestra de {n} caras",
+"en": " · measured on a sample of {n} faces"
+},
+{
+"es": "Lanza un rayo hacia dentro desde cada cara y mide hasta la pared de enfrente.",
+"en": "Casts a ray inward from each face and measures to the opposite wall."
+},
+{
+"es": "AUTOINTERSECCIONES",
+"en": "SELF-INTERSECTIONS"
+},
+{
+"es": "Buscando caras que se atraviesan…",
+"en": "Looking for faces that pass through each other…"
+},
+{
+"es": "Busca pares de caras que se cruzan sin compartir vértices (piezas solapadas, mallas mal unidas).",
+"en": "Looks for pairs of faces that cross without sharing vertices (overlapping parts, badly joined meshes)."
+},
+{
+"es": "Ninguna: no hay caras que se atraviesen.",
+"en": "None: no faces pass through each other."
+},
+{
+"es": "Más de {n} pares de caras se atraviesan. Primera zona: x {x}, y {y}, z {z} mm.",
+"en": "More than {n} pairs of faces intersect. First area: x {x}, y {y}, z {z} mm."
+},
+{
+"es": "{n} pares de caras se atraviesan. Primera zona: x {x}, y {y}, z {z} mm.",
+"en": "{n} pairs of faces intersect. First area: x {x}, y {y}, z {z} mm."
+},
+{
+"es": "Buscar",
+"en": "Search"
+},
+{
+"es": "Repetir",
+"en": "Repeat"
+},
+{
+"es": "Corta la malla con un plano para ver el interior",
+"en": "Cut the mesh with a plane to see the inside"
+},
+{
+"es": "{l} (actual)",
+"en": "{l} (current)"
+},
+{
+"es": "{a} cm² de voladizo",
+"en": "{a} cm² of overhang"
+},
+{
+"es": " · alto {h} mm",
+"en": " · height {h} mm"
+},
+{
+"es": "Solo se comparan las seis caras de la caja envolvente.",
+"en": "Only the six faces of the bounding box are compared."
+},
+{
+"es": "Generado con {g}",
+"en": "Generated with {g}"
+},
+{
+"es": "{w} × {h} mm declarado",
+"en": "{w} × {h} mm declared"
+},
+{
+"es": "sin tamaño físico",
+"en": "no physical size"
+},
+{
+"es": "RECORRIDO DEL PLÓTER",
+"en": "PLOTTER TRAVEL"
+},
+{
+"es": "Con pluma bajada",
+"en": "Pen down"
+},
+{
+"es": "Con pluma levantada",
+"en": "Pen up"
+},
+{
+"es": "{d} ({p} %)",
+"en": "{d} ({p} %)"
+},
+{
+"es": "Levantadas de pluma",
+"en": "Pen lifts"
+},
+{
+"es": "PLUMAS",
+"en": "PENS"
+},
+{
+"es": "Pluma {n}{w}",
+"en": "Pen {n}{w}"
+},
+{
+"es": "{d} · {n} trazo",
+"en": "{d} · {n} stroke"
+},
+{
+"es": "{d} · {n} trazos",
+"en": "{d} · {n} strokes"
+},
+{
+"es": "Rótulos (LB)",
+"en": "Labels (LB)"
+},
+{
+"es": "Polilíneas codificadas (PE)",
+"en": "Encoded polylines (PE)"
+},
+{
+"es": "sí",
+"en": "yes"
+},
+{
+"es": "CONTENIDO",
+"en": "CONTENT"
+},
+{
+"es": "QUÉ NO SE PUEDE DAR POR BUENO",
+"en": "WHAT CAN'T BE TAKEN AS GIVEN"
+}
+]
