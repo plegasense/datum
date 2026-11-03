@@ -17,9 +17,9 @@ Abre STEP, DXF, STL, 3MF, OBJ y más; ensamblajes con árbol de piezas, búsqued
 - `app/`: interfaz Flutter.
 - `core/`: núcleo C++ compartido.
 - `third_party/`, `testdata/`, `tools/`: dependencias, archivos de prueba y scripts.
+- `releases/`: AAB compilados (fuera de git). Se generan con `tools/build_release_android.command`.
 
 ## Código fuente de terceros
 - **Open CASCADE Technology 8.0.1** (LGPL-2.1 con la excepción de OCCT), sin modificar. Código fuente: https://github.com/Open-Cascade-SAS/OCCT/tree/V8_0_1. Se compila con `tools/build_occt_android.sh` (y `_ios`, `_macos`); Datum lo enlaza de forma estática y su código completo está en este repositorio, por lo que se puede volver a enlazar con otra versión de la librería.
 - **Draco** y **LASzip** (Apache-2.0): código incluido en `third_party/`.
 - Cada versión publicada en Google Play corresponde a una etiqueta de este repositorio (p. ej. `v1.0.1`).
-- `releases/`: AAB compilados (fuera de git). Se generan con `tools/build_release_android.command`.
