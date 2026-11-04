@@ -43,8 +43,6 @@ import 'home_view.dart';
 import 'layers_panel.dart';
 import 'recents.dart';
 import 'scene_panel.dart';
-import 'language_sheet.dart';
-import 'units_sheet.dart';
 import '../model/shapes.dart';
 import 'theme.dart';
 import '../l10n/l10n.dart';
@@ -1933,22 +1931,6 @@ class _ViewerPageState extends State<ViewerPage> {
                           fontWeight: FontWeight.w600,
                         ),
                       ),
-                    ),
-                    const SizedBox(width: 6),
-                    ToolButton(
-                      icon: Icons.folder_open_rounded,
-                      tooltip: tr('Abrir'),
-                      onTap: _pick,
-                    ),
-                    ToolButton(
-                      icon: Icons.square_foot_rounded,
-                      tooltip: tr('Unidades'),
-                      onTap: () => showUnitsSheet(context),
-                    ),
-                    ToolButton(
-                      icon: Icons.translate_rounded,
-                      tooltip: tr('Idioma'),
-                      onTap: () => showLanguageSheet(context),
                     ),
                   ],
                 ),
