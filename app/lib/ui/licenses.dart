@@ -24,6 +24,9 @@ void registerNativeLicenses() {
         const ['Draco'], await t('DRACO_LICENSE.txt'));
     yield LicenseEntryWithLineBreaks(
         const ['LASzip'], await t('LASZIP_COPYING.txt'));
+    yield LicenseEntryWithLineBreaks(
+        const ['LASzip (codificador aritmético)'],
+        await t('LASZIP_ARITHMETIC_BSD.txt'));
   });
 }
 
