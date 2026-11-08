@@ -1,6 +1,6 @@
 # Evaluación como usuario, formato a formato
 
-Fecha: 24-oct-2026. Cada formato se abrió con un archivo real (de `Piezas CAD` o de fuentes externas) en el iPhone simulado y se juzgó pensando en quien lo usa de verdad. Las capturas están en `docs/eval/`.
+Fecha: 24-oct-2026. Cada formato se abrió con un archivo real (del corpus local o de fuentes externas) en el iPhone simulado y se juzgó pensando en quien lo usa de verdad. Las capturas están en `docs/eval/`.
 
 ## Principio nuevo
 

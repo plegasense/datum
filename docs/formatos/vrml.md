@@ -46,7 +46,7 @@ Cabecera: «VRML 1.0 / VRML 97 / X3D», triángulos, tamaño, texturas, archivos
 | Pruebas geométricas | volumen de caja, cilindro, cono, esfera, extrusión; ccw falso; PROTO; Switch; X3D XML; `.wrz`; PNG | 16 tests |
 | Fuzz | 3 semillas × 352 casos | 0 fallos inesperados |
 | Rendimiento | 35 MB y 977 mil triángulos | Mac 1,1 s; tableta 5,4 s y 52 ms por fotograma al mover |
-Dispositivos: iPhone (simulador) y tableta Xiaomi.
+Dispositivos: iPhone (simulador) y tableta Android.
 
 ## 8. Puerta de calidad
 | Fila | Nota | Evidencia |

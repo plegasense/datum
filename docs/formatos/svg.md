@@ -46,7 +46,7 @@ Carencias reales: la escala 96/72 ppp es el error más repetido al cortar; los v
 | resvg (suite de pruebas) | 320 | 320 abren |
 | Comparación con un navegador (getBBox) | 183 con geometría | 180 coinciden; 3 distintas: arcos (el navegador da cajas no ajustadas, comprobado con un cálculo independiente) y `use` encadenado (el navegador duplica el desplazamiento) |
 | Fuzz | 5 semillas × 4 095 casos | 0 fallos inesperados (se corrigió un desbordamiento de pila) |
-| Dispositivos | iPhone (simulador) y tableta Xiaomi | carga 174 ms; hoja de datos y notas visibles |
+| Dispositivos | iPhone (simulador) y tableta Android | carga 174 ms; hoja de datos y notas visibles |
 Pruebas: `test/vector_formats_test.dart`.
 
 ## 8. Puerta de calidad

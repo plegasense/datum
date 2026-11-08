@@ -57,7 +57,7 @@ Superaremos al mejor (LayerPeek, por su ficha) en:
 ## 7. Validación
 | Origen | Archivos | Resultado |
 |---|---|---|
-| Bambu Studio 2.4–2.8 (proyectos del usuario) | 75 (54 + 21 en «Piezas CAD») | 75/75 abren; 54 proyectos en 3,8 s en el Mac; 2,27 M de triángulos en 1 s |
+| Bambu Studio 2.4–2.8 (proyectos del usuario) | 75 (54 + 21 en el corpus local) | 75/75 abren; 54 proyectos en 3,8 s en el Mac; 2,27 M de triángulos en 1 s |
 | Consorcio 3MF: ejemplos (núcleo, materiales, texturas, producción, cortes, retícula) | 33 | 33/33 abren |
 | Consorcio 3MF: pruebas de validación | 47 | los 4 `MUSTFAIL` sin geometría fallan con mensaje limpio; el resto abre |
 | PrusaSlicer 2.8/2.9 (clon de pruebas, SLA, torre de purga, costura) | 6 | 6/6; volúmenes por rango, cambios de color |
@@ -66,7 +66,7 @@ Superaremos al mejor (LayerPeek, por su ficha) en:
 | Fuzz: ZIP cortado, XML truncado, bytes cambiados o borrados | 1224 casos sobre 75 archivos | 328 abren, 896 error limpio, **0 inesperados** (`tool/verify_robust_3mf.dart`) |
 Pruebas unitarias: `test/threemf_test.dart` (10 casos: pintura, unidades, colores, Bambu con volumen negativo, laminado, ZIP roto); total del proyecto 42 pasan.
 
-Rendimiento (tableta Xiaomi, Mali-G57): proyecto de 1,9 M de triángulos y 4 filamentos (25 MB): carga 4,7 s, giro 29,7 ms por fotograma con la versión simplificada (83–94 ms sin ella); proyecto de 85 mil triángulos: 0,4 s.
+Rendimiento (tableta Android, Mali-G57): proyecto de 1,9 M de triángulos y 4 filamentos (25 MB): carga 4,7 s, giro 29,7 ms por fotograma con la versión simplificada (83–94 ms sin ella); proyecto de 85 mil triángulos: 0,4 s.
 
 Tareas del usuario completadas (capturas):
 - «¿Qué trae el proyecto?»: `s1_baul.png`, `s3_*`, `t2_placa_tap.png`.

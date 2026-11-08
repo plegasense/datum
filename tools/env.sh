@@ -8,7 +8,7 @@ export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$FLUTTER_HOME/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$PATH"
 
-# Compilaciones fuera de Documents: iCloud añade atributos a los archivos y
+# Compilaciones fuera de carpetas sincronizadas en la nube: éstas añaden atributos a los archivos y
 # codesign de iOS falla con "resource fork, Finder information, or similar detritus".
 export DATUM_BUILD_CACHE="$HOME/Library/Caches/Dovexa"
 mkdir -p "$DATUM_BUILD_CACHE/app-build"

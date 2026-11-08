@@ -48,7 +48,7 @@ Carencias reales: sólo hay fichas de tienda, no reseñas independientes; el mod
 | libE57Format (referencia y pruebas propias) | 7 E57 | 4 abren (conejo en `double` e `int32`, cubo con color en `float` y `double`); 3 con error claro (sin prototipo, sin puntos, cortado). La caja del conejo coincide con la del XML |
 | Sintético de 20 M puntos (680 MB) | 1 LAS | densidad medida 79,8 frente a 80 real; tableta: lectura 2,2 s, 31 ms por fotograma al mover, 440 ms por fotograma con los 4 M de puntos en reposo |
 | Fuzz | 6 semillas × 315 casos | 0 fallos inesperados (se corrigieron 3 tipos de error en PCD, PTS y LAS) |
-Pruebas: `test/cloud_formats_test.dart` (9). Dispositivos: iPhone (simulador) y tableta Xiaomi.
+Pruebas: `test/cloud_formats_test.dart` (9). Dispositivos: iPhone (simulador) y tableta Android.
 
 ## 8. Puerta de calidad
 | Fila | Nota | Evidencia |

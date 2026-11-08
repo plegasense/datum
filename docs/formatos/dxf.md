@@ -99,7 +99,7 @@ Fuera de alcance en este formato: edición, DWG nativo, exportar a PDF.
 | Ranura de 4 tramos (2 rectas + 2 arcos) en pulgadas | 1 pieza, corte 71,416, área 278,54, unidad 1 = pulgadas | 71,411 / 278,494 (error por teselado de arcos < 0,02 %) |
 | Sin unidad | unidad 0 | exacto |
 
-**Archivos reales:** 5 de `Piezas CAD` (logo del perro, 3 chapas de corte de 2 500 × 1 250: 42–83 piezas) y 19 DXF públicos (ezdxf: rellenos, cotas en bloques, columnas, arcos horarios, archivos raros; LibreCAD: símbolos, bloques, plantillas). 21 de 24 abren; los 3 que no (mínimo de 35 bytes, plantilla vacía y mínimo AC1021) no contienen geometría y lo dicen.
+**Archivos reales:** 5 del corpus local (logo del perro, 3 chapas de corte de 2 500 × 1 250: 42–83 piezas) y 19 DXF públicos (ezdxf: rellenos, cotas en bloques, columnas, arcos horarios, archivos raros; LibreCAD: símbolos, bloques, plantillas). 21 de 24 abren; los 3 que no (mínimo de 35 bytes, plantilla vacía y mínimo AC1021) no contienen geometría y lo dicen.
 **Rendimiento** (emulador Android, 4 núcleos, compilación *profile*): chapa sintética de 20 000 piezas con agujero (160 000 segmentos, 3 MB): carga 2,1 s, análisis 0,2 s, 41 fps arrastrando el plano con una pasada de línea (el cuello de botella es el dibujado de líneas de la GPU del emulador). El relleno se limita a 2 500 contornos.
 **Archivos rotos** (`tool/verify_robust_dxf.dart`): 9 casos sin cierre inesperado (vacío, texto, cortado a la mitad —abre y avisa de que está incompleto—, binario, corrupto, línea de 3 MB, coordenadas de 1e300).
 **Capturas:** `docs/formatos/dxf/`.
@@ -120,7 +120,7 @@ Fuera de alcance en este formato: edición, DWG nativo, exportar a PDF.
 Media: **8,2**. Igual que en STEP, la puerta no se cumple por la falta de una prueba en dispositivo físico y de más archivos de otros programas.
 
 ## Prueba en tableta física (24-oct-2026)
-Xiaomi 25040RP0AE (Helio G99, Mali-G57, 2560×1600).
+Tableta Android (Helio G99, Mali-G57, 2560×1600).
 - **Fallo encontrado y corregido:** todos los DXF salían **en blanco** (el análisis sí funcionaba). Causa: matriz ortogonal con profundidad estilo OpenGL, recortada por Vulkan. Corregida; ahora dibuja en tableta y en iPhone.
 - Chapa sintética de 20 000 piezas con agujero (5,9 MB): carga 2,8 s, 20 ms por fotograma al desplazar (8,7 ms de construcción + 11,4 ms de trama). 2 000 piezas: carga 0,25 s, 7 ms.
 - Nota Rendimiento: 8,5 (medido en dispositivo real).

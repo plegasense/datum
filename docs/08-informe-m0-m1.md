@@ -23,7 +23,7 @@
 - **Formatos propietarios** (`.sldprt`, `.ipt`, `.prt`: 400+ archivos del corpus): detectados y explicados, no abiertos. Es la mayoría de tu biblioteca.
 
 ## Incidencias técnicas encontradas (y resueltas)
-1. iCloud añade atributos a `~/Documents` y `codesign` de iOS falla: compilar fuera (enlace `app/build` → `~/Library/Caches/Dovexa`).
+1. las carpetas sincronizadas en la nube añaden atributos y `codesign` de iOS falla: compilar fuera (enlace `app/build` → `~/Library/Caches/Dovexa`).
 2. El Flutter global (3.41) no era compatible con Xcode 27: Flutter propio en `~/development/flutter-datum` (3.47.8).
 3. `file_picker` 13 cambió su API.
 4. El simulador de iOS compila también x86_64: pieza vacía (`datum_stub.cpp`) para esa arquitectura.
@@ -45,7 +45,7 @@ La matriz de proyección usaba profundidad en [-1, 1] (OpenGL). **Metal y Vulkan
 ### Pendiente
 - DXF: sombreados (HATCH), cotas (DIMENSION), texto MTEXT con formato, unidades ($INSUNITS).
 - G-code: grosor real de la extrusión, animación de reproducción, estimación de tiempos propia, `.gcode.3mf` (G-code dentro del 3MF).
-- iCloud crea copias "X 2" de archivos en `~/Documents` (43 en este proyecto, ya borradas); conviene mover el proyecto a una carpeta que no se sincronice.
+- la sincronización en la nube crea copias "X 2" de archivos (43 en este proyecto, ya borradas); conviene mover el proyecto a una carpeta que no se sincronice.
 
 
 ## Actualización: formatos nuevos y fallo del encuadre (24/10/2026)

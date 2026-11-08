@@ -132,7 +132,7 @@ Decisiones técnicas: la geometría de OCCT llega siempre en mm; la unidad del a
 
 Error medido: por debajo de 0,0001 mm (criterio: 0,001).
 
-**Batería de archivos reales** (`dart run tool/bench_cad.dart "<carpeta>"`): los **83 STEP/STP de `Piezas CAD`** (SolidWorks, Inventor, NX, Fusion; de 0,01 a 2 MB; piezas y conjuntos de hasta 25 piezas / 47 instancias) abren sin fallo; unidad detectada en todos; agujeros y propiedades en < 120 ms por archivo. Dos archivos más con caras sin aristas vivas (`ChapaSoldada`, `PaloRueda`) son correctos: todas sus uniones son tangentes.
+**Batería de archivos reales** (`dart run tool/bench_cad.dart "<carpeta>"`): los **83 STEP/STP del corpus local** (SolidWorks, Inventor, NX, Fusion; de 0,01 a 2 MB; piezas y conjuntos de hasta 25 piezas / 47 instancias) abren sin fallo; unidad detectada en todos; agujeros y propiedades en < 120 ms por archivo. Dos archivos más con caras sin aristas vivas (`ChapaSoldada`, `PaloRueda`) son correctos: todas sus uniones son tangentes.
 
 **Rendimiento** (emulador Android, GPU del anfitrión, compilación *profile*): conjunto de estrés de **1 500 piezas, 498 000 triángulos, 46 MB**:
 - carga en Mac: 4,8 s (en el móvil será varias veces más; sin medir);
@@ -171,7 +171,7 @@ Pendiente de validar: archivos de NIST con PMI y de otros programas (Creo, CATIA
 | `face_recognition_sample_part.stp`, `splinecage.stp` | NX 9.0 / ST-Developer | correcto |
 | 5 piezas de la biblioteca de FreeCAD (rodamientos, piñones, pila) | **FreeCAD** (OCCT 6.5–7.5) | correcto |
 
-14 de 14 sin fallo. Sumados a los 83 de `Piezas CAD` (SolidWorks, Inventor, NX, Fusion) y a los 33 de NIST, el visor ha abierto archivos de SolidWorks, Inventor (2013 y 2018), NX (7.5 y 9), CATIA V5, Pro/ENGINEER, Fusion, FreeCAD y OpenCASCADE. De **Creo** moderno no he encontrado ningún archivo público con origen verificable; Pro/ENGINEER es el mismo programa de PTC, con el formato de entonces.
+14 de 14 sin fallo. Sumados a los 83 del corpus local (SolidWorks, Inventor, NX, Fusion) y a los 33 de NIST, el visor ha abierto archivos de SolidWorks, Inventor (2013 y 2018), NX (7.5 y 9), CATIA V5, Pro/ENGINEER, Fusion, FreeCAD y OpenCASCADE. De **Creo** moderno no he encontrado ningún archivo público con origen verificable; Pro/ENGINEER es el mismo programa de PTC, con el formato de entonces.
 
 ## 8. Puerta de calidad — todavía NO aprobada (autoevaluación crítica)
 
@@ -189,7 +189,7 @@ Pendiente de validar: archivos de NIST con PMI y de otros programas (Creo, CATIA
 Media: **8,25**. La puerta (≥ 8,5 con ninguna fila por debajo de 8) no se cumple por 0,3. Lo que falta no se puede conseguir sin material que no tengo aquí: **un móvil físico** (rendimiento y detalle) y (la robustez ya está cubierta con los archivos de otros programas). Con la prueba en el móvil, si sale bien, rendimiento y detalle suben a 8,5 y la media a ~8,4–8,5.
 
 ## Prueba en tableta física (24-oct-2026)
-Xiaomi 25040RP0AE (Android 16, MediaTek Helio G99, Mali-G57, 8 núcleos, 8 GB, 2560×1600), compilación de perfil, mediante `tools/perf_device.sh`.
+Tableta Android (Android 16, MediaTek Helio G99, Mali-G57, 8 núcleos, 8 GB, 2560×1600), compilación de perfil, mediante `tools/perf_device.sh`.
 | Archivo | Carga | Giro (por fotograma) |
 |---|---|---|
 | Ventilator.stp, 2,2 MB, 1 pieza | 3,3 s (lectura 0,7 s, conversión 1,9 s, teselado 0,5 s) | 9 ms |

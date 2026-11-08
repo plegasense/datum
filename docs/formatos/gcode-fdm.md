@@ -77,7 +77,7 @@ Capturas: `gcode-fdm/*.png` (iPhone y Android).
 Media: **8,44** · Aprobado: **no** (faltan 0,06). Para aprobar: medir en dispositivo físico (Rendimiento ≥ 8,5) o dibujar extrusión con anchura real.
 
 ## Prueba en tableta física (24-oct-2026)
-Xiaomi 25040RP0AE (Helio G99, Mali-G57, 2560×1600), compilación de perfil. Placa Bambu de 1,54 M de movimientos, girando:
+Tableta Android (Helio G99, Mali-G57, 2560×1600), compilación de perfil. Placa Bambu de 1,54 M de movimientos, girando:
 | Versión | Por fotograma |
 |---|---|
 | Inicial | **180 ms** (5 fps; el emulador daba 39 ms y ocultaba el problema) |

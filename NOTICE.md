@@ -9,6 +9,8 @@ Dovexa se publica bajo la **GNU General Public License v3.0** (ver `LICENSE`).
 | Draco (Google) | Descompresión de mallas glTF | Apache-2.0 (`third_party/draco`) |
 | LASzip (Rapidlasso) | Lectura de LAZ | Apache-2.0 (`third_party/laszip`) |
 | Roboto (Google) | Tipografía del nombre en el logotipo (`branding/fonts`) | Apache-2.0 |
+| Noto Sans (Thai, Devanagari, CJK) | Generación de gráficos de tienda y avisos (`branding/fonts/noto`) | SIL OFL 1.1 (`branding/fonts/noto/OFL.txt`) |
+| Codificador aritmético de LASzip (Amir Said, William A. Pearlman, 2019) | Parte de LASzip, con su propio aviso BSD de 3 cláusulas en `third_party/laszip/src/arithmeticdecoder.cpp` | BSD-3-Clause |
 | Paquetes de Dart y Flutter | Interfaz, XML, archivos | Ver la página de licencias dentro de la app |
 
 Los archivos de prueba descargados (`testdata/_externos/`) no forman parte del programa: pertenecen a sus autores y mantienen sus licencias (LGPL de J. Burkardt, MIT de three.js, BSD de PDAL, etc.) y no se redistribuyen.

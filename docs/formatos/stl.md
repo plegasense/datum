@@ -46,7 +46,7 @@ Cabecera: estado de la malla («Estanca» / «N problemas»), medidas, volumen y
 - Hallazgos que corregimos con ellos: ASCII con espacio delante y en mayúsculas se leían como binario; binario truncado con «solid» en la cabecera; vértices con ruido de 1e-5 no se soldaban (rejilla con vecinas).
 - Referencias: Benchy 15 550,5 mm³ y 19,3 g PLA, 9 agujeros y 563 triángulos degenerados; cubo de 20 mm = 8 000 mm³; defectos de admesh detectados (agujero, normales, no-manifold).
 - Robustez: 516 casos truncados o corrompidos, 0 fallos inesperados (más lento 42 ms).
-- Tableta Xiaomi (Helio G99): Benchy (225 mil tri) carga 0,2 s, revisión 1,1 s, 22 ms por fotograma; Vesta (800 mil) 0,49 s / 3,4 s / 31 ms; Linne (950 mil, 47 MB) 0,5 s / 3,4 s / 29 ms (versión simplificada al girar). Toques reales: medir de la chimenea al casco = 37,19 mm (ΔX 23,72 · ΔY 12,59 · ΔZ 25,72).
+- Tableta Android (Helio G99): Benchy (225 mil tri) carga 0,2 s, revisión 1,1 s, 22 ms por fotograma; Vesta (800 mil) 0,49 s / 3,4 s / 31 ms; Linne (950 mil, 47 MB) 0,5 s / 3,4 s / 29 ms (versión simplificada al girar). Toques reales: medir de la chimenea al casco = 37,19 mm (ΔX 23,72 · ΔY 12,59 · ΔZ 25,72).
 
 ## 8. Puerta de calidad
 | Fila | Nota | Evidencia |
