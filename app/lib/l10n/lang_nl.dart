@@ -689,7 +689,7 @@ const Map<String, String> kLang_nl = {
   'Revisión del archivo': 'Bestandscontrole',
   'Rellenar contornos': 'Contouren vullen',
   'Información y filtros': 'Informatie en filters',
-  'Movimientos rápidos': 'Ijlgangbewegingen',
+  'Movimientos rápidos': 'IJlgangbewegingen',
   'Vista: color, tamaño y filtros': 'Weergave: kleur, grootte en filters',
   'Ninguna': 'Geen',
   '{n} segmentos': '{n} segmenten',

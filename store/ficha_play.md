@@ -6,7 +6,7 @@ Huellas de la clave de subida — SHA-1 `6E:0C:12:BD:10:9F:E0:6A:42:3B:64:3E:FE:
 ## Textos
 Fuente única: `ficha_es.py` (valida longitudes) → `ficha_es.txt`. Idioma de la ficha: español (España). La interfaz de la app está en 21 idiomas (con selector en Ajustes); hay fichas traducidas en `store_*.json`.
 
-- **Título** (27/30): Dovexa: visor CAD, STEP y 3D. No lleva «gratis» (Play no admite palabras promocionales en el título); lo dice la descripción breve y el gráfico.
+- **Título** (28/30): Dovexa: visor CAD, STEP y 3D. No lleva «gratis» (Play no admite palabras promocionales en el título); lo dice la descripción breve y el gráfico.
 - **Categoría**: Productividad (alternativa: Herramientas) · **Etiquetas**: CAD, visor 3D, impresión 3D, CNC.
 - **Contacto público**: plegasense@gmail.com · **Política**: ver abajo.
 

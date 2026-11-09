@@ -3,6 +3,8 @@ TITLE = "Dovexa: CAD, STEP & 3D Viewer"
 SHORT = "Free CAD & 3D viewer, no ads: STEP, DXF, STL & G-code, works offline"
 LONG = """Dovexa opens the engineering and manufacturing files that land on your phone and helps you understand them, not just look at them. It is completely free: no ads, no account, no subscriptions and no purchases. It works offline and has no Internet permission: your files never leave your phone.
 
+Metric and imperial units: see sizes in mm or inches.
+
 OPEN WHAT YOU GET SENT
 • CAD: STEP, IGES and STPZ, with full assemblies, colours and part names.
 • 2D drawings: DXF, SVG and HPGL plotter files.
@@ -39,9 +41,7 @@ PRIVATE AND HONEST
 WHAT IT IS NOT
 Dovexa is a viewer: it does not edit or model. It does not open DWG or the native formats of each program; export from there to STEP, DXF or STL. Very large assemblies can take a few seconds to open the first time.
 
-Screenshots use public sample files (for example Cesium Milk Truck, CC BY 4.0, by Cesium).
-
-This is a closed test version: your feedback helps us improve it. Write to plegasense@gmail.com."""
+Screenshots use public sample files (for example Cesium Milk Truck, CC BY 4.0, by Cesium)."""
 if __name__ == "__main__":
     print(len(TITLE), len(SHORT), len(LONG))
     assert len(TITLE) <= 30 and len(SHORT) <= 80 and len(LONG) <= 4000

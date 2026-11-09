@@ -41,7 +41,7 @@ const Map<String, String> kLang_ko = {
   'Expórtalo a STEP (.step) desde {s} y ábrelo aquí.': '{s}에서 STEP(.step)으로 내보낸 뒤 여기서 열어 주세요.',
   'El archivo no contiene geometría': '파일에 지오메트리가 없어요',
   'El ZIP descomprimido es demasiado grande (más de 1,5 GB)': '압축을 푼 ZIP이 너무 커요(1.5GB 초과)',
-  'El ZIP no contiene ningún modelo que Dovexa sepa abrir': 'ZIP에 Dovexa이 열 수 있는 모델이 없어요',
+  'El ZIP no contiene ningún modelo que Dovexa sepa abrir': 'ZIP에 Dovexa가 열 수 있는 모델이 없어요',
   'No se pudo abrir el archivo': '파일을 열 수 없어요',
   'El archivo está vacío.': '파일이 비어 있어요.',
   'Este archivo no parece un STEP (no empieza con ISO-10303-21).': 'STEP 파일이 아닌 것 같아요(ISO-10303-21로 시작하지 않음).',

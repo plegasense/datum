@@ -3,6 +3,10 @@ TITULO = "Dovexa: visor CAD, STEP y 3D"
 CORTA = "Visor CAD y 3D gratis y sin anuncios: STEP, DXF, STL y G-code, sin conexión"
 LARGA = """Dovexa abre los archivos de ingeniería y fabricación que te llegan al móvil y te ayuda a entenderlos, no solo a mirarlos. Es totalmente gratis: sin anuncios, sin cuenta, sin suscripciones y sin compras. Funciona sin conexión y no tiene permiso de Internet: tus archivos nunca salen del teléfono.
 
+Unidades métricas e imperiales: medidas en mm o en pulgadas.
+
+Unidades métricas e imperiales: medidas en mm o en pulgadas.
+
 ABRE LO QUE TE ENVÍEN
 • CAD: STEP, IGES y STPZ, con ensamblajes completos, colores y nombres de pieza.
 • Dibujos 2D: DXF, SVG y plotter HPGL.
@@ -39,9 +43,7 @@ PRIVADO Y HONESTO
 QUÉ NO ES
 Dovexa es un visor: no edita ni modela. No abre DWG ni los formatos propios de cada programa; exporta desde él a STEP, DXF o STL. Los ensamblajes muy grandes pueden tardar unos segundos en abrirse la primera vez.
 
-Las capturas usan archivos públicos de muestra (por ejemplo, Cesium Milk Truck, CC BY 4.0, de Cesium).
-
-Esta es una versión de prueba cerrada: tus comentarios nos ayudan a mejorarla. Escríbenos a plegasense@gmail.com."""
+Las capturas usan archivos públicos de muestra (por ejemplo, Cesium Milk Truck, CC BY 4.0, de Cesium)."""
 if __name__ == "__main__":
     print(len(TITULO), len(CORTA), len(LARGA))
     assert len(TITULO) <= 30 and len(CORTA) <= 80 and len(LARGA) <= 4000
