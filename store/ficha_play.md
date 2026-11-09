@@ -26,7 +26,7 @@ Fuente única: `ficha_es.py` (valida longitudes) → `ficha_es.txt`. Idioma de l
 - IA: la app no incluye contenido generado con IA.
 
 ## Política de privacidad
-Texto en `politica_privacidad.md`. URL pública: https://docs.google.com/document/d/12QDC-PplWexk-ufmb_U-96DR75kX9c7Lzy73Bm8PY7w/mobilebasic.
+Texto en `politica_privacidad.md`. URL pública: https://github.com/plegasense/dovexa/blob/main/store/politica_privacidad.md.
 
 ## Prueba cerrada
 Pista «Prueba cerrada - Alpha», país España, testers añadidos en Play Console.
