@@ -41,6 +41,9 @@ android {
         // flag during build.
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        // Open CASCADE solo está compilado para arm64: sin esto Gradle empaqueta libdartjni
+        // de x86_64/armeabi-v7a y Play ofrece la app a dispositivos donde no arranca.
+        ndk { abiFilters += "arm64-v8a" }
     }
 
     signingConfigs {
@@ -53,6 +56,10 @@ android {
             }
             storePassword = keystoreProperties.getProperty("storePassword")
         }
+    }
+
+    packaging {
+        jniLibs { excludes += listOf("lib/x86_64/**", "lib/x86/**", "lib/armeabi-v7a/**") }
     }
 
     buildTypes {

@@ -1,6 +1,6 @@
 # Política de privacidad de Dovexa
 
-Última actualización: 25 de octubre de 2026
+Última actualización: 9 de noviembre de 2026
 
 ## 1. Quién es el responsable
 Plegasense, desarrolladora de Dovexa.
@@ -13,10 +13,11 @@ Los archivos que abres (modelos 3D, dibujos, G-code, nubes de puntos…) se leen
 
 ## 3. Qué guarda la app en tu dispositivo
 - La lista de archivos abiertos recientemente (nombre y ubicación), para que puedas volver a abrirlos.
+- Tus preferencias (idioma y sistema de unidades).
 - Una caché local de conversión de archivos CAD grandes, para abrirlos más rápido la próxima vez.
 - Los archivos que guardas tú mismo desde la app (por ejemplo, un DXF exportado), en la ubicación que elijas.
 
-Todo se borra al desinstalar la app. La caché y la lista de recientes se pueden vaciar borrando los datos de la app en los ajustes del sistema.
+Todo se borra al desinstalar la app, y la app no se incluye en copias de seguridad en la nube. La caché y la lista de recientes se pueden vaciar borrando los datos de la app en los ajustes del sistema.
 
 ## 4. Lo que no hace
 Dovexa no incluye publicidad, ni herramientas de análisis o seguimiento, ni compras integradas. No pide tu ubicación, contactos, fotografías, micrófono, cámara ni datos bancarios. Para abrir un archivo usa el selector de archivos del sistema, que solo da acceso al archivo que eliges.
