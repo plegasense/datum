@@ -29,7 +29,6 @@ Avisos: bajada en G0 por debajo de Z0 (con línea), husillo sin M3/M4, unidades 
 Antes: 3 de 7 archivos de LinuxCNC fallaban o salían incompletos. Ahora: 21 de 22 se leen; `m6demo` no contiene movimientos (mensaje claro). Casos con valor comprobado: mmount 5.719 mov. (antes 638), 3D_Chips 4.681 (antes error), daisy 51 (antes error), Haas VF-2 34 (antes error por G154), Fanuc con WHILE/M98 (test).
 Robustez: fuzz de 258 archivos, 0 fallos inesperados; bucle infinito cortado en 0,9 s; recursión y expresiones inválidas sin colgarse.
 Tests: `app/test/gcode_test.dart`.
-Capturas: `gcode-cnc/*.png`.
 No cubierto: código real de Fusion 360/Mastercam/Haas posprocesado (no se encontró público); compensación de radio y longitud; desplazamientos de G54–G59; simulación de material.
 
 ## 8. Puerta (segunda evaluación)

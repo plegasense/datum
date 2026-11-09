@@ -42,7 +42,7 @@ Cabecera: formato · triángulos · medidas · texturas/color por vértice · «
 | trimesh (casos límite: vacío, índices negativos, no convexo, color NaN…) y alecjacobson | 40 | 39 abren (3 como nube de puntos, sin caras); 2 vacíos con mensaje |
 | Del usuario (impresión en color) | 1 | 2,0 s en el Mac, 5,5 s en la tableta |
 | Dañados | incluidos en los 1197 casos | 0 inesperados |
-Pruebas: `test/mesh_formats_test.dart` (barras, negativos, polígonos, MTL, texturas ausentes, solo vértices). Capturas: `docs/formatos/obj_*.png`.
+Pruebas: `test/mesh_formats_test.dart` (barras, negativos, polígonos, MTL, texturas ausentes, solo vértices).
 
 ## 8. Puerta de calidad
 | Fila | Nota | Evidencia |

@@ -15,7 +15,7 @@ Fuente única: `ficha_es.py` (valida longitudes) → `ficha_es.txt`. Idioma de l
 - Gráfico de funciones 1024×500: `play/graficos/grafico-funciones-1024x500.png`.
 - Teléfono 1080×1920 (8, en orden): `play/phone/01…08`. Capturas reales de la app en emulador Android con archivos públicos de muestra, más titular. Se regeneran con `compose.py slides.json`.
 - Tableta: `play/tablet/` (si existe).
-- Créditos de los modelos de las capturas: Cesium Milk Truck (Cesium, CC BY 4.0), 3DBenchy (CC), PrusaSlicer/g-code de muestra, mmount.ngc (LinuxCNC), Autzen (Hobu/USGS), as1-oc-214 (Open CASCADE).
+- Créditos de los modelos de las capturas: Cesium Milk Truck (Cesium, CC BY 4.0), 3DBenchy (CreativeTools, CC0 1.0, 3DBenchy.com), PrusaSlicer/g-code de muestra, mmount.ngc (LinuxCNC), Autzen (Hobu/USGS), as1-oc-214 (Open CASCADE).
 
 ## Respuestas de Play Console
 - Acceso a la app: sin restricciones, no hace falta cuenta. Anuncios: no. Compras: no.

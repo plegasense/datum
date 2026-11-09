@@ -34,6 +34,6 @@ void showDatumLicenses(BuildContext context) {
   showLicensePage(
     context: context,
     applicationName: 'Dovexa',
-    applicationLegalese: '© 2026 Dovexa · GPL-3.0\n$kSourceUrl',
+    applicationLegalese: '© 2026 Plegasense · GPL-3.0\n$kSourceUrl',
   );
 }

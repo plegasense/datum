@@ -52,7 +52,6 @@ Superaremos al mejor visor de glTF en:
 | Dañados (`tool/verify_robust_mesh.dart`) | 1197 casos sobre archivos de menos de 2 MB de las tres familias | 347 abren, 850 error limpio, 0 inesperados |
 Draco dañado (432 variantes con bytes cambiados o cortados en los tres modelos Draco): sin cuelgues ni cierres de la app. Pruebas unitarias: `test/mesh_formats_test.dart` (14 casos, con las comparaciones de meshopt y Draco).
 Rendimiento (tableta Mali-G57): Corset en Draco 13,2 ms al girar (carga 1,5 s); DamagedHelmet (5 texturas) 17,4 ms por fotograma al girar; CesiumMan animado 10,3 ms; 125 esferas (1 M de triángulos) 56,6 ms con versión simplificada.
-Capturas en `docs/formatos/gltf_*.png`.
 
 ## 8. Puerta de calidad
 | Fila | Nota | Evidencia |

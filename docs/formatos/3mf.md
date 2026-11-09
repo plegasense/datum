@@ -69,11 +69,6 @@ Pruebas unitarias: `test/threemf_test.dart` (10 casos: pintura, unidades, colore
 Rendimiento (tableta Android, Mali-G57): proyecto de 1,9 M de triángulos y 4 filamentos (25 MB): carga 4,7 s, giro 29,7 ms por fotograma con la versión simplificada (83–94 ms sin ella); proyecto de 85 mil triángulos: 0,4 s.
 
 Tareas del usuario completadas (capturas):
-- «¿Qué trae el proyecto?»: `s1_baul.png`, `s3_*`, `t2_placa_tap.png`.
-- «¿Con qué colores y cuánto gasta?»: `s3_plate_1_filaments_.png`, `t1_filamentos.png`.
-- «¿Qué piezas y volúmenes?»: `s3_parts_.png`.
-- «Medir»: `s9_medir.png`. «Seleccionar»: `s7_tap.png`. «Ver el recorrido»: `s8_toolpath.png`.
-- Otros programas: `s6_prusa.png` (PrusaSlicer, hoja de proyecto), `s4_lattice.png` (retícula), `s5_kinect.png` (color por vértice).
 - Toque real en la tableta: tira de placas.
 
 ## 8. Puerta de calidad

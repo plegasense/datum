@@ -61,7 +61,6 @@ Decisión: el tiempo declarado manda; el teórico (sin aceleraciones) solo repar
 Robustez: 258 archivos truncados/corrompidos, 0 fallos inesperados; `.bgcode` dañado → mensaje claro.
 Rendimiento (emulador Android, perfil, 1,54 M movimientos): 21,6 ms por fotograma al girar (antes 39 ms); dispositivo físico sin medir.
 Tests automáticos: `app/test/gcode_test.dart` (8).
-Capturas: `gcode-fdm/*.png` (iPhone y Android).
 
 ## 8. Puerta de calidad (segunda evaluación)
 | Fila | Nota | Evidencia |
