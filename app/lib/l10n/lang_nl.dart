@@ -1021,4 +1021,6 @@ const Map<String, String> kLang_nl = {
   'Acerca de': 'Over',
   'Código fuente': 'Broncode',
   'Visor CAD gratuito, sin anuncios y sin conexión.': 'Gratis CAD-viewer, zonder advertenties en offline.',
+  'Dovexa se distribuye bajo la GNU General Public License v3.0.': 'Dovexa wordt verspreid onder de GNU General Public License v3.0.',
+  'LASzip (codificador aritmético)': 'LASzip (aritmetische codeerder)',
 };

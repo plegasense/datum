@@ -136,4 +136,6 @@ const Map<String, String> kEn_ui_main = {
   'Acerca de': 'About',
   'Código fuente': 'Source code',
   'Visor CAD gratuito, sin anuncios y sin conexión.': 'Free CAD viewer, no ads and offline.',
+  'Dovexa se distribuye bajo la GNU General Public License v3.0.': 'Dovexa is distributed under the GNU General Public License v3.0.',
+  'LASzip (codificador aritmético)': 'LASzip (arithmetic coder)',
 };

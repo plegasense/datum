@@ -1021,4 +1021,6 @@ const Map<String, String> kLang_vi = {
   'Acerca de': 'Giới thiệu',
   'Código fuente': 'Mã nguồn',
   'Visor CAD gratuito, sin anuncios y sin conexión.': 'Trình xem CAD miễn phí, không quảng cáo và ngoại tuyến.',
+  'Dovexa se distribuye bajo la GNU General Public License v3.0.': 'Dovexa được phân phối theo GNU General Public License v3.0.',
+  'LASzip (codificador aritmético)': 'LASzip (bộ mã hóa số học)',
 };

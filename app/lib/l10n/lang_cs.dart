@@ -1021,4 +1021,6 @@ const Map<String, String> kLang_cs = {
   'Acerca de': 'O aplikaci',
   'Código fuente': 'Zdrojový kód',
   'Visor CAD gratuito, sin anuncios y sin conexión.': 'Bezplatný prohlížeč CAD, bez reklam a offline.',
+  'Dovexa se distribuye bajo la GNU General Public License v3.0.': 'Dovexa je šířena pod licencí GNU General Public License v3.0.',
+  'LASzip (codificador aritmético)': 'LASzip (aritmetický kodér)',
 };

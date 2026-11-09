@@ -1021,4 +1021,6 @@ const Map<String, String> kLang_hi = {
   'Acerca de': 'परिचय',
   'Código fuente': 'सोर्स कोड',
   'Visor CAD gratuito, sin anuncios y sin conexión.': 'मुफ़्त CAD व्यूअर, बिना विज्ञापन और ऑफ़लाइन।',
+  'Dovexa se distribuye bajo la GNU General Public License v3.0.': 'Dovexa को GNU General Public License v3.0 के अंतर्गत वितरित किया जाता है।',
+  'LASzip (codificador aritmético)': 'LASzip (अंकगणितीय कोडर)',
 };

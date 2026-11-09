@@ -2,6 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
+import '../l10n/l10n.dart';
+
 
 /// Dirección pública del código fuente de Dovexa (obligatoria por la GPL-3.0).
 const String kSourceUrl = 'https://github.com/plegasense/dovexa';
@@ -13,8 +15,8 @@ void registerNativeLicenses() {
     Future<String> t(String f) => rootBundle.loadString('assets/licenses/$f');
     yield LicenseEntryWithLineBreaks(
       const ['Dovexa'],
-      'Dovexa se distribuye bajo la GNU General Public License v3.0.\n'
-      'Código fuente: $kSourceUrl\n\n${await t('DOVEXA_GPL3.txt')}',
+      '${tr('Dovexa se distribuye bajo la GNU General Public License v3.0.')}\n'
+      '${tr('Código fuente')}: $kSourceUrl\n\n${await t('DOVEXA_GPL3.txt')}',
     );
     yield LicenseEntryWithLineBreaks(
       const ['Open CASCADE Technology'],
@@ -25,7 +27,7 @@ void registerNativeLicenses() {
     yield LicenseEntryWithLineBreaks(
         const ['LASzip'], await t('LASZIP_COPYING.txt'));
     yield LicenseEntryWithLineBreaks(
-        const ['LASzip (codificador aritmético)'],
+        [tr('LASzip (codificador aritmético)')],
         await t('LASZIP_ARITHMETIC_BSD.txt'));
   });
 }
