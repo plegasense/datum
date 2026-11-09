@@ -13,7 +13,7 @@
 | 1.0.7 | 10 | — | 9-nov-2026 | El limpiador de rutas cubre también la carpeta antigua |
 | 1.0.8 | 11 | — | 9-nov-2026 | Correcciones de traducción en 8 idiomas |
 | 1.0.9 | 12 | — | 9-nov-2026 | Política de privacidad bilingüe en el repositorio como URL pública |
-| **1.0.10** | **13** | Lanzamiento completo | 9-nov-2026 (enviada a revisión) | Pantalla de licencias traducida. Versión de cierre del proyecto |
+| **1.0.10** | **13** | Prueba cerrada – Alpha | 9-nov-2026 (publicada) | Pantalla de licencias traducida. Versión de cierre del proyecto |
 
 Las versiones 1.0.5 a 1.0.9 fueron pasos intermedios del mismo día; en `releases/android/` solo se conserva el AAB de la 1.0.10.
 
