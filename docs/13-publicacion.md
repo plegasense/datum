@@ -7,7 +7,7 @@
 | 1.0.1 | 4 | Prueba cerrada – Alpha | 4-nov-2026 (publicada) | Ajustes (Unidades, Idioma, Acerca de), licencias de código abierto, enlace al código |
 | 1.0.2 | 5 | Prueba cerrada – Alpha | 4-nov-2026 (enviada a revisión) | Barra del visor simplificada; Abrir, Unidades e Idioma siguen accesibles desde Inicio y Ajustes |
 | 1.0.3 | 6 | Prueba cerrada – Alpha | — | Aviso BSD de LASzip en licencias (el AAB lleva ABIs sobrantes y rutas del equipo: no usar) |
-| 1.0.4 | 7 | Prueba cerrada – Alpha | (sin subir) | Solo arm64, sin rutas del equipo en el binario, sin copia de seguridad en la nube, política de privacidad actualizada |
+| 1.0.4 (no usar: lleva el usuario del equipo en resources.pb) | 7 | Prueba cerrada – Alpha | (sin subir) | Solo arm64, sin rutas del equipo en el binario, sin copia de seguridad en la nube, política de privacidad actualizada |
 
 Código fuente público: https://github.com/plegasense/datum (cada versión tiene su etiqueta `vX.Y.Z`).
 
