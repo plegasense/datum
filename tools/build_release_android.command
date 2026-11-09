@@ -3,7 +3,7 @@
 # la única arquitectura para la que hay Open CASCADE compilado).
 # Uso: doble clic en Finder, o ./tools/build_release_android.command
 # Resultado: releases/android/Dovexa-<versión>-<build>.aab
-# La firma se lee de ~/Library/Application Support/Dovexa/signing/key.properties.
+# La firma se lee de claves/key.properties (carpeta del proyecto, fuera de git).
 set -u
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 # Se compila desde una copia en una ruta sin tu nombre de usuario: las rutas de compilación acaban dentro del binario.
@@ -18,7 +18,8 @@ python3 "$ROOT/tools/scrub_paths.py" "$B/third_party/_install/occt-android-arm64
 export GRADLE_USER_HOME=/Users/Shared/dovexa-gradle
 mkdir -p "$GRADLE_USER_HOME"
 cd "$B/app" || exit 1
-F="$HOME/development/flutter-dovexa/bin/flutter"; [ -x "$F" ] || F=flutter
+F="$ROOT/sdk/flutter/bin/flutter"; [ -x "$F" ] || F=flutter
+export DOVEXA_KEY_PROPERTIES="$ROOT/claves/key.properties"
 VER=$(grep '^version:' pubspec.yaml | sed 's/version: *//; s/+/-/')
 LOG="$ROOT/releases/android/build-$VER.log"
 mkdir -p "$ROOT/releases/android"

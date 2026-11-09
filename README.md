@@ -23,14 +23,16 @@ El historial de versiones y los pasos para publicar otra están en `docs/13-publ
 | `docs/` | Diseño, decisiones, especialización por formato, idiomas y publicación (índice abajo). |
 | `testdata/` | Archivos de prueba pequeños y con licencia. Ver `testdata/README.md`. |
 | `releases/` | AAB compilados (fuera de git). |
+| `claves/`, `sdk/` | Clave de subida de Play y Flutter del proyecto (fuera de git). |
 
 ## Lo que no está en git (y hay que conservar)
-- **Clave de subida de Play**: `~/Library/Application Support/Dovexa/signing/` (`dovexa-upload-key.jks` y `key.properties`). Sin ella no se pueden subir versiones. Guardar copia cifrada. Ver `app/android/RELEASE_SIGNING.md`.
-- **Flutter del proyecto**: `~/development/flutter-dovexa` (versión fijada; el Flutter global no sirve).
+Todo está dentro de esta carpeta; copiarla entera es la copia de seguridad del proyecto.
+- **Clave de subida de Play**: `claves/` (`dovexa-upload-key.jks`, `key.properties` y una copia cifrada). Sin ella no se pueden subir versiones. Guardar otra copia fuera de este ordenador. Ver `app/android/RELEASE_SIGNING.md`.
+- **Flutter del proyecto**: `sdk/flutter` (3.47.8, versión fijada; el Flutter global no sirve).
 - **Open CASCADE para Android**: `third_party/_install/occt-android-arm64-v8a` (se recompila con `tools/build_occt_android.sh`, tarda).
 - `testdata/_externos/` y `testdata/_big/`: muestras para capturas y pruebas de rendimiento.
 
-Las cachés de compilación (`/Users/Shared/dovexa-build`, `/Users/Shared/dovexa-gradle`, `~/Library/Caches/Dovexa`, `app/.dart_tool`) se pueden borrar: se regeneran al compilar.
+Lo único que se crea fuera de la carpeta son cachés de compilación (`/Users/Shared/dovexa-build`, `/Users/Shared/dovexa-gradle`, `~/Library/Caches/Dovexa`): están fuera a propósito, para que el binario no lleve el nombre de usuario del equipo, y se pueden borrar siempre.
 
 ## Tareas habituales
 ```bash

@@ -3,7 +3,7 @@
 # Flutter propio del proyecto (separado del Flutter global, que no se toca).
 _src="${BASH_SOURCE[0]:-${(%):-%x}}"
 export DOVEXA_ROOT="$(cd "$(dirname "$_src")/.." && pwd)"
-export FLUTTER_HOME="$HOME/development/flutter-dovexa"
+export FLUTTER_HOME="$DOVEXA_ROOT/sdk/flutter"
 export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$FLUTTER_HOME/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$PATH"

@@ -43,3 +43,9 @@ testdata/_externos/
 
 # Binarios publicados (no se versionan)
 releases/
+
+# Privado y local: clave de firma de Play y SDK de Flutter del proyecto (nunca a git)
+/claves/
+/sdk/
+key.properties
+*.enc

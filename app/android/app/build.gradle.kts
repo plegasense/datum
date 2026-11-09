@@ -8,12 +8,11 @@ plugins {
 }
 
 val keystoreProperties = Properties()
-val defaultSigningDirectory = file(
-    "${System.getProperty("user.home")}/Library/Application Support/Dovexa/signing",
-)
+// La clave de subida vive en <proyecto>/claves (fuera de git); otra ruta con DOVEXA_KEY_PROPERTIES.
 val keystorePropertiesFile = System.getenv("DOVEXA_KEY_PROPERTIES")
     ?.let(::file)
-    ?: File(defaultSigningDirectory, "key.properties")
+    ?: File(rootDir, "../../claves/key.properties")
+val defaultSigningDirectory = keystorePropertiesFile.absoluteFile.parentFile
 if (keystorePropertiesFile.exists()) {
     FileInputStream(keystorePropertiesFile).use(keystoreProperties::load)
 }

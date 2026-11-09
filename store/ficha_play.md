@@ -1,6 +1,6 @@
 # Ficha de Play: Dovexa
 
-Identificador: `app.datum.datum` · AAB: `releases/android/Dovexa-<versión>-<build>.aab` (solo arm64-v8a; ver `docs/13-publicacion.md`) · Firma: clave de subida en `~/Library/Application Support/Dovexa/signing/` (ver `app/android/RELEASE_SIGNING.md`).
+Identificador: `app.datum.datum` · AAB: `releases/android/Dovexa-<versión>-<build>.aab` (solo arm64-v8a; ver `docs/13-publicacion.md`) · Firma: clave de subida en `claves/` (ver `app/android/RELEASE_SIGNING.md`).
 Huellas de la clave de subida — SHA-1 `6E:0C:12:BD:10:9F:E0:6A:42:3B:64:3E:FE:02:1B:F5:6E:6B:F6:A9` · SHA-256 `3F:67:C5:62:42:30:F5:F9:29:18:BD:65:A2:1B:BE:5F:4A:D9:F8:37:48:FC:D9:9F:03:A9:2E:DB:76:F6:DE:A4`.
 
 ## Textos
