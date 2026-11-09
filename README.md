@@ -9,6 +9,7 @@ Abre STEP, IGES, DXF, STL, 3MF, OBJ, glTF, PLY, G-code (FDM y CNC), SVG, HPGL, V
 
 ## Estado (9-nov-2026)
 Proyecto cerrado en la versión **1.0.10 (build 13)**, etiqueta `v1.0.10`, publicada en Google Play (prueba cerrada «Alpha», 178 países) el 9-nov-2026.
+Acceso a producción solicitado a Google el 9-nov-2026 (22:17); la respuesta llega por correo, normalmente en 7 días o menos. Las respuestas enviadas están en `docs/13-publicacion.md`.
 El historial de versiones y los pasos para publicar otra están en `docs/13-publicacion.md`.
 
 ## Carpetas

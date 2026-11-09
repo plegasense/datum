@@ -17,6 +17,20 @@
 
 Las versiones 1.0.5 a 1.0.9 fueron pasos intermedios del mismo día; en `releases/android/` solo se conserva el AAB de la 1.0.10.
 
+## Acceso a producción
+Solicitado el 9-nov-2026 a las 22:17 (Panel de control → Producción → Solicitar acceso a producción). Google responde por correo al propietario de la cuenta, normalmente en 7 días o menos. Cuando lo conceda, hay que crear la versión en el canal Producción (se puede promocionar la 1.0.10 desde la prueba cerrada).
+
+Respuestas enviadas:
+1. Reclutamiento: We used a paid testing provider (Testers Community), which supplied the testers who opted in to the closed test.
+2. Facilidad para reclutar: Fácil.
+3. Participación: Testers installed Dovexa on their own phones and tablets and kept it during the 14-day test, receiving the updates we published (1.0.0 to 1.0.10). They opened CAD and 3D files and used the viewer tools. No tester reported crashes or blocking problems.
+4. Comentarios: Testers did not report bugs or request features. We watched for feedback through Google Play's private tester feedback and through the testing provider, and we checked every build ourselves on a physical tablet.
+5. Audiencia: Dovexa is for engineers, designers, machinists, 3D-printing users and students who need to view and check CAD, 3D and manufacturing files (STEP, IGES, DXF, STL, 3MF, G-code and others) on an Android phone or tablet.
+6. Valor: Dovexa opens engineering and manufacturing files on the device: assemblies with a part tree, measurement, section views and several display modes. It is free and open source, works offline, has no ads and no account, and is available in 21 languages.
+7. Descargas el primer año: entre 10.000 y 100.000.
+8. Cambios durante la prueba: During the test we simplified the viewer toolbar, added a Settings screen (units, language, About, open-source licenses), corrected translations in 8 languages, translated the licenses screen, updated the privacy policy and renamed the app from Datum to Dovexa.
+9. Por qué está lista: The closed test ran 14 days with 12+ testers and no reported crashes or blocking issues. The latest build (1.0.10) was checked on a physical tablet: loading a STEP file, rotating, part information and section views all work. Translations, licenses and privacy policy were reviewed.
+
 Código fuente público: https://github.com/plegasense/dovexa (cada versión tiene su etiqueta `vX.Y.Z`).
 
 ## Pasos
