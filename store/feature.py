@@ -7,7 +7,7 @@ W, H = 1024, 500
 
 
 def build(code):
-    st = json.load(open("store_strings_en.json" if code == "en" else f"store_{code}.json"))
+    st = json.load(open(f"textos/{code}.json"))
     ft = st["feature"]
     compose.use_language(code)
     f = compose.font

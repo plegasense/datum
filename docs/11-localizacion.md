@@ -1,6 +1,7 @@
-# Localización es/en
+# 11 · Localización
 
-Dovexa se escribe en español y se traduce al inglés en tiempo de ejecución.
+Dovexa se escribe en español y se traduce en tiempo de ejecución al inglés (`en_*.dart`) y a otros 19 idiomas
+(`lang_<código>.dart`, mismas claves; selector en Ajustes → Idioma). Lo que sigue describe el mecanismo con el inglés; los demás idiomas funcionan igual.
 
 ## Mecanismo
 - `app/lib/l10n/l10n.dart`: `tr('texto en español {marcador}', {'marcador': valor})`. Con idioma `es` devuelve el texto

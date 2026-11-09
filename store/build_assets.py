@@ -1,5 +1,5 @@
 """Genera capturas, gráfico de funciones e imágenes de la ficha de Play para un idioma.
-Uso: python3 build_assets.py <código> …   (lee store_<código>.json y shots/<código>/<escena>.png)"""
+Uso: python3 build_assets.py <código> …   (lee textos/<código>.json y shots/<código>/<escena>.png)"""
 import json, os, sys
 import compose
 
@@ -8,7 +8,7 @@ NAMES = ["01-step", "02-print3d", "03-cnc", "04-stl", "05-textures", "06-clouds"
 
 
 def strings(code):
-    p = "store_strings_en.json" if code == "en" else f"store_{code}.json"
+    p = f"textos/{code}.json"
     return json.load(open(p))
 
 

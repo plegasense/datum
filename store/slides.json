@@ -1,9 +1,0 @@
-[
- {"out":"play/phone/01-ensamblajes.png","shot":"shots/raw_step_ex2.png","tag":"STEP · IGES","title":"Ensamblajes CAD completos","sub":"Vista explosionada, árbol de piezas, colores y medidas"},
- {"out":"play/phone/02-impresion3d.png","shot":"shots/raw_fdm2.png","tag":"G-CODE 3D","title":"Mira tu impresión capa a capa","sub":"Tiempo, filamento y tipo de cada movimiento"},
- {"out":"play/phone/03-cnc.png","shot":"shots/raw_cnc.png","tag":"G-CODE CNC","title":"Simula el fresado antes de cortar","sub":"Herramientas, avances y el material que queda"},
- {"out":"play/phone/04-stl.png","shot":"shots/raw_stl_sheet.png","tag":"STL · 3MF · OBJ","title":"Revisa el modelo antes de imprimir","sub":"Peso, filamento y si cabe en tu impresora"},
- {"out":"play/phone/05-texturas.png","shot":"shots/raw_gltf.png","tag":"glTF · OBJ · VRML","title":"Texturas y animaciones","sub":"Modelos con color, materiales y movimiento"},
- {"out":"play/phone/06-nubes.png","shot":"shots/raw_cloud2.png","tag":"LAS · LAZ · E57","title":"Nubes de puntos de escáner","sub":"Color por altura, intensidad o clase"},
- {"out":"play/phone/07-dxf.png","shot":"shots/raw_dxf_cut.png","tag":"DXF · SVG · HPGL","title":"Planos 2D con datos de corte","sub":"Longitud, perforaciones y aprovechamiento de chapa"}
-]

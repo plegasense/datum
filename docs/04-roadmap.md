@@ -1,5 +1,7 @@
 # 04 · Roadmap
 
+> **Documento histórico.** Es el plan original; el proyecto se cerró en la versión 1.0.10 (9-nov-2026) y las casillas no se actualizaron hasta el final. El estado real está en `README.md`, `docs/formatos/ESTADO.md` y `docs/13-publicacion.md`.
+
 Los hitos van en orden. **Cada uno termina en algo que se puede ver y probar.** Los esfuerzos son estimaciones gruesas de trabajo efectivo, no fechas; se reajustan tras M0.
 
 | Hito | Objetivo | Esfuerzo |

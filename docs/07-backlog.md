@@ -1,5 +1,7 @@
 # 07 · Backlog
 
+> **Documento histórico.** Es el plan original; el proyecto se cerró en la versión 1.0.10 (9-nov-2026) y las casillas no se actualizaron hasta el final. El estado real está en `README.md`, `docs/formatos/ESTADO.md` y `docs/13-publicacion.md`.
+
 Prioridad: **P0** imprescindible para el hito, **P1** importante, **P2** deseable. Tamaño: S (horas), M (1–2 días), L (3–5 días), XL (más de una semana).
 Estado: `[ ]` pendiente · `[~]` en curso · `[x]` hecho.
 

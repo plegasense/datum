@@ -1,4 +1,4 @@
-# Fuente única de la ficha de Play (español). Ejecutar para validar longitudes y generar ficha_es.txt.
+# Fuente única de la ficha de Play (español). Ejecutar para validar longitudes y generar ficha/es.txt.
 TITULO = "Dovexa: visor CAD, STEP y 3D"
 CORTA = "Visor CAD y 3D gratis y sin anuncios: STEP, DXF, STL y G-code, sin conexión"
 LARGA = """Dovexa abre los archivos de ingeniería y fabricación que te llegan al móvil y te ayuda a entenderlos, no solo a mirarlos. Es totalmente gratis: sin anuncios, sin cuenta, sin suscripciones y sin compras. Funciona sin conexión y no tiene permiso de Internet: tus archivos nunca salen del teléfono.
