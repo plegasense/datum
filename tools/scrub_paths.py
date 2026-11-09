@@ -5,5 +5,6 @@ d, root = sys.argv[1], sys.argv[2].encode()
 new = b"/" * (len(root) - 7) + b"/dovexa"
 for f in glob.glob(d + "/*.a"):
     b = open(f, "rb").read()
-    if root in b:
-        open(f, "wb").write(b.replace(root, new))
+    n = b.replace(root, new).replace(b"/datum/third_party", b"/build/third_party")  # mismo largo
+    if n != b:
+        open(f, "wb").write(n)
