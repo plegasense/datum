@@ -12,7 +12,7 @@ Fuente única: `ficha_es.py` (valida longitudes) → `ficha_es.txt`. Idioma de l
 
 ## Gráficos (carpeta `play/`)
 - Icono 512×512: `play/graficos/icono-512.png` (el cuadrado completo, sin esquinas transparentes).
-- Gráfico de funciones 1024×500: `play/graficos/grafico-funciones-1024x500.png`.
+- Gráfico de cabecera 1024×500: `play/<idioma>/feature-graphic-1024x500.png` (se genera con `feature.py`).
 - Teléfono 1080×1920 (8, en orden): `play/phone/01…08`. Capturas reales de la app en emulador Android con archivos públicos de muestra, más titular. Se regeneran con `compose.py slides.json`.
 - Tableta: `play/tablet/` (si existe).
 - Créditos de los modelos de las capturas: Cesium Milk Truck (Cesium, CC BY 4.0), 3DBenchy (CreativeTools, CC0 1.0, 3DBenchy.com), PrusaSlicer/g-code de muestra, mmount.ngc (LinuxCNC), Autzen (Hobu/USGS), as1-oc-214 (Open CASCADE).
