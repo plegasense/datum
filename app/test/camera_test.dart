@@ -1,5 +1,5 @@
-import 'package:datum/model/mesh.dart';
-import 'package:datum/render/camera.dart';
+import 'package:dovexa/model/mesh.dart';
+import 'package:dovexa/render/camera.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:vector_math/vector_math.dart' as vm;
 

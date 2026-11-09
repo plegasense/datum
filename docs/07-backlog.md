@@ -8,14 +8,14 @@ Estado: `[ ]` pendiente · `[~]` en curso · `[x]` hecho.
 ## E0 · Infraestructura (M0)
 - [ ] **E0-01** Crear proyecto Flutter para iOS y Android (minSdk 26, targetSdk 36, iOS 17+) y compilar en emulador y simulador. P0 · M
 - [ ] **E0-02** Instalar `ninja` y CMake de escritorio, configurar `JAVA_HOME`; script `tools/setup.sh` que verifica el entorno. P0 · S
-- [ ] **E0-03** Estructura del núcleo C++ (`core/`) con CMake para Android, iOS y macOS, y API en C (`datum.h`). P0 · L
+- [ ] **E0-03** Estructura del núcleo C++ (`core/`) con CMake para Android, iOS y macOS, y API en C (`dovexa.h`). P0 · L
 - [ ] **E0-04** Compilar OCCT para Android (`arm64-v8a`, `x86_64`), iOS (dispositivo y simulador, como framework dinámico) y macOS, con script reproducible en `tools/`. P0 · XL
 - [ ] **E0-05** Enlace Dart FFI ↔ API en C, funcionando en las dos plataformas. P0 · M
 - [ ] **E0-06** Visor 3D nativo incrustado en Flutter (Metal en iOS, Vulkan/GLES en Android) con gestos de cámara. P0 · XL
 - [ ] **E0-07** Prueba: STEP → teselado → malla en pantalla con cámara orbital, en simulador iOS y emulador Android. P0 · L
 - [ ] **E0-08** Medir tamaño de la app, tiempo y memoria en cada plataforma; informe en `docs/`. P0 · S
 - [ ] **E0-09** Comparar bgfx y Filament con aristas, selección y secciones; cerrar D-03. P0 · M
-- [ ] **E0-10** `datum-cli` en escritorio: abre un archivo y vuelca estadísticas. P1 · M
+- [ ] **E0-10** `dovexa-cli` en escritorio: abre un archivo y vuelca estadísticas. P1 · M
 - [ ] **E0-11** Integración continua con GitHub Actions (Linux y macOS) y caché de OCCT. P1 · L
 - [ ] **E0-12** Lint y formato: `flutter analyze`, `dart format`, `clang-format`. P2 · S
 - [ ] **E0-13** Integrar el icono y la marca (adaptable en Android, conjunto de iconos en iOS, tema). P1 · S

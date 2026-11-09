@@ -1,5 +1,5 @@
-import 'package:datum/io/loader.dart';
-import 'package:datum/model/brep.dart';
+import 'package:dovexa/io/loader.dart';
+import 'package:dovexa/model/brep.dart';
 
 Future<void> main(List<String> a) async {
   final s = await loadScene(a.first);

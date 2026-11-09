@@ -5,7 +5,7 @@
 |---|---|
 | **Renderizado** | **Flutter GPU** (Impeller): shaders propios, MSAA 4x, profundidad, modo alambre. Sin bgfx ni Filament. Probado en iOS y macOS. Está en preview y se fija a Flutter 3.47.8 |
 | **Interfaz** | Flutter, un solo código para iOS y Android. El visor 3D se dibuja dentro de Flutter, sin vistas nativas incrustadas |
-| **Núcleo** | C++ con Open CASCADE 8.0.1, compilado por el *hook* de Flutter (native assets) para cada plataforma, API en C (`core/include/datum.h`) |
+| **Núcleo** | C++ con Open CASCADE 8.0.1, compilado por el *hook* de Flutter (native assets) para cada plataforma, API en C (`core/include/dovexa.h`) |
 | **STL, OBJ, 3MF** | Lectores propios en Dart (isolates), sin dependencias nativas |
 
 ## Resultados con archivos reales (corpus local, 1,4 GB)
@@ -24,9 +24,9 @@
 
 ## Incidencias técnicas encontradas (y resueltas)
 1. las carpetas sincronizadas en la nube añaden atributos y `codesign` de iOS falla: compilar fuera (enlace `app/build` → `~/Library/Caches/Dovexa`).
-2. El Flutter global (3.41) no era compatible con Xcode 27: Flutter propio en `~/development/flutter-datum` (3.47.8).
+2. El Flutter global (3.41) no era compatible con Xcode 27: Flutter propio en `~/development/flutter-dovexa` (3.47.8).
 3. `file_picker` 13 cambió su API.
-4. El simulador de iOS compila también x86_64: pieza vacía (`datum_stub.cpp`) para esa arquitectura.
+4. El simulador de iOS compila también x86_64: pieza vacía (`dovexa_stub.cpp`) para esa arquitectura.
 5. Una pantalla de captura en macOS no es posible desde este entorno; las capturas automáticas se hacen en el simulador de iPhone.
 
 

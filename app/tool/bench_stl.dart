@@ -1,7 +1,7 @@
 // Mide la velocidad del lector de STL. Uso: dart run tool/bench_stl.dart archivo.stl
 import 'dart:io';
 
-import 'package:datum/io/stl_loader.dart';
+import 'package:dovexa/io/stl_loader.dart';
 
 Future<void> main(List<String> args) async {
   for (final path in args) {

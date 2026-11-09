@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:archive/archive.dart';
-import 'package:datum/io/threemf_loader.dart';
-import 'package:datum/io/threemf_model.dart';
-import 'package:datum/model/threemf.dart';
+import 'package:dovexa/io/threemf_loader.dart';
+import 'package:dovexa/io/threemf_model.dart';
+import 'package:dovexa/model/threemf.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 File zipOf(String name, Map<String, String> files) {
@@ -13,7 +13,7 @@ File zipOf(String name, Map<String, String> files) {
     final b = utf8.encode(v);
     a.addFile(ArchiveFile(k, b.length, b));
   });
-  final f = File('${Directory.systemTemp.path}/datum_3mf_$name.3mf');
+  final f = File('${Directory.systemTemp.path}/dovexa_3mf_$name.3mf');
   f.writeAsBytesSync(ZipEncoder().encode(a));
   return f;
 }
@@ -131,7 +131,7 @@ void main() {
     });
 
     test('un ZIP roto da un error claro', () {
-      final f = File('${Directory.systemTemp.path}/datum_3mf_roto.3mf')
+      final f = File('${Directory.systemTemp.path}/dovexa_3mf_roto.3mf')
         ..writeAsBytesSync([1, 2, 3, 4, 5]);
       expect(() => parse3mf(f.path), throwsA(isA<FormatException>()));
     });

@@ -2,9 +2,9 @@ import 'dart:io';
 import 'dart:math';
 import 'dart:typed_data';
 
-import 'package:datum/io/gltf_loader.dart';
-import 'package:datum/io/obj_loader.dart';
-import 'package:datum/io/ply_loader.dart';
+import 'package:dovexa/io/gltf_loader.dart';
+import 'package:dovexa/io/obj_loader.dart';
+import 'package:dovexa/io/ply_loader.dart';
 
 /// Daña archivos glTF/GLB, OBJ y PLY reales (cortados, bytes cambiados o borrados) y comprueba que
 /// cada lector devuelve una malla o un error limpio: nunca un fallo de índice, de tipo o un bloqueo.
@@ -25,7 +25,7 @@ void main(List<String> args) {
   for (final f in files) {
     final src = f.readAsBytesSync();
     final ext = f.path.split('.').last.toLowerCase();
-    final dir = Directory.systemTemp.createTempSync('datum_fz').path;
+    final dir = Directory.systemTemp.createTempSync('dovexa_fz').path;
     // los archivos asociados (texturas, bin) se enlazan para que el lector los encuentre
     for (final sib in f.parent.listSync().whereType<File>()) {
       final n = sib.path.split('/').last;

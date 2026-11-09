@@ -1,8 +1,8 @@
 import 'dart:io';
 
-import 'package:datum/io/bgcode_loader.dart';
-import 'package:datum/io/gcode_loader.dart';
-import 'package:datum/model/print_summary.dart';
+import 'package:dovexa/io/bgcode_loader.dart';
+import 'package:dovexa/io/gcode_loader.dart';
+import 'package:dovexa/model/print_summary.dart';
 
 Future<void> main(List<String> args) async {
   for (final f in args) {

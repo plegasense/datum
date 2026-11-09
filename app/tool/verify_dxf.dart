@@ -3,10 +3,10 @@
 import 'dart:io';
 import 'dart:math' as math;
 
-import 'package:datum/io/loader.dart';
-import 'package:datum/model/document.dart';
-import 'package:datum/model/drawing_stats.dart';
-import 'package:datum/model/shapes.dart';
+import 'package:dovexa/io/loader.dart';
+import 'package:dovexa/model/document.dart';
+import 'package:dovexa/model/drawing_stats.dart';
+import 'package:dovexa/model/shapes.dart';
 
 var failures = 0;
 void check(String what, num got, num want, {double tol = 0.01}) {

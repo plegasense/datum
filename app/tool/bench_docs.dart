@@ -2,8 +2,8 @@
 // Uso: dart run tool/bench_docs.dart <carpeta> [tamañoMaxMB]
 import 'dart:io';
 
-import 'package:datum/io/loader.dart';
-import 'package:datum/model/document.dart';
+import 'package:dovexa/io/loader.dart';
+import 'package:dovexa/model/document.dart';
 
 Future<void> main(List<String> args) async {
   final dir = Directory(args[0]);

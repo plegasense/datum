@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:datum/io/loader.dart';
-import 'package:datum/l10n/l10n.dart';
+import 'package:dovexa/io/loader.dart';
+import 'package:dovexa/l10n/l10n.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 /// Abre en inglés los archivos de muestra y lista los `tr()` sin traducción. Solo con

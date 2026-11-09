@@ -4,11 +4,11 @@ import 'dart:io';
 import 'dart:math' as math;
 import 'dart:typed_data';
 
-import 'package:datum/io/loader.dart';
+import 'package:dovexa/io/loader.dart';
 
 Future<void> main(List<String> a) async {
   final src = File(a.first).readAsBytesSync();
-  final dir = Directory.systemTemp.createTempSync('datum_robust');
+  final dir = Directory.systemTemp.createTempSync('dovexa_robust');
   final cases = <String, Uint8List>{
     'vacío': Uint8List(0),
     'texto suelto': Uint8List.fromList('esto no es un STEP\n'.codeUnits),

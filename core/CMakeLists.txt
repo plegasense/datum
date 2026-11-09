@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(datum_core LANGUAGES CXX)
+project(dovexa_core LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -10,13 +10,13 @@ if(NOT OCCT_ROOT)
 endif()
 file(GLOB OCCT_LIBS "${OCCT_ROOT}/lib/libTK*.a")
 
-add_library(datum_core STATIC src/datum_cad.cpp)
-target_include_directories(datum_core PUBLIC include ${OCCT_ROOT}/include/opencascade)
-target_link_libraries(datum_core PUBLIC ${OCCT_LIBS})
+add_library(dovexa_core STATIC src/dovexa_cad.cpp)
+target_include_directories(dovexa_core PUBLIC include ${OCCT_ROOT}/include/opencascade)
+target_link_libraries(dovexa_core PUBLIC ${OCCT_LIBS})
 
-add_executable(datum-cli src/datum_cli.cpp)
-target_link_libraries(datum-cli PRIVATE datum_core)
+add_executable(dovexa-cli src/dovexa_cli.cpp)
+target_link_libraries(dovexa-cli PRIVATE dovexa_core)
 
-add_executable(datum-step-probe src/step_probe.cpp)
-target_include_directories(datum-step-probe PRIVATE ${OCCT_ROOT}/include/opencascade)
-target_link_libraries(datum-step-probe PRIVATE ${OCCT_LIBS})
+add_executable(dovexa-step-probe src/step_probe.cpp)
+target_include_directories(dovexa-step-probe PRIVATE ${OCCT_ROOT}/include/opencascade)
+target_link_libraries(dovexa-step-probe PRIVATE ${OCCT_LIBS})

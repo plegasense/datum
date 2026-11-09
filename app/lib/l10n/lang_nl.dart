@@ -809,7 +809,7 @@ const Map<String, String> kLang_nl = {
   'ORIGEN': 'HERKOMST',
   'Software': 'Software',
   'Equipo': 'Apparatuur',
-  'Fecha': 'Dovexa',
+  'Fecha': 'Datum',
   'El archivo está incompleto: termina antes de tiempo. ¿Se cortó la descarga o la copia? Falta parte del dibujo.': 'Het bestand is onvolledig: het eindigt te vroeg. Is de download of kopie onderbroken? Een deel van de tekening ontbreekt.',
   'El archivo no indica sus unidades: se supone {u}. Compruébalo antes de cortar.': 'Het bestand geeft zijn eenheden niet op: er wordt uitgegaan van {u}. Controleer dit voordat je gaat snijden.',
   '{n} pieza': '{n} onderdeel',

@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 
-import 'package:datum/io/stl_loader.dart';
+import 'package:dovexa/io/stl_loader.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 String ascii(String solid, {bool upper = false, String lead = ''}) {
@@ -27,7 +27,7 @@ String ascii(String solid, {bool upper = false, String lead = ''}) {
 }
 
 Future<File> tmp(String name, List<int> bytes) async {
-  final f = File('${Directory.systemTemp.path}/datum_stl_$name');
+  final f = File('${Directory.systemTemp.path}/dovexa_stl_$name');
   f.writeAsBytesSync(bytes);
   return f;
 }

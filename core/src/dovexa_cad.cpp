@@ -1,5 +1,5 @@
 // Importador de formatos B-rep (STEP, IGES, BREP) sobre Open CASCADE (XCAF).
-#include "datum.h"
+#include "dovexa.h"
 
 #include <algorithm>
 #include <atomic>
@@ -180,7 +180,7 @@ struct PmiRec {
   std::vector<float> segs;               // presentación gráfica (6 floats por segmento)
 };
 
-struct DatumScene {
+struct DovexaScene {
   std::vector<PmiRec> pmi;
   std::vector<Part> parts;
   std::vector<Node> nodes;
@@ -193,7 +193,7 @@ struct DatumScene {
 namespace {
 
 struct Ctx {
-  DatumScene* scene;
+  DovexaScene* scene;
   double relDeflection;
   Handle(XCAFDoc_ShapeTool) shapes;
   Handle(XCAFDoc_ColorTool) colors;
@@ -483,7 +483,7 @@ void walk(Ctx& cx, const TDF_Label& label, int parent, int depth) {
 namespace {
 
 // Localiza una cara o arista de una pieza a partir de la forma a la que apunta una anotación.
-bool locateShape(DatumScene* sc, const TopoDS_Shape& sh, std::array<int, 3>& out) {
+bool locateShape(DovexaScene* sc, const TopoDS_Shape& sh, std::array<int, 3>& out) {
   for (size_t pi = 0; pi < sc->parts.size(); ++pi) {
     Part& p = sc->parts[pi];
     if (sh.ShapeType() == TopAbs_FACE) {
@@ -505,7 +505,7 @@ bool locateShape(DatumScene* sc, const TopoDS_Shape& sh, std::array<int, 3>& out
   return false;
 }
 
-void addRefs(DatumScene* sc, const TDF_Label& lab, PmiRec& r) {
+void addRefs(DovexaScene* sc, const TDF_Label& lab, PmiRec& r) {
   NCollection_Sequence<TDF_Label> a, b;
   if (!XCAFDoc_DimTolTool::GetRefShapeLabel(lab, a, b)) return;
   auto add = [&](NCollection_Sequence<TDF_Label>& seq) {
@@ -551,7 +551,7 @@ void addPresentation(const TopoDS_Shape& pres, PmiRec& r) {
   }
 }
 
-void readPmi(DatumScene* sc) {
+void readPmi(DovexaScene* sc) {
   try {
     Handle(XCAFDoc_DimTolTool) dt = XCAFDoc_DocumentTool::DimTolTool(sc->doc->Main());
     if (dt.IsNull()) return;
@@ -660,15 +660,15 @@ static double g_timing[5] = {0, 0, 0, 0, 0};  // lectura, conversión, árbol, t
 
 extern "C" {
 
-DATUM_API void datum_cad_set_lean(int lean) { g_lean = lean != 0; }
+DOVEXA_API void dovexa_cad_set_lean(int lean) { g_lean = lean != 0; }
 
-DATUM_API void datum_cad_set_cache_file(const char* path) { g_cacheFile = path ? path : ""; }
+DOVEXA_API void dovexa_cad_set_cache_file(const char* path) { g_cacheFile = path ? path : ""; }
 
-DATUM_API void datum_cad_timing(double* out5) {
+DOVEXA_API void dovexa_cad_timing(double* out5) {
   for (int i = 0; i < 5; ++i) out5[i] = g_timing[i];
 }
 
-DatumScene* datum_cad_open(const char* path, double rel_deflection) {
+DovexaScene* dovexa_cad_open(const char* path, double rel_deflection) {
   g_error.clear();
   try {
     Handle(XCAFApp_Application) app = XCAFApp_Application::GetApplication();
@@ -755,7 +755,7 @@ DatumScene* datum_cad_open(const char* path, double rel_deflection) {
       return nullptr;
     }
 
-    auto* scene = new DatumScene();
+    auto* scene = new DovexaScene();
     scene->doc = doc;
     scene->unit = fileUnit;
     scene->origin = fileOrigin;
@@ -793,7 +793,7 @@ DatumScene* datum_cad_open(const char* path, double rel_deflection) {
     readPmi(scene);
     g_timing[4] = nowMs() - t0;
     // Si abrir costó, se guarda el documento convertido (binario) para la próxima vez.
-    if (!fromCache && !cacheFile.empty() && (nowMs() - tStart > 2500 || std::getenv("DATUM_CACHE_ALWAYS"))) {
+    if (!fromCache && !cacheFile.empty() && (nowMs() - tStart > 2500 || std::getenv("DOVEXA_CACHE_ALWAYS"))) {
       const double ts = nowMs();
       try {
         BinXCAFDrivers::DefineFormat(app);
@@ -809,11 +809,11 @@ DatumScene* datum_cad_open(const char* path, double rel_deflection) {
       } catch (...) {
       }
 #ifdef __ANDROID__
-      __android_log_print(ANDROID_LOG_INFO, "datum", "caché guardada en %.0f ms", nowMs() - ts);
+      __android_log_print(ANDROID_LOG_INFO, "dovexa", "caché guardada en %.0f ms", nowMs() - ts);
 #endif
     }
 #ifdef __ANDROID__
-    __android_log_print(ANDROID_LOG_INFO, "datum", "lectura %.0f ms, conversión %.0f ms, árbol %.0f ms, teselado %.0f ms, anotaciones %.0f ms (núcleos %u)", g_timing[0], g_timing[1], g_timing[2], g_timing[3], g_timing[4], std::thread::hardware_concurrency());
+    __android_log_print(ANDROID_LOG_INFO, "dovexa", "lectura %.0f ms, conversión %.0f ms, árbol %.0f ms, teselado %.0f ms, anotaciones %.0f ms (núcleos %u)", g_timing[0], g_timing[1], g_timing[2], g_timing[3], g_timing[4], std::thread::hardware_concurrency());
 #endif
     if (scene->parts.empty()) {
       g_error = "El archivo no contiene geometría";
@@ -831,8 +831,8 @@ DatumScene* datum_cad_open(const char* path, double rel_deflection) {
   return nullptr;
 }
 
-const char* datum_last_error(void) { return g_error.c_str(); }
-void datum_scene_free(DatumScene* s) {
+const char* dovexa_last_error(void) { return g_error.c_str(); }
+void dovexa_scene_free(DovexaScene* s) {
   if (s == nullptr) return;
   Handle(TDocStd_Document) doc = s->doc;
   delete s;
@@ -844,43 +844,43 @@ void datum_scene_free(DatumScene* s) {
   }
 }
 
-int datum_part_count(const DatumScene* s) { return static_cast<int>(s->parts.size()); }
-const char* datum_part_name(const DatumScene* s, int i) { return s->parts[i].name.c_str(); }
-const char* datum_part_material(const DatumScene* s, int i, double* density_g_cm3) {
+int dovexa_part_count(const DovexaScene* s) { return static_cast<int>(s->parts.size()); }
+const char* dovexa_part_name(const DovexaScene* s, int i) { return s->parts[i].name.c_str(); }
+const char* dovexa_part_material(const DovexaScene* s, int i, double* density_g_cm3) {
   *density_g_cm3 = s->parts[i].matDensity;
   return s->parts[i].matName.c_str();
 }
-long long datum_part_vertex_count(const DatumScene* s, int i) {
+long long dovexa_part_vertex_count(const DovexaScene* s, int i) {
   return static_cast<long long>(s->parts[i].verts.size() / 6);
 }
-const float* datum_part_vertices(const DatumScene* s, int i) { return s->parts[i].verts.data(); }
-unsigned int datum_part_color(const DatumScene* s, int i) { return s->parts[i].color; }
+const float* dovexa_part_vertices(const DovexaScene* s, int i) { return s->parts[i].verts.data(); }
+unsigned int dovexa_part_color(const DovexaScene* s, int i) { return s->parts[i].color; }
 
-const char* datum_file_unit(const DatumScene* s) { return s->unit.c_str(); }
-const char* datum_file_origin(const DatumScene* s) { return s->origin.c_str(); }
-const char* datum_file_schema(const DatumScene* s) { return s->schema.c_str(); }
+const char* dovexa_file_unit(const DovexaScene* s) { return s->unit.c_str(); }
+const char* dovexa_file_origin(const DovexaScene* s) { return s->origin.c_str(); }
+const char* dovexa_file_schema(const DovexaScene* s) { return s->schema.c_str(); }
 
-int datum_part_face_count(const DatumScene* s, int part) { return static_cast<int>(s->parts[part].faces.size()); }
-const int* datum_part_face_of_triangle(const DatumScene* s, int part) { return s->parts[part].faceOfTri.data(); }
-void datum_part_face_info(DatumScene* s, int part, int face, double* out) {
+int dovexa_part_face_count(const DovexaScene* s, int part) { return static_cast<int>(s->parts[part].faces.size()); }
+const int* dovexa_part_face_of_triangle(const DovexaScene* s, int part) { return s->parts[part].faceOfTri.data(); }
+void dovexa_part_face_info(DovexaScene* s, int part, int face, double* out) {
   Part& p = s->parts[part];
   computeFace(p, face);
   for (int i = 0; i < 14; ++i) out[i] = p.faceRecs[face].v[i];
 }
 
-long long datum_part_edge_segment_count(const DatumScene* s, int part) {
+long long dovexa_part_edge_segment_count(const DovexaScene* s, int part) {
   return static_cast<long long>(s->parts[part].edgeOfSeg.size());
 }
-const float* datum_part_edge_segments(const DatumScene* s, int part) { return s->parts[part].edgeSegs.data(); }
-const int* datum_part_edge_of_segment(const DatumScene* s, int part) { return s->parts[part].edgeOfSeg.data(); }
-int datum_part_edge_count(const DatumScene* s, int part) { return static_cast<int>(s->parts[part].edgeRecs.size()); }
-void datum_part_edge_info(const DatumScene* s, int part, int edge, double* out) {
+const float* dovexa_part_edge_segments(const DovexaScene* s, int part) { return s->parts[part].edgeSegs.data(); }
+const int* dovexa_part_edge_of_segment(const DovexaScene* s, int part) { return s->parts[part].edgeOfSeg.data(); }
+int dovexa_part_edge_count(const DovexaScene* s, int part) { return static_cast<int>(s->parts[part].edgeRecs.size()); }
+void dovexa_part_edge_info(const DovexaScene* s, int part, int edge, double* out) {
   const auto& r = s->parts[part].edgeRecs[edge];
   for (int i = 0; i < 15; ++i) out[i] = r[i];
 }
 
 // out: volumen, área, centro (x y z), volumen del archivo, área del archivo, ¿trae datos del archivo?
-void datum_part_props(DatumScene* s, int part, double* out) {
+void dovexa_part_props(DovexaScene* s, int part, double* out) {
   Part& p = s->parts[part];
   if (!p.propsDone) {
     p.propsDone = true;
@@ -908,7 +908,7 @@ void datum_part_props(DatumScene* s, int part, double* out) {
   for (int i = 0; i < 8; ++i) out[i] = p.props[i];
 }
 
-static TopoDS_Shape placed(const DatumScene* s, int part, int kind, int idx, const double* m) {
+static TopoDS_Shape placed(const DovexaScene* s, int part, int kind, int idx, const double* m) {
   const Part& p = s->parts[part];
   TopoDS_Shape sh = kind == 0 ? static_cast<TopoDS_Shape>(p.faces[idx]) : static_cast<TopoDS_Shape>(p.edgeShapes[idx]);
   gp_Trsf t;
@@ -918,7 +918,7 @@ static TopoDS_Shape placed(const DatumScene* s, int part, int kind, int idx, con
 
 // Distancia mínima entre dos caras/aristas (kind: 0 cara, 1 arista) ya colocadas en el mundo.
 // out: distancia, punto en A (3), punto en B (3). Devuelve 1 si hay resultado.
-int datum_distance(const DatumScene* s, int partA, int kindA, int idxA, const double* mA, int partB, int kindB,
+int dovexa_distance(const DovexaScene* s, int partA, int kindA, int idxA, const double* mA, int partB, int kindB,
                    int idxB, const double* mB, double* out) {
   try {
     BRepExtrema_DistShapeShape d(placed(s, partA, kindA, idxA, mA), placed(s, partB, kindB, idxB, mB));
@@ -933,28 +933,28 @@ int datum_distance(const DatumScene* s, int partA, int kindA, int idxA, const do
   }
 }
 
-int datum_pmi_count(const DatumScene* s) { return static_cast<int>(s->pmi.size()); }
-void datum_pmi_info(const DatumScene* s, int i, double* out16) {
+int dovexa_pmi_count(const DovexaScene* s) { return static_cast<int>(s->pmi.size()); }
+void dovexa_pmi_info(const DovexaScene* s, int i, double* out16) {
   const PmiRec& r = s->pmi[i];
   out16[0] = r.kind;
   out16[1] = r.type;
   for (int k = 0; k < 14; ++k) out16[2 + k] = r.v[k];
 }
-const char* datum_pmi_text(const DatumScene* s, int i) { return s->pmi[i].text.c_str(); }
-int datum_pmi_ref_count(const DatumScene* s, int i) { return static_cast<int>(s->pmi[i].refs.size()); }
-void datum_pmi_ref(const DatumScene* s, int i, int k, int* out3) {
+const char* dovexa_pmi_text(const DovexaScene* s, int i) { return s->pmi[i].text.c_str(); }
+int dovexa_pmi_ref_count(const DovexaScene* s, int i) { return static_cast<int>(s->pmi[i].refs.size()); }
+void dovexa_pmi_ref(const DovexaScene* s, int i, int k, int* out3) {
   for (int j = 0; j < 3; ++j) out3[j] = s->pmi[i].refs[k][j];
 }
-long long datum_pmi_segment_count(const DatumScene* s, int i) {
+long long dovexa_pmi_segment_count(const DovexaScene* s, int i) {
   return static_cast<long long>(s->pmi[i].segs.size() / 6);
 }
-const float* datum_pmi_segments(const DatumScene* s, int i) { return s->pmi[i].segs.data(); }
+const float* dovexa_pmi_segments(const DovexaScene* s, int i) { return s->pmi[i].segs.data(); }
 
-int datum_node_count(const DatumScene* s) { return static_cast<int>(s->nodes.size()); }
-const char* datum_node_name(const DatumScene* s, int i) { return s->nodes[i].name.c_str(); }
-int datum_node_parent(const DatumScene* s, int i) { return s->nodes[i].parent; }
-int datum_node_part(const DatumScene* s, int i) { return s->nodes[i].part; }
-const double* datum_node_matrix(const DatumScene* s, int i) { return s->nodes[i].m; }
-unsigned int datum_node_color(const DatumScene* s, int i) { return s->nodes[i].color; }
+int dovexa_node_count(const DovexaScene* s) { return static_cast<int>(s->nodes.size()); }
+const char* dovexa_node_name(const DovexaScene* s, int i) { return s->nodes[i].name.c_str(); }
+int dovexa_node_parent(const DovexaScene* s, int i) { return s->nodes[i].parent; }
+int dovexa_node_part(const DovexaScene* s, int i) { return s->nodes[i].part; }
+const double* dovexa_node_matrix(const DovexaScene* s, int i) { return s->nodes[i].m; }
+unsigned int dovexa_node_color(const DovexaScene* s, int i) { return s->nodes[i].color; }
 
 }  // extern "C"

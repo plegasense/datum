@@ -2,14 +2,14 @@ import 'dart:io';
 import 'dart:math';
 import 'dart:typed_data';
 
-import 'package:datum/io/stl_loader.dart';
-import 'package:datum/model/mesh_check.dart';
+import 'package:dovexa/io/stl_loader.dart';
+import 'package:dovexa/model/mesh_check.dart';
 
 /// STL truncados y corrompidos: debe terminar siempre (malla o error claro), sin colgarse.
 Future<void> main(List<String> args) async {
   final rnd = Random(11);
   var ok = 0, err = 0, bad = 0, slowest = 0;
-  final dir = Directory.systemTemp.createTempSync('datum_robust_stl');
+  final dir = Directory.systemTemp.createTempSync('dovexa_robust_stl');
   for (final f in args) {
     final bytes = File(f).readAsBytesSync();
     if (bytes.length < 2 || bytes.length > 6 * 1024 * 1024) continue;

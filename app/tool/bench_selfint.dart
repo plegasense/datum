@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:datum/io/stl_loader.dart';
-import 'package:datum/model/thickness.dart';
+import 'package:dovexa/io/stl_loader.dart';
+import 'package:dovexa/model/thickness.dart';
 
 Future<void> main(List<String> args) async {
   for (final f in args) {

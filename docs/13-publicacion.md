@@ -9,11 +9,11 @@
 | 1.0.3 | 6 | Prueba cerrada – Alpha | — | Aviso BSD de LASzip en licencias (el AAB lleva ABIs sobrantes y rutas del equipo: no usar) |
 | 1.0.4 (no usar: lleva el usuario del equipo en resources.pb) | 7 | Prueba cerrada – Alpha | (sin subir) | Solo arm64, sin rutas del equipo en el binario, sin copia de seguridad en la nube, política de privacidad actualizada |
 
-Código fuente público: https://github.com/plegasense/datum (cada versión tiene su etiqueta `vX.Y.Z`).
+Código fuente público: https://github.com/plegasense/dovexa (cada versión tiene su etiqueta `vX.Y.Z`).
 
 ## Pasos
 1. **Versión**: subir `version:` en `app/pubspec.yaml` (`X.Y.Z+build`; el build siempre mayor que el anterior).
-2. **Compilar** (copia en `/Users/Shared/datum-build`, sin tu nombre de usuario en el binario): doble clic en `tools/build_release_android.command`. Deja `releases/android/Dovexa-X.Y.Z-build.aab` (solo arm64; firmado con la clave de subida de `~/Library/Application Support/Dovexa/signing/`).
+2. **Compilar** (copia en `/Users/Shared/dovexa-build`, sin tu nombre de usuario en el binario): doble clic en `tools/build_release_android.command`. Deja `releases/android/Dovexa-X.Y.Z-build.aab` (solo arm64; firmado con la clave de subida de `~/Library/Application Support/Dovexa/signing/`).
 3. **Código (obligatorio por la GPL-3.0)**: `git commit`, `git tag vX.Y.Z` y `git push origin main vX.Y.Z` **antes** de publicar el AAB.
 4. **Play Console** → Dovexa → Prueba cerrada – Alpha → Crear nueva versión → Subir el AAB → notas en `es-ES` y `en-US` → Guardar → Resumen de publicación → Enviar a revisión.
 

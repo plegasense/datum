@@ -11,7 +11,7 @@ import '../model/threemf.dart';
 import '../render/gpu_mesh.dart';
 import '../render/lod.dart';
 import 'glass.dart';
-import 'stl_tools.dart' show datumSheet, fmtNum, sheetLabel, sheetRow, sheetTitle;
+import 'stl_tools.dart' show dovexaSheet, fmtNum, sheetLabel, sheetRow, sheetTitle;
 import 'theme.dart';
 import '../model/unit_system.dart';
 
@@ -660,7 +660,7 @@ Future<void> showTmfFilamentsSheet(
   ThreeMfController c, {
   void Function(int plate)? onToolpath,
 }) {
-  return datumSheet(
+  return dovexaSheet(
     context,
     ListenableBuilder(
       listenable: c,
@@ -788,7 +788,7 @@ Future<void> showTmfPartsSheet(
   ThreeMfController c, {
   required void Function(Bounds) onFocus,
 }) {
-  return datumSheet(
+  return dovexaSheet(
     context,
     ListenableBuilder(
       listenable: c,
@@ -974,7 +974,7 @@ Future<void> showTmfProjectSheet(BuildContext context, ThreeMfController c) {
       kids.add(Padding(padding: const EdgeInsets.symmetric(vertical: 2), child: Text(n, style: const TextStyle(color: DT.orangeSoft, fontSize: 13))));
     }
   }
-  return datumSheet(context, SingleChildScrollView(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: kids)));
+  return dovexaSheet(context, SingleChildScrollView(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: kids)));
 }
 
 String _unitName(String u) => switch (u) {

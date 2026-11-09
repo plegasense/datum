@@ -456,7 +456,7 @@ class StlController extends ChangeNotifier {
     thickness = r.$1;
     _triAreas = r.$2;
     // ignore: avoid_print
-    if (const String.fromEnvironment('DATUM_CAD').isNotEmpty) print('ESPESOR ${sw.elapsedMilliseconds} ms · ${r.$1.perTriangle.length} caras · mín ${r.$1.minThickness * scale} mm');
+    if (const String.fromEnvironment('DOVEXA_CAD').isNotEmpty) print('ESPESOR ${sw.elapsedMilliseconds} ms · ${r.$1.perTriangle.length} caras · mín ${r.$1.minThickness * scale} mm');
     thicknessBusy = false;
     await _paintThickness();
   }
@@ -752,7 +752,7 @@ class StlController extends ChangeNotifier {
 
 // ---------------------------------------------------------------- hojas
 
-Future<void> datumSheet(BuildContext context, Widget child) {
+Future<void> dovexaSheet(BuildContext context, Widget child) {
   return showModalBottomSheet<void>(
     context: context,
     backgroundColor: Colors.transparent,
@@ -851,7 +851,7 @@ Future<void> showMeshReviewSheet(
   StlController c, {
   required void Function(MeshHole) onHole,
 }) {
-  return datumSheet(
+  return dovexaSheet(
     context,
     ListenableBuilder(
       listenable: c,
@@ -1097,7 +1097,7 @@ Future<void> showMeshReviewSheet(
 
 /// Impresión: material, peso, filamento, cama y voladizos.
 Future<void> showPrintSheet(BuildContext context, StlController c) {
-  return datumSheet(
+  return dovexaSheet(
     context,
     ListenableBuilder(
       listenable: c,
@@ -1375,7 +1375,7 @@ Future<void> showPrintSheet(BuildContext context, StlController c) {
 
 /// Plano de sección sobre un eje.
 Future<void> showMeshSectionSheet(BuildContext context, StlController c) {
-  return datumSheet(
+  return dovexaSheet(
     context,
     ListenableBuilder(
       listenable: c,

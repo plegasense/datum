@@ -175,7 +175,7 @@ Widget _dot(Color c) => Container(width: 12, height: 12, decoration: BoxDecorati
 /// Hoja «Vista»: color, tamaño de punto, clases visibles y recorte por altura.
 Future<void> showCloudViewSheet(BuildContext context, CloudController ctl) {
   final c = ctl.cloud;
-  return datumSheet(
+  return dovexaSheet(
     context,
     StatefulBuilder(
       builder: (ctx, set) {
@@ -411,5 +411,5 @@ Future<void> showCloudInfoSheet(BuildContext context, PointCloud c) {
       );
     }
   }
-  return datumSheet(context, ListView(shrinkWrap: true, children: rows));
+  return dovexaSheet(context, ListView(shrinkWrap: true, children: rows));
 }

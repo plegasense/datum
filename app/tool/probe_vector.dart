@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:datum/io/hpgl_parser.dart';
-import 'package:datum/io/svg_loader.dart';
+import 'package:dovexa/io/hpgl_parser.dart';
+import 'package:dovexa/io/svg_loader.dart';
 
 /// Resume cómo se lee cada SVG / HPGL: dart run tool/probe_vector.dart <archivo|carpeta>...
 void main(List<String> args) {

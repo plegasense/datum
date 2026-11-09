@@ -20,7 +20,7 @@ import '../model/rig.dart';
 import 'glass.dart';
 import 'threemf_tools.dart' show ThreeMfController;
 import 'rig_player.dart';
-import 'stl_tools.dart' show datumSheet, fmtNum, sheetLabel, sheetRow, sheetTitle;
+import 'stl_tools.dart' show dovexaSheet, fmtNum, sheetLabel, sheetRow, sheetTitle;
 import 'theme.dart';
 import '../model/unit_system.dart';
 
@@ -445,7 +445,7 @@ Future<void> showMeshInfoSheet(
       kids.add(Padding(padding: const EdgeInsets.symmetric(vertical: 2), child: Text(w, style: const TextStyle(color: DT.orangeSoft, fontSize: 13))));
     }
   }
-  return datumSheet(context, SingleChildScrollView(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: kids)));
+  return dovexaSheet(context, SingleChildScrollView(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: kids)));
 }
 
 /// Resultado de la revisión de la malla (se calcula al pedirlo).
@@ -497,7 +497,7 @@ class _ReviewBlock extends StatelessWidget {
 
 /// Hoja con las piezas del modelo: mostrar u ocultar cada una.
 Future<void> showMeshPartsSheet(BuildContext context, MeshFileController c, {required void Function(Bounds) onFocus}) {
-  return datumSheet(
+  return dovexaSheet(
     context,
     ListenableBuilder(
       listenable: c,
@@ -612,7 +612,7 @@ Future<bool> pickMissingFiles(String modelPath) async {
 
 /// Hoja de sección: un plano que corta la malla para ver el interior.
 Future<void> showMeshFileSectionSheet(BuildContext context, MeshFileController c) {
-  return datumSheet(
+  return dovexaSheet(
     context,
     ListenableBuilder(
       listenable: c,
@@ -666,7 +666,7 @@ Future<void> showMeshFileSectionSheet(BuildContext context, MeshFileController c
 
 /// Sección de un proyecto 3MF (mismo plano y tapa que en las demás mallas).
 Future<void> showTmfSectionSheet(BuildContext context, ThreeMfController c) {
-  return datumSheet(
+  return dovexaSheet(
     context,
     ListenableBuilder(
       listenable: c,
@@ -724,7 +724,7 @@ void applyFileView(OrbitCamera cam, MeshFileController c, ViewInfo v) {
 
 /// Lista de vistas del archivo (cámaras de glTF o `Viewpoint` de VRML).
 Future<void> showMeshViewsSheet(BuildContext context, MeshFileController c, OrbitCamera cam) {
-  return datumSheet(
+  return dovexaSheet(
     context,
     ListView(
       shrinkWrap: true,
@@ -757,7 +757,7 @@ Future<void> showMeshViewsSheet(BuildContext context, MeshFileController c, Orbi
 
 /// Variantes de material del archivo (colores de un zapato, tapicerías…).
 Future<void> showMeshVariantsSheet(BuildContext context, MeshFileController c) {
-  return datumSheet(
+  return dovexaSheet(
     context,
     ListenableBuilder(
       listenable: c,

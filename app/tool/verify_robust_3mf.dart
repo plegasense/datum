@@ -3,7 +3,7 @@ import 'dart:math';
 import 'dart:typed_data';
 
 import 'package:archive/archive.dart';
-import 'package:datum/io/threemf_loader.dart';
+import 'package:dovexa/io/threemf_loader.dart';
 
 /// Daña 3MF reales (XML truncado, bytes cambiados o borrados, ZIP cortado) y comprueba que
 /// el lector devuelve una malla o un error limpio (nunca un fallo de índice, un tipo roto o un bloqueo).
@@ -20,7 +20,7 @@ void main(List<String> args) {
   }
   files.sort((a, b) => a.path.compareTo(b.path));
   final rnd = Random(7);
-  final tmp = File('${Directory.systemTemp.path}/datum_fuzz.3mf');
+  final tmp = File('${Directory.systemTemp.path}/dovexa_fuzz.3mf');
   var cases = 0, ok = 0, clean = 0;
   final bad = <String>[];
   for (final f in files) {

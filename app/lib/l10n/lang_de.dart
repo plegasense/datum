@@ -796,7 +796,7 @@ const Map<String, String> kLang_de = {
   'ORIGEN': 'HERKUNFT',
   'Software': 'Software',
   'Equipo': 'Gerät',
-  'Fecha': 'Dovexa',
+  'Fecha': 'Datum',
   'El archivo está incompleto: termina antes de tiempo. ¿Se cortó la descarga o la copia? Falta parte del dibujo.': 'Die Datei ist unvollständig: Sie endet zu früh. Wurde der Download oder das Kopieren unterbrochen? Ein Teil der Zeichnung fehlt.',
   'El archivo no indica sus unidades: se supone {u}. Compruébalo antes de cortar.': 'Die Datei gibt ihre Einheiten nicht an: Angenommen wird {u}. Prüfe das vor dem Schneiden.',
   '{n} pieza': '{n} Teil',

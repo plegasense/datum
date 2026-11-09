@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:datum/io/stl_loader.dart';
-import 'package:datum/model/mesh_check.dart';
+import 'package:dovexa/io/stl_loader.dart';
+import 'package:dovexa/model/mesh_check.dart';
 
 /// Revisa en lote STL reales: carga, informe de malla y tiempos.
 ///   dart run tool/probe_stl.dart carpeta_o_archivos...

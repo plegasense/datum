@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import '../l10n/l10n.dart';
 import '../model/unit_system.dart';
-import 'stl_tools.dart' show datumSheet, sheetTitle;
+import 'stl_tools.dart' show dovexaSheet, sheetTitle;
 import 'theme.dart';
 
 /// Hoja para elegir el idioma de la interfaz: Automático (el del dispositivo) o uno de la lista.
 Future<void> showLanguageSheet(BuildContext context) {
-  return datumSheet(
+  return dovexaSheet(
     context,
     ValueListenableBuilder<String>(
       valueListenable: L.choice,

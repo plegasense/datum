@@ -111,7 +111,7 @@ Future<void> showVectorSheet(BuildContext context, DrawingDocument d) {
       );
     }
   }
-  return datumSheet(context, ListView(shrinkWrap: true, children: rows));
+  return dovexaSheet(context, ListView(shrinkWrap: true, children: rows));
 }
 
 /// Texto corto para la cabecera: «Inkscape 1.2» o «HPGL/2».

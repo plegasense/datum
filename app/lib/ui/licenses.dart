@@ -4,7 +4,7 @@ import 'package:flutter/services.dart' show rootBundle;
 
 
 /// Dirección pública del código fuente de Dovexa (obligatoria por la GPL-3.0).
-const String kSourceUrl = 'https://github.com/plegasense/datum';
+const String kSourceUrl = 'https://github.com/plegasense/dovexa';
 
 /// Registra las licencias de los componentes nativos, que Flutter no detecta
 /// por sí solo. Los paquetes de Dart y Flutter se añaden automáticamente.
@@ -14,7 +14,7 @@ void registerNativeLicenses() {
     yield LicenseEntryWithLineBreaks(
       const ['Dovexa'],
       'Dovexa se distribuye bajo la GNU General Public License v3.0.\n'
-      'Código fuente: $kSourceUrl\n\n${await t('DATUM_GPL3.txt')}',
+      'Código fuente: $kSourceUrl\n\n${await t('DOVEXA_GPL3.txt')}',
     );
     yield LicenseEntryWithLineBreaks(
       const ['Open CASCADE Technology'],
@@ -30,7 +30,7 @@ void registerNativeLicenses() {
   });
 }
 
-void showDatumLicenses(BuildContext context) {
+void showDovexaLicenses(BuildContext context) {
   showLicensePage(
     context: context,
     applicationName: 'Dovexa',

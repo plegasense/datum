@@ -12,7 +12,7 @@
 │  de materiales · ajustes · paneles               │
 │  ── hueco nativo para el visor 3D ──             │
 └──────────────┬───────────────────────────────────┘
-               │ Dart FFI sobre una API en C (datum.h)
+               │ Dart FFI sobre una API en C (dovexa.h)
 ┌──────────────▼───────────────────────────────────┐
 │ core/  (C++17, compartido)                       │
 │  io/    importadores (STL, OBJ, 3MF, STEP…)      │
@@ -29,7 +29,7 @@
 
 ## Decisiones técnicas
 - **Plataformas:** Android minSdk 26, targetSdk 36 (Google lo exige a apps nuevas desde el 31/08/2026). iOS 17 o superior (a confirmar).
-- **Núcleo:** C++17, una API en C estable (`datum.h`) que Dart consume por FFI en ambas plataformas, sin código puente distinto en cada sistema. El código específico de plataforma se reduce a crear la superficie de dibujo y recibir archivos.
+- **Núcleo:** C++17, una API en C estable (`dovexa.h`) que Dart consume por FFI en ambas plataformas, sin código puente distinto en cada sistema. El código específico de plataforma se reduce a crear la superficie de dibujo y recibir archivos.
 - **Gráficos:** capa multiplataforma. Candidatas: **bgfx** (BSD; control de bajo nivel y shaders propios) o **Filament** (Apache-2.0; más estructurado). Se decide con una prueba en M0 (D-03). Ya no vale solo OpenGL ES.
 - **Interfaz:** Flutter (ya instalado en este Mac). Riesgo principal: **incrustar un visor 3D nativo a 60 fps con gestos fluidos dentro de Flutter**. Se valida en M0 (D-10). Plan B: dos carcasas nativas finas (SwiftUI y Compose) sobre la misma API en C.
 - **Sin permiso de Internet en Android** y sin uso de red en iOS. Sin analítica. Privacidad comprobable.
@@ -84,7 +84,7 @@ Es lo que permite árbol, búsqueda por nombre, recuentos, aislar y ocultar.
 | Memoria | < 1 GB en Android; menos en iPhone antiguos (se mide) |
 
 ## Calidad y pruebas
-- **Núcleo en escritorio:** GoogleTest y `datum-cli` (abre un archivo y vuelca estadísticas y mallas de referencia). Itera mucho más rápido que en emulador.
+- **Núcleo en escritorio:** GoogleTest y `dovexa-cli` (abre un archivo y vuelca estadísticas y mallas de referencia). Itera mucho más rápido que en emulador.
 - **Móvil:** pruebas de UI y capturas en los simuladores de iOS y en el emulador Android; rendimiento en móviles físicos de ambos sistemas.
 - **Corpus de archivos** versionado (ver `02-formatos.md`).
 - Los archivos corruptos o enormes **nunca** deben cerrar la app; se prueban con fuzzing básico.

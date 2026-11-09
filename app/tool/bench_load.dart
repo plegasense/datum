@@ -2,7 +2,7 @@
 // Uso: dart run tool/bench_load.dart <carpeta> [extensiones separadas por coma] [tamañoMaxMB]
 import 'dart:io';
 
-import 'package:datum/io/loader.dart';
+import 'package:dovexa/io/loader.dart';
 
 Future<void> main(List<String> args) async {
   final dir = Directory(args[0]);

@@ -17,7 +17,7 @@ Dovexa se escribe en español y se traduce al inglés en tiempo de ejecución.
 4. `const`: donde entre `tr(...)` hay que quitar `const` del widget que lo contiene.
 5. Mapas/listas constantes de textos: déjalas y traduce al usarlas (`tr(kNombres[k])`); el texto debe estar como clave en el mapa inglés.
 6. No se traduce: comentarios, nombres de formatos y unidades (STEP, DXF, mm, G-code…), identificadores, claves
-   de preferencias, mensajes de depuración (`print`), ganchos de prueba (`DATUM_*`), nombres propios.
+   de preferencias, mensajes de depuración (`print`), ganchos de prueba (`DOVEXA_*`), nombres propios.
 7. Cada área escribe sus traducciones en su `lib/l10n/en_<area>.dart`; una entrada por clave, sin claves repetidas dentro del archivo.
 
 ## Glosario (usar siempre igual)

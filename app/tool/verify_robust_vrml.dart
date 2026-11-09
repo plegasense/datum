@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'dart:math';
 
-import 'package:datum/io/vrml_loader.dart';
+import 'package:dovexa/io/vrml_loader.dart';
 
 /// Daña VRML/X3D reales (cortados, caracteres cambiados, líneas borradas) y comprueba que el lector
 /// devuelve una escena o un error limpio. Uso: SEED=11 dart run tool/verify_robust_vrml.dart <carpeta>...
@@ -18,7 +18,7 @@ void main(List<String> args) {
   final rnd = Random(int.parse(Platform.environment['SEED'] ?? '11'));
   var cases = 0, ok = 0, clean = 0;
   final bad = <String>[];
-  final dir = Directory.systemTemp.createTempSync('datum_fzw').path;
+  final dir = Directory.systemTemp.createTempSync('dovexa_fzw').path;
   for (final f in files) {
     final src = f.readAsStringSync();
     if (src.isEmpty) continue;

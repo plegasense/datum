@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:datum/io/gcode_loader.dart';
-import 'package:datum/model/stock_sim.dart';
+import 'package:dovexa/io/gcode_loader.dart';
+import 'package:dovexa/model/stock_sim.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 StockSim sim(String program, {double dia = 4}) {

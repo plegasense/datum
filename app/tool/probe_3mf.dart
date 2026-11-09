@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:datum/io/threemf_loader.dart';
-import 'package:datum/model/threemf.dart';
+import 'package:dovexa/io/threemf_loader.dart';
+import 'package:dovexa/model/threemf.dart';
 
 /// Resume cómo se lee cada 3MF: dart run tool/probe_3mf.dart <archivo|carpeta>...
 void main(List<String> args) {

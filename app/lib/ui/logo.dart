@@ -4,8 +4,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 /// Logo de Dovexa: vista explosionada de un ensamblaje. [explode] va de 0 (junto) a 1 (separado).
-class DatumLogo extends StatelessWidget {
-  const DatumLogo({super.key, required this.size, this.explode = 1});
+class DovexaLogo extends StatelessWidget {
+  const DovexaLogo({super.key, required this.size, this.explode = 1});
   final double size;
   final double explode;
 

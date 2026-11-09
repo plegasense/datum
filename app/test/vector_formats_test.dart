@@ -1,12 +1,12 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:datum/io/hpgl_parser.dart';
-import 'package:datum/io/svg_loader.dart';
+import 'package:dovexa/io/hpgl_parser.dart';
+import 'package:dovexa/io/svg_loader.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 File tmp(String name, String s) {
-  final f = File('${Directory.systemTemp.path}/datum_vec_$name');
+  final f = File('${Directory.systemTemp.path}/dovexa_vec_$name');
   f.writeAsBytesSync(utf8.encode(s));
   return f;
 }

@@ -26,22 +26,22 @@ Future<void> main() async {
     await Units.load().timeout(const Duration(seconds: 2));
   } catch (_) {}
   try {
-    cadCacheDir = '${(await getApplicationCacheDirectory()).path}/datum_cad';
+    cadCacheDir = '${(await getApplicationCacheDirectory()).path}/dovexa_cad';
     extraBase = (await getApplicationCacheDirectory()).path;
   } catch (_) {}
   EdlFx.load();
   registerNativeLicenses();
-  runApp(const DatumApp());
+  runApp(const DovexaApp());
 }
 
-class DatumApp extends StatefulWidget {
-  const DatumApp({super.key});
+class DovexaApp extends StatefulWidget {
+  const DovexaApp({super.key});
 
   @override
-  State<DatumApp> createState() => _DatumAppState();
+  State<DovexaApp> createState() => _DovexaAppState();
 }
 
-class _DatumAppState extends State<DatumApp> {
+class _DovexaAppState extends State<DovexaApp> {
   @override
   void initState() {
     super.initState();

@@ -4,12 +4,12 @@ import 'dart:io';
 import 'dart:math' as math;
 import 'dart:typed_data';
 
-import 'package:datum/io/loader.dart';
-import 'package:datum/model/document.dart';
+import 'package:dovexa/io/loader.dart';
+import 'package:dovexa/model/document.dart';
 
 Future<void> main(List<String> a) async {
   final src = File(a.first).readAsBytesSync();
-  final dir = Directory.systemTemp.createTempSync('datum_robust_dxf');
+  final dir = Directory.systemTemp.createTempSync('dovexa_robust_dxf');
   final cases = <String, Uint8List>{
     'vacío': Uint8List(0),
     'texto suelto': Uint8List.fromList('esto no es un DXF\n'.codeUnits),

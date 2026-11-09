@@ -51,7 +51,7 @@ Superaremos al mejor (LayerPeek, por su ficha) en:
 - `io/zip_lite.dart`: lector de ZIP (almacenado y deflate, ZIP64) que descomprime con zlib nativo **en trozos**; un modelo de 216 MB no se carga entero.
 - `io/threemf_model.dart`: lector de XML por bytes, sin cadenas en las etiquetas calientes (vértices y triángulos); estado de pintura, propiedades de color `pid/p1..p3`, vigas y metadatos. `PaintDecoder` reconstruye las subdivisiones del `TriangleSelector` (1, 2 o 3 lados partidos, hijos en orden inverso) leyendo el código de PrusaSlicer/Bambu para entender el formato; implementación propia.
 - `io/threemf_loader.dart`: unidades, producción, componentes anidados, volúmenes de Bambu (componentes) y de PrusaSlicer (rangos), partición de cada volumen por filamento o por color (cuantizado a 4/3 bits si hay más de 48 colores), volumen por filamento, cajas, placas (cuadrícula `ceil(√n)` × 1,2·cama), proyecto (JSON de Bambu, `Slic3r_PE.config`, `slice_info`), vigas como prismas hexagonales.
-- `ui/threemf_tools.dart`: controlador (placa, ocultos, aislado, auxiliares, cama, medida, versión simplificada para girar proyectos de más de 400 mil triángulos), chips, tira de placas y hojas. `viewer_page.dart`: integración y ganchos de prueba `DATUM_CAD=plate:N;filaments;parts;project;aux;hide:N;iso:N;m:x,y,..;tap:x,y;toolpath:N;v:yaw,pitch;perf`.
+- `ui/threemf_tools.dart`: controlador (placa, ocultos, aislado, auxiliares, cama, medida, versión simplificada para girar proyectos de más de 400 mil triángulos), chips, tira de placas y hojas. `viewer_page.dart`: integración y ganchos de prueba `DOVEXA_CAD=plate:N;filaments;parts;project;aux;hide:N;iso:N;m:x,y,..;tap:x,y;toolpath:N;v:yaw,pitch;perf`.
 - Medido: ver sección 7.
 
 ## 7. Validación

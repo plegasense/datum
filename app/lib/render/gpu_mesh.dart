@@ -14,7 +14,7 @@ import '../model/scene.dart';
 import 'camera.dart';
 import '../l10n/l10n.dart';
 
-const _kBundle = 'build/shaderbundles/datum.shaderbundle';
+const _kBundle = 'build/shaderbundles/dovexa.shaderbundle';
 
 enum ViewMode { shaded, wireframe }
 
@@ -64,8 +64,8 @@ class RenderOptions {
 }
 
 /// Recursos de GPU compartidos y dibujo de una malla con Flutter GPU.
-class DatumRenderer {
-  DatumRenderer._(this._pipeline, this._linePipeline, this._rich);
+class DovexaRenderer {
+  DovexaRenderer._(this._pipeline, this._linePipeline, this._rich);
   final gpu.RenderPipeline _pipeline;
   final gpu.RenderPipeline _linePipeline;
 
@@ -73,15 +73,15 @@ class DatumRenderer {
   final gpu.RenderPipeline _rich;
 
   /// Otro renderizador con sus propios destinos de dibujo (comparte los programas de sombreado).
-  DatumRenderer clone() => DatumRenderer._(_pipeline, _linePipeline, _rich);
+  DovexaRenderer clone() => DovexaRenderer._(_pipeline, _linePipeline, _rich);
 
-  static DatumRenderer? _instance;
-  static Future<DatumRenderer> instance() async {
+  static DovexaRenderer? _instance;
+  static Future<DovexaRenderer> instance() async {
     if (_instance != null) return _instance!;
     final lib = await gpu.ShaderLibrary.fromAsset(_kBundle);
     if (lib == null) throw Exception(tr('No se pudo cargar {b}', {'b': _kBundle}));
     final ctx = gpu.gpuContext;
-    _instance = DatumRenderer._(
+    _instance = DovexaRenderer._(
       ctx.createRenderPipeline(lib['MeshVertex']!, lib['MeshFragment']!),
       ctx.createRenderPipeline(lib['LineVertex']!, lib['MeshFragment']!),
       ctx.createRenderPipeline(lib['RichVertex']!, lib['RichFragment']!),
@@ -279,7 +279,7 @@ class DatumRenderer {
       final em = (plain || mat == null) ? const Color(0x00000000) : Color(mat.emissive);
       gpu.Texture? tex;
       if (!plain && mat?.texture != null && mat!.texture! < scene.textures.length) {
-        tex = DatumRenderer.textureOf(scene.textures[mat.texture!]);
+        tex = DovexaRenderer.textureOf(scene.textures[mat.texture!]);
       }
       final uvt = !plain && mat != null && mat.hasUvTransform
           ? [mat.uvOx, mat.uvOy, mat.uvSx, mat.uvSy]
@@ -290,7 +290,7 @@ class DatumRenderer {
       final upM = (rot * vm.Vector3(0, 0, 1))..normalize();
       final isPbr = !plain && (mat?.pbr ?? false);
       gpu.Texture? texOf(int? i) => (!plain && i != null && i < scene.textures.length)
-          ? DatumRenderer.textureOf(scene.textures[i])
+          ? DovexaRenderer.textureOf(scene.textures[i])
           : null;
       final nrmT = isPbr ? texOf(mat!.normalTexture) : null;
       final flags = [
@@ -331,11 +331,11 @@ class DatumRenderer {
         widthAddressMode: _wrap(plain ? 0 : (mat?.wrapS ?? 0)),
         heightAddressMode: _wrap(plain ? 0 : (mat?.wrapT ?? 0)),
       );
-      pass.bindTexture(texSlot, tex ?? DatumRenderer._white(), sampler: smp);
-      pass.bindTexture(mrSlot, (isPbr ? texOf(mat!.mrTexture) : null) ?? DatumRenderer._white(), sampler: smp);
-      pass.bindTexture(nrmSlot, nrmT ?? DatumRenderer._flatNormal(), sampler: smp);
-      pass.bindTexture(occSlot, (isPbr ? texOf(mat!.occlusionTexture) : null) ?? DatumRenderer._white(), sampler: smp);
-      pass.bindTexture(emSlot, (isPbr ? texOf(mat!.emissiveTexture) : null) ?? DatumRenderer._white(), sampler: smp);
+      pass.bindTexture(texSlot, tex ?? DovexaRenderer._white(), sampler: smp);
+      pass.bindTexture(mrSlot, (isPbr ? texOf(mat!.mrTexture) : null) ?? DovexaRenderer._white(), sampler: smp);
+      pass.bindTexture(nrmSlot, nrmT ?? DovexaRenderer._flatNormal(), sampler: smp);
+      pass.bindTexture(occSlot, (isPbr ? texOf(mat!.occlusionTexture) : null) ?? DovexaRenderer._white(), sampler: smp);
+      pass.bindTexture(emSlot, (isPbr ? texOf(mat!.emissiveTexture) : null) ?? DovexaRenderer._white(), sampler: smp);
       gm.draw(pass);
     }
 
@@ -722,7 +722,7 @@ class LineDraw {
   final double pointSize;
 }
 
-extension LineRendering on DatumRenderer {
+extension LineRendering on DovexaRenderer {
   /// Dibuja conjuntos de líneas (dibujos 2D, trayectorias de G-code).
   ui.Image renderLines(
     List<LineDraw> draws,

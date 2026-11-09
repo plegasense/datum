@@ -1,6 +1,6 @@
 import 'dart:typed_data';
 
-import 'package:datum/model/mesh_check.dart';
+import 'package:dovexa/model/mesh_check.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 typedef P = (double, double, double);

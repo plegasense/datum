@@ -211,7 +211,7 @@ class _HomeViewState extends State<HomeView>
                         opacity: Curves.easeOut.transform(
                           (logoT.value * 2).clamp(0.0, 1.0),
                         ),
-                        child: DatumLogo(
+                        child: DovexaLogo(
                           size: compact ? 150 : 210,
                           explode: logoT.value,
                         ),

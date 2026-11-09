@@ -20,7 +20,7 @@ import '../l10n/l10n.dart';
 /// transparencia y emisión, texturas (archivo, píxeles incrustados y `data:`), y las geometrías
 /// `IndexedFaceSet`, `Box`, `Sphere`, `Cone`, `Cylinder`, `Extrusion`, `ElevationGrid`,
 /// `IndexedLineSet`, `PointSet` y los conjuntos de triángulos y cuadriláteros de X3D.
-final bool _timing = const String.fromEnvironment('DATUM_CAD').isNotEmpty || Platform.environment.containsKey('VRML_TIMING');
+final bool _timing = const String.fromEnvironment('DOVEXA_CAD').isNotEmpty || Platform.environment.containsKey('VRML_TIMING');
 
 SceneData parseVrml(String path, {List<String> extraDirs = const []}) {
   try {

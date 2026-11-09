@@ -1,5 +1,5 @@
 // Prueba de viabilidad (M0): leer un STEP con XCAF, recorrer el ensamblaje y teselar.
-// Uso: datum-step-probe archivo.step
+// Uso: dovexa-step-probe archivo.step
 #include <chrono>
 #include <cstdio>
 #include <iostream>

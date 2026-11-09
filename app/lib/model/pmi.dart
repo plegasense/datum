@@ -25,7 +25,7 @@ class PmiItem {
   });
   final PmiKind kind;
   final int type;
-  final List<double> v; // ver datum.h
+  final List<double> v; // ver dovexa.h
   final String text;
   final List<PmiRef> refs;
 

@@ -2,8 +2,8 @@ import 'dart:io';
 import 'dart:math';
 import 'dart:typed_data';
 
-import 'package:datum/io/bgcode_loader.dart';
-import 'package:datum/io/gcode_loader.dart';
+import 'package:dovexa/io/bgcode_loader.dart';
+import 'package:dovexa/io/gcode_loader.dart';
 
 /// Trunca y corrompe archivos reales: debe terminar siempre (resultado o error claro), sin colgarse.
 Future<void> main(List<String> args) async {

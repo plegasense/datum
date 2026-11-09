@@ -39,7 +39,7 @@ Superaremos al mejor visor de glTF en:
 - Textos del oficio: «Normales calculadas (el archivo no las trae)», «Memoria de texturas», «Extensiones obligatorias».
 
 ## 6. Implementación
-- `io/gltf_loader.dart`: lector con accesores tipados, dispersos y con paso, normalizado, `KHR_texture_transform`, materiales PBR, color por vértice, esqueleto, formas de morfo, instancias, meshopt (`io/meshopt.dart`, decodificador propio del formato público), Draco (`core/src/datum_draco.cpp` + `io/draco_glue.dart`; fuentes de Draco 1.5.7, Apache-2.0, en `third_party/draco/`), rig (`model/rig.dart`).
+- `io/gltf_loader.dart`: lector con accesores tipados, dispersos y con paso, normalizado, `KHR_texture_transform`, materiales PBR, color por vértice, esqueleto, formas de morfo, instancias, meshopt (`io/meshopt.dart`, decodificador propio del formato público), Draco (`core/src/dovexa_draco.cpp` + `io/draco_glue.dart`; fuentes de Draco 1.5.7, Apache-2.0, en `third_party/draco/`), rig (`model/rig.dart`).
 - Renderizador: pipeline propio (`shaders/rich.*`) con UV, color por vértice, 5 texturas (color, metal/rugosidad, normales, oclusión, emisión), mapas de mip, mezcla y recorte; sombreado físico simplificado con luz clave, relleno y entorno de hemisferio; mallas indexadas.
 - `ui/rig_player.dart`: animación de nodos, piel por CPU y morfo con actualización del buffer de GPU.
 - `render/lod.dart`: versión simplificada para girar modelos de más de 400 mil triángulos.

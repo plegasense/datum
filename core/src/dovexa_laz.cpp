@@ -4,10 +4,10 @@
 #include <cstring>
 #include <string>
 
-#include "datum.h"
+#include "dovexa.h"
 #include "laszip_api.h"
 
-struct DatumLaz {
+struct DovexaLaz {
   laszip_POINTER reader = nullptr;
   laszip_header* header = nullptr;
   laszip_point* point = nullptr;
@@ -76,7 +76,7 @@ static void pack(const laszip_point* p, int fmt, int rl, unsigned char* o) {
 
 extern "C" {
 
-DatumLaz* datum_laz_open(const char* path) {
+DovexaLaz* dovexa_laz_open(const char* path) {
   g_laz_error.clear();
   laszip_POINTER r = nullptr;
   if (laszip_create(&r)) {
@@ -91,7 +91,7 @@ DatumLaz* datum_laz_open(const char* path) {
     laszip_destroy(r);
     return nullptr;
   }
-  auto* h = new DatumLaz();
+  auto* h = new DovexaLaz();
   h->reader = r;
   laszip_get_header_pointer(r, &h->header);
   laszip_get_point_pointer(r, &h->point);
@@ -109,11 +109,11 @@ DatumLaz* datum_laz_open(const char* path) {
   return h;
 }
 
-const char* datum_laz_error(void) { return g_laz_error.c_str(); }
+const char* dovexa_laz_error(void) { return g_laz_error.c_str(); }
 
-long long datum_laz_count(const DatumLaz* h) { return h ? h->count : 0; }
+long long dovexa_laz_count(const DovexaLaz* h) { return h ? h->count : 0; }
 
-int datum_laz_read(DatumLaz* h, unsigned char* out, int n) {
+int dovexa_laz_read(DovexaLaz* h, unsigned char* out, int n) {
   if (!h) return 0;
   int i = 0;
   for (; i < n; ++i) {
@@ -128,7 +128,7 @@ int datum_laz_read(DatumLaz* h, unsigned char* out, int n) {
   return i;
 }
 
-void datum_laz_free(DatumLaz* h) {
+void dovexa_laz_free(DovexaLaz* h) {
   if (!h) return;
   laszip_close_reader(h->reader);
   laszip_destroy(h->reader);

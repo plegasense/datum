@@ -1,5 +1,5 @@
 import 'dart:typed_data';
-import 'package:datum/io/ngc_calc.dart';
+import 'package:dovexa/io/ngc_calc.dart';
 
 void main() {
   final c = NgcCalc();

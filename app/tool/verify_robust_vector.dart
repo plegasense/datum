@@ -2,8 +2,8 @@ import 'dart:io';
 import 'dart:math';
 import 'dart:typed_data';
 
-import 'package:datum/io/hpgl_parser.dart';
-import 'package:datum/io/svg_loader.dart';
+import 'package:dovexa/io/hpgl_parser.dart';
+import 'package:dovexa/io/svg_loader.dart';
 
 /// Daña SVG y HPGL reales (cortados, bytes cambiados o borrados) y comprueba que el lector devuelve
 /// un dibujo o un error limpio: nunca un fallo de tipo, de índice ni un bloqueo.
@@ -21,7 +21,7 @@ void main(List<String> args) {
   final rnd = Random(int.parse(Platform.environment['SEED'] ?? '11'));
   var cases = 0, ok = 0, clean = 0;
   final bad = <String>[];
-  final dir = Directory.systemTemp.createTempSync('datum_fzv').path;
+  final dir = Directory.systemTemp.createTempSync('dovexa_fzv').path;
   for (final f in files) {
     final src = f.readAsBytesSync();
     if (src.isEmpty) continue;

@@ -1,13 +1,13 @@
 import 'dart:io';
 import 'dart:typed_data';
 
-import 'package:datum/io/mesh_data.dart';
-import 'package:datum/io/obj_loader.dart';
-import 'package:datum/io/texture_prep.dart';
-import 'package:datum/model/mesh_info.dart';
+import 'package:dovexa/io/mesh_data.dart';
+import 'package:dovexa/io/obj_loader.dart';
+import 'package:dovexa/io/texture_prep.dart';
+import 'package:dovexa/model/mesh_info.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-Directory tmp(String n) => Directory('${Directory.systemTemp.path}/datum_obj_$n')..createSync(recursive: true);
+Directory tmp(String n) => Directory('${Directory.systemTemp.path}/dovexa_obj_$n')..createSync(recursive: true);
 
 void main() {
   test('OBJ: líneas sin caras se dibujan como tubos', () {

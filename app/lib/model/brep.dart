@@ -5,7 +5,7 @@ import 'dart:typed_data';
 import 'package:ffi/ffi.dart';
 import 'package:vector_math/vector_math.dart' as vm;
 
-import '../src/datum_ffi.dart';
+import '../src/dovexa_ffi.dart';
 import 'pmi.dart';
 
 enum SurfaceKind { other, plane, cylinder, cone, sphere, torus }
@@ -96,7 +96,7 @@ class CadBrep {
     if (_disposed) return FaceInfo(List.filled(14, 0));
     return using((arena) {
       final out = arena<Double>(14);
-      datumPartFaceInfo(_p, part, face, out);
+      dovexaPartFaceInfo(_p, part, face, out);
       return FaceInfo(out.asTypedList(14).toList());
     });
   }
@@ -104,7 +104,7 @@ class CadBrep {
   EdgeInfo edgeInfo(int part, int edge) {
     return using((arena) {
       final out = arena<Double>(15);
-      datumPartEdgeInfo(_p, part, edge, out);
+      dovexaPartEdgeInfo(_p, part, edge, out);
       return EdgeInfo(out.asTypedList(15).toList());
     });
   }
@@ -113,7 +113,7 @@ class CadBrep {
   PartProps props(int part) => _props.putIfAbsent(part, () {
     return using((arena) {
       final out = arena<Double>(8);
-      datumPartProps(_p, part, out);
+      dovexaPartProps(_p, part, out);
       return PartProps(out.asTypedList(8).toList());
     });
   });
@@ -135,7 +135,7 @@ class CadBrep {
       ma.asTypedList(16).setAll(0, worldA.storage);
       mb.asTypedList(16).setAll(0, worldB.storage);
       final out = arena<Double>(7);
-      final ok = datumDistance(
+      final ok = dovexaDistance(
         _p,
         partA,
         edgeA ? 1 : 0,
@@ -160,7 +160,7 @@ class CadBrep {
   void dispose() {
     if (_disposed) return;
     _disposed = true;
-    datumSceneFree(_p);
+    dovexaSceneFree(_p);
   }
 }
 

@@ -5,13 +5,13 @@
 #include <string>
 #include <vector>
 
-#include "datum.h"
+#include "dovexa.h"
 #include "draco/compression/decode.h"
 #include "draco/core/decoder_buffer.h"
 #include "draco/mesh/mesh.h"
 #include "draco/point_cloud/point_cloud.h"
 
-struct DatumDraco {
+struct DovexaDraco {
   std::unique_ptr<draco::Mesh> mesh;
   std::string error;
 };
@@ -20,7 +20,7 @@ static thread_local std::string g_draco_error;
 
 extern "C" {
 
-DatumDraco* datum_draco_decode(const uint8_t* data, size_t size) {
+DovexaDraco* dovexa_draco_decode(const uint8_t* data, size_t size) {
   g_draco_error.clear();
   draco::DecoderBuffer buf;
   buf.Init(reinterpret_cast<const char*>(data), size);
@@ -39,17 +39,17 @@ DatumDraco* datum_draco_decode(const uint8_t* data, size_t size) {
     g_draco_error = m.status().error_msg();
     return nullptr;
   }
-  auto* r = new DatumDraco();
+  auto* r = new DovexaDraco();
   r->mesh = std::move(m).value();
   return r;
 }
 
-const char* datum_draco_error(void) { return g_draco_error.c_str(); }
+const char* dovexa_draco_error(void) { return g_draco_error.c_str(); }
 
-int datum_draco_points(const DatumDraco* d) { return d && d->mesh ? static_cast<int>(d->mesh->num_points()) : 0; }
-int datum_draco_faces(const DatumDraco* d) { return d && d->mesh ? static_cast<int>(d->mesh->num_faces()) : 0; }
+int dovexa_draco_points(const DovexaDraco* d) { return d && d->mesh ? static_cast<int>(d->mesh->num_points()) : 0; }
+int dovexa_draco_faces(const DovexaDraco* d) { return d && d->mesh ? static_cast<int>(d->mesh->num_faces()) : 0; }
 
-void datum_draco_indices(const DatumDraco* d, uint32_t* out) {
+void dovexa_draco_indices(const DovexaDraco* d, uint32_t* out) {
   if (!d || !d->mesh) return;
   const int nf = static_cast<int>(d->mesh->num_faces());
   for (int f = 0; f < nf; ++f) {
@@ -60,13 +60,13 @@ void datum_draco_indices(const DatumDraco* d, uint32_t* out) {
   }
 }
 
-int datum_draco_attr_components(const DatumDraco* d, int unique_id) {
+int dovexa_draco_attr_components(const DovexaDraco* d, int unique_id) {
   if (!d || !d->mesh) return 0;
   const auto* a = d->mesh->GetAttributeByUniqueId(static_cast<uint32_t>(unique_id));
   return a ? a->num_components() : 0;
 }
 
-int datum_draco_attr(const DatumDraco* d, int unique_id, float* out) {
+int dovexa_draco_attr(const DovexaDraco* d, int unique_id, float* out) {
   if (!d || !d->mesh) return 0;
   const auto* a = d->mesh->GetAttributeByUniqueId(static_cast<uint32_t>(unique_id));
   if (!a) return 0;
@@ -79,6 +79,6 @@ int datum_draco_attr(const DatumDraco* d, int unique_id, float* out) {
   return nc;
 }
 
-void datum_draco_free(DatumDraco* d) { delete d; }
+void dovexa_draco_free(DovexaDraco* d) { delete d; }
 
 }  // extern "C"

@@ -809,7 +809,7 @@ const Map<String, String> kLang_cs = {
   'ORIGEN': 'PŮVOD',
   'Software': 'Software',
   'Equipo': 'Zařízení',
-  'Fecha': 'Dovexa',
+  'Fecha': 'Datum',
   'El archivo está incompleto: termina antes de tiempo. ¿Se cortó la descarga o la copia? Falta parte del dibujo.': 'Soubor je neúplný: končí předčasně. Přerušilo se stahování nebo kopírování? Část výkresu chybí.',
   'El archivo no indica sus unidades: se supone {u}. Compruébalo antes de cortar.': 'Soubor neuvádí jednotky: předpokládá se {u}. Před řezáním to zkontrolujte.',
   '{n} pieza': 'Díly: {n}',

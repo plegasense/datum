@@ -1,9 +1,9 @@
 import 'dart:io';
 
-import 'package:datum/io/e57_loader.dart';
-import 'package:datum/io/las_loader.dart';
-import 'package:datum/io/laz_glue.dart';
-import 'package:datum/io/pointcloud_loader.dart';
+import 'package:dovexa/io/e57_loader.dart';
+import 'package:dovexa/io/las_loader.dart';
+import 'package:dovexa/io/laz_glue.dart';
+import 'package:dovexa/io/pointcloud_loader.dart';
 
 /// Resume cómo se lee cada nube: dart run tool/probe_cloud.dart <archivo|carpeta>...
 void main(List<String> args) {

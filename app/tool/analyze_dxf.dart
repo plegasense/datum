@@ -2,10 +2,10 @@
 //   dart run tool/analyze_dxf.dart "<carpeta>"
 import 'dart:io';
 
-import 'package:datum/io/loader.dart';
-import 'package:datum/model/document.dart';
-import 'package:datum/model/drawing_stats.dart';
-import 'package:datum/model/shapes.dart';
+import 'package:dovexa/io/loader.dart';
+import 'package:dovexa/model/document.dart';
+import 'package:dovexa/model/drawing_stats.dart';
+import 'package:dovexa/model/shapes.dart';
 
 Future<void> main(List<String> args) async {
   final files = [

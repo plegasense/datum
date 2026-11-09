@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:datum/io/dxf_loader.dart';
-import 'package:datum/io/dxf_writer.dart';
-import 'package:datum/model/document.dart';
+import 'package:dovexa/io/dxf_loader.dart';
+import 'package:dovexa/io/dxf_writer.dart';
+import 'package:dovexa/model/document.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 DrawingDocument open(String dxf) {

@@ -5,7 +5,7 @@ import 'dart:math' as math;
 import 'package:ffi/ffi.dart';
 
 import '../l10n/l10n.dart';
-import '../src/datum_ffi.dart';
+import '../src/dovexa_ffi.dart';
 import 'las_loader.dart';
 import 'mesh_data_extra.dart';
 
@@ -31,16 +31,16 @@ PointData _parseLaz(String path, int maxPoints) {
   }
   if (!h.compressed) return parseLas(path, maxPoints: maxPoints);
   final p = path.toNativeUtf8();
-  final handle = datumLazOpen(p);
+  final handle = dovexaLazOpen(p);
   malloc.free(p);
   if (handle == nullptr) {
-    final e = datumLazError();
+    final e = dovexaLazError();
     throw FormatException(tr('No se pudo descomprimir el LAZ: {m}', {'m': tr(e == nullptr ? 'error desconocido' : e.toDartString())}));
   }
   Pointer<Uint8>? tmp;
   var tmpSize = 0;
   try {
-    final n = datumLazCount(handle);
+    final n = dovexaLazCount(handle);
     if (n > 0) h.pointCount = n;
     final rl = h.recordLength;
     return readLasRecords(h, name, 'LAZ', maxPoints, (buf, want) {
@@ -50,12 +50,12 @@ PointData _parseLaz(String path, int maxPoints) {
         tmp = malloc<Uint8>(need);
         tmpSize = need;
       }
-      final got = datumLazRead(handle, tmp!, math.min(want, buf.length ~/ rl));
+      final got = dovexaLazRead(handle, tmp!, math.min(want, buf.length ~/ rl));
       if (got > 0) buf.setRange(0, got * rl, tmp!.asTypedList(got * rl));
       return got;
     });
   } finally {
     if (tmp != null) malloc.free(tmp!);
-    datumLazFree(handle);
+    dovexaLazFree(handle);
   }
 }

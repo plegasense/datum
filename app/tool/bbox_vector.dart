@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:datum/io/svg_loader.dart';
+import 'package:dovexa/io/svg_loader.dart';
 
 /// Caja de cada SVG (en px de 96 ppp, y hacia abajo) para compararla con un navegador.
 /// Uso: dart run tool/bbox_vector.dart <lista.json> <carpeta-vector> <salida.json>

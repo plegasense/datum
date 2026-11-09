@@ -11,7 +11,7 @@ val keystoreProperties = Properties()
 val defaultSigningDirectory = file(
     "${System.getProperty("user.home")}/Library/Application Support/Dovexa/signing",
 )
-val keystorePropertiesFile = System.getenv("DATUM_KEY_PROPERTIES")
+val keystorePropertiesFile = System.getenv("DOVEXA_KEY_PROPERTIES")
     ?.let(::file)
     ?: File(defaultSigningDirectory, "key.properties")
 if (keystorePropertiesFile.exists()) {

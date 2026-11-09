@@ -1,6 +1,6 @@
 import 'dart:typed_data';
 
-import 'package:datum/model/thickness.dart';
+import 'package:dovexa/model/thickness.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 /// Cubo centrado de lado [s]; con [inward] las caras miran hacia dentro (cavidad).

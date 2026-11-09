@@ -2,10 +2,10 @@ import 'dart:io';
 import 'dart:math';
 import 'dart:typed_data';
 
-import 'package:datum/io/e57_loader.dart';
-import 'package:datum/io/las_loader.dart';
-import 'package:datum/io/laz_glue.dart';
-import 'package:datum/io/pointcloud_loader.dart';
+import 'package:dovexa/io/e57_loader.dart';
+import 'package:dovexa/io/las_loader.dart';
+import 'package:dovexa/io/laz_glue.dart';
+import 'package:dovexa/io/pointcloud_loader.dart';
 
 /// Daña nubes reales (LAS, LAZ, E57, PCD, XYZ, PTS) y comprueba que el lector devuelve una nube o un
 /// error limpio: nunca un fallo de índice o de tipo, ni un bloqueo. Uso: SEED=11 dart run tool/verify_robust_cloud.dart <carpeta>...
@@ -22,7 +22,7 @@ void main(List<String> args) {
   final rnd = Random(int.parse(Platform.environment['SEED'] ?? '11'));
   var cases = 0, ok = 0, clean = 0;
   final bad = <String>[];
-  final dir = Directory.systemTemp.createTempSync('datum_fzc').path;
+  final dir = Directory.systemTemp.createTempSync('dovexa_fzc').path;
   for (final f in files) {
     final src = f.readAsBytesSync();
     if (src.isEmpty) continue;

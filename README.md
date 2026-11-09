@@ -5,7 +5,7 @@ Abre STEP, DXF, STL, 3MF, OBJ y más; ensamblajes con árbol de piezas, búsqued
 
 ## Decisiones tomadas
 - Licencia: GPL-3.0 (ver `LICENSE` y `NOTICE.md`).
-- Nombre: Dovexa (plano de referencia en CAD/GD&T). Comprobado que no hay app de CAD con ese nombre en Play Store.
+- Nombre: Dovexa (nombre inventado, sin significado previo). Comprobado en EUIPO, USPTO y UKIPO (TMview) y en Play Store.
 - Plataformas: iOS y Android. Núcleo C++ compartido, interfaz Flutter (a validar en M0).
 - Logo: vista explosionada de un ensamblaje en isométrica: base sólida, bloque en alambre y pieza naranja seleccionada, unidos por guías discontinuas. Ver ensamblajes, modos de vista y selección de piezas.
 - Colores: tinta #0D1B1E, blanco y grises azulados, naranja #FB923C (pieza seleccionada), menta #5EEAD4 (guías).

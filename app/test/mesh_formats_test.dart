@@ -2,18 +2,18 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 
-import 'package:datum/io/gltf_loader.dart';
-import 'package:datum/io/obj_loader.dart';
-import 'package:datum/io/ply_loader.dart';
-import 'package:datum/io/rich_mesh.dart';
-import 'package:datum/io/texture_prep.dart';
-import 'package:datum/model/mesh_info.dart';
-import 'package:datum/model/rig.dart';
-import 'package:datum/render/lod.dart';
+import 'package:dovexa/io/gltf_loader.dart';
+import 'package:dovexa/io/obj_loader.dart';
+import 'package:dovexa/io/ply_loader.dart';
+import 'package:dovexa/io/rich_mesh.dart';
+import 'package:dovexa/io/texture_prep.dart';
+import 'package:dovexa/model/mesh_info.dart';
+import 'package:dovexa/model/rig.dart';
+import 'package:dovexa/render/lod.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 File tmp(String name, List<int> bytes) {
-  final f = File('${Directory.systemTemp.path}/datum_mesh_$name');
+  final f = File('${Directory.systemTemp.path}/dovexa_mesh_$name');
   f.writeAsBytesSync(bytes);
   return f;
 }
@@ -139,7 +139,7 @@ f -4 -3 -2
     });
 
     test('MTL: color, textura citada y archivo que falta', () {
-      final dir = Directory.systemTemp.createTempSync('datum_obj');
+      final dir = Directory.systemTemp.createTempSync('dovexa_obj');
       File('${dir.path}/m.obj').writeAsStringSync('mtllib m.mtl\nusemtl rojo\nv 0 0 0\nv 1 0 0\nv 0 1 0\nf 1 2 3\nusemtl pintado\nf 1 2 3\n');
       File('${dir.path}/m.mtl').writeAsStringSync('newmtl rojo\nKd 1 0 0\nnewmtl pintado\nKd 0.5 0.5 0.5\nmap_Kd -s 1 1 1 falta.png\nd 0.5\n');
       final r = parseObj('${dir.path}/m.obj') as dynamic;

@@ -115,7 +115,7 @@ String extraFilesDir(String modelPath) {
   for (final c in modelPath.codeUnits) {
     h = ((h << 5) + h + c) & 0x7FFFFFFF;
   }
-  return '${extraBase ?? Directory.systemTemp.path}/datum_extra/$h';
+  return '${extraBase ?? Directory.systemTemp.path}/dovexa_extra/$h';
 }
 
 /// Carpeta base de los archivos añadidos (la fija `main`).
@@ -260,7 +260,7 @@ Future<Document> loadDocument(String path, {int? gcodePlate}) async {
     final t1 = sw.elapsedMilliseconds;
     final doc = _cloud(d);
     // ignore: avoid_print
-    if (const String.fromEnvironment('DATUM_CAD').isNotEmpty) print('CLOUD lectura $t1 ms · modelo ${sw.elapsedMilliseconds - t1} ms');
+    if (const String.fromEnvironment('DOVEXA_CAD').isNotEmpty) print('CLOUD lectura $t1 ms · modelo ${sw.elapsedMilliseconds - t1} ms');
     return doc;
   }
   if (ext == 'e57') return _cloud(await isoRun(() => parseE57(path)));
@@ -292,7 +292,7 @@ Future<Document> loadDocument(String path, {int? gcodePlate}) async {
       lower.endsWith('.step.gz')) {
     final data = await isoRun(() {
       final tmp = File(
-        '${Directory.systemTemp.path}/datum_${DateTime.now().microsecondsSinceEpoch}.step',
+        '${Directory.systemTemp.path}/dovexa_${DateTime.now().microsecondsSinceEpoch}.step',
       );
       tmp.writeAsBytesSync(gzip.decode(File(path).readAsBytesSync()));
       try {
@@ -336,7 +336,7 @@ String extractModelZip(String zipPath, String base) {
     for (final c in zipPath.codeUnits) {
       h = ((h << 5) + h + c) & 0x7FFFFFFF;
     }
-    final dir = Directory('$base/datum_zip/$h')..createSync(recursive: true);
+    final dir = Directory('$base/dovexa_zip/$h')..createSync(recursive: true);
     String? main;
     var total = 0;
     const rank = {'glb': 0, 'gltf': 1, 'obj': 2, 'ply': 3, '3mf': 4, 'stl': 5, 'step': 6, 'stp': 6};

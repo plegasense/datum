@@ -2,15 +2,15 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 
-import 'package:datum/io/mesh_data.dart';
-import 'package:datum/io/vrml_loader.dart';
-import 'package:datum/io/vrml_parse.dart';
-import 'package:datum/model/mesh_info.dart';
-import 'package:datum/model/rig.dart';
+import 'package:dovexa/io/mesh_data.dart';
+import 'package:dovexa/io/vrml_loader.dart';
+import 'package:dovexa/io/vrml_parse.dart';
+import 'package:dovexa/model/mesh_info.dart';
+import 'package:dovexa/model/rig.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 File wrl(String name, String body, {String header = '#VRML V2.0 utf8'}) {
-  final f = File('${Directory.systemTemp.path}/datum_vrml_$name');
+  final f = File('${Directory.systemTemp.path}/dovexa_vrml_$name');
   f.writeAsStringSync('$header\n$body');
   return f;
 }
@@ -141,7 +141,7 @@ void main() {
     });
 
     test('X3D en XML', () {
-      final f = File('${Directory.systemTemp.path}/datum_vrml_x.x3d')
+      final f = File('${Directory.systemTemp.path}/dovexa_vrml_x.x3d')
         ..writeAsStringSync('<?xml version="1.0"?><X3D version="3.3"><Scene><Transform translation="1 2 3"><Shape><Appearance><Material diffuseColor="1 0 0" transparency="0.5"/></Appearance><Box size="2 2 2"/></Shape></Transform></Scene></X3D>');
       final d = parseVrml(f.path);
       expect((d.extra as MeshFileInfo).format, 'X3D (XML)');
@@ -150,7 +150,7 @@ void main() {
     });
 
     test('.wrz comprimido', () {
-      final f = File('${Directory.systemTemp.path}/datum_vrml_z.wrz')
+      final f = File('${Directory.systemTemp.path}/dovexa_vrml_z.wrz')
         ..writeAsBytesSync(gzip.encode(utf8.encode('#VRML V2.0 utf8\nShape { geometry Box {} }')));
       expect(parseVrml(f.path).meshes.length, 1);
     });

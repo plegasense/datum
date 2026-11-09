@@ -48,22 +48,22 @@ import 'theme.dart';
 import '../l10n/l10n.dart';
 import '../model/unit_system.dart';
 
-const _kAutoOpen = String.fromEnvironment('DATUM_OPEN');
+const _kAutoOpen = String.fromEnvironment('DOVEXA_OPEN');
 // Solo para pruebas automáticas.
-const _kShot = String.fromEnvironment('DATUM_SHOT');
-const _kAutoSelect = String.fromEnvironment('DATUM_SELECT');
-const _kAutoCad = String.fromEnvironment('DATUM_CAD');
-const _kAutoPanel = bool.fromEnvironment('DATUM_PANEL');
-const _kAutoSlider = String.fromEnvironment('DATUM_SLIDER');
-const _kAutoColor = String.fromEnvironment('DATUM_COLOR');
-const _kAutoStock = bool.fromEnvironment('DATUM_STOCK');
+const _kShot = String.fromEnvironment('DOVEXA_SHOT');
+const _kAutoSelect = String.fromEnvironment('DOVEXA_SELECT');
+const _kAutoCad = String.fromEnvironment('DOVEXA_CAD');
+const _kAutoPanel = bool.fromEnvironment('DOVEXA_PANEL');
+const _kAutoSlider = String.fromEnvironment('DOVEXA_SLIDER');
+const _kAutoColor = String.fromEnvironment('DOVEXA_COLOR');
+const _kAutoStock = bool.fromEnvironment('DOVEXA_STOCK');
 const _kAutoHide = String.fromEnvironment(
-  'DATUM_HIDE',
+  'DOVEXA_HIDE',
 ); // "5,7": categorías de G-code a ocultar
 const _kAutoMeasure = String.fromEnvironment(
-  'DATUM_MEASURE',
+  'DOVEXA_MEASURE',
 ); // "fx1,fy1,fx2,fy2" (fracciones de pantalla)
-const _kHomeShot = bool.fromEnvironment('DATUM_HOME_SHOT');
+const _kHomeShot = bool.fromEnvironment('DOVEXA_HOME_SHOT');
 
 class ViewerPage extends StatefulWidget {
   const ViewerPage({super.key});
@@ -75,7 +75,7 @@ class _ViewerPageState extends State<ViewerPage> {
   final OrbitCamera cam = OrbitCamera();
   final GlobalKey _boundary = GlobalKey();
   final GlobalKey<ScaffoldState> _scaffold = GlobalKey<ScaffoldState>();
-  DatumRenderer? _renderer;
+  DovexaRenderer? _renderer;
   Document? _doc;
   final Set<SceneNode> _selected = {};
   String? _error;
@@ -98,7 +98,7 @@ class _ViewerPageState extends State<ViewerPage> {
   bool _showStock = false;
   StockSim? _sim;
   Scene? _stockScene;
-  DatumRenderer? _renderer2;
+  DovexaRenderer? _renderer2;
   int _lastStockBuild = 0;
 
   /// Fija el avance del programa CNC y, si se ve el material, talla la pieza hasta ahí.
@@ -241,7 +241,7 @@ class _ViewerPageState extends State<ViewerPage> {
     cam.addListener(() => _overlayTick.value++);
     Units.notifier.addListener(_onUnitsChanged);
     L.choice.addListener(_onUnitsChanged);
-    DatumRenderer.instance()
+    DovexaRenderer.instance()
         .then((r) {
           if (!mounted) return;
           setState(() => _renderer = r);
@@ -3003,10 +3003,10 @@ class _ViewPainter extends CustomPainter {
   final Scene? altScene;
   final Scene? lodScene;
   final Scene? stockScene;
-  final DatumRenderer? renderer2;
+  final DovexaRenderer? renderer2;
   final RenderOptions? options;
   final int layerLo;
-  final DatumRenderer? renderer;
+  final DovexaRenderer? renderer;
   final Document? doc;
   final OrbitCamera cam;
   final ViewMode mode;

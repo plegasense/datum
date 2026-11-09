@@ -1,7 +1,7 @@
-import 'package:datum/l10n/l10n.dart';
-import 'package:datum/model/cloud_info.dart';
-import 'package:datum/model/unit_system.dart';
-import 'package:datum/model/units.dart';
+import 'package:dovexa/l10n/l10n.dart';
+import 'package:dovexa/model/cloud_info.dart';
+import 'package:dovexa/model/unit_system.dart';
+import 'package:dovexa/model/units.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

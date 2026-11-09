@@ -5,7 +5,7 @@ Registro de decisiones. Estado: **Abierta**, **Propuesta** (con recomendación) 
 ## Cerradas
 | ID | Decisión | Motivo |
 |---|---|---|
-| D-00a | Nombre: **Dovexa** | Plano de referencia en CAD/GD&T; sin conflicto en Play Store |
+| D-00a | Nombre: **Dovexa** | Nombre inventado; sin marcas idénticas en UE, EE. UU. ni Reino Unido; sin conflicto en Play Store |
 | D-00b | **iOS y Android** | Tu decisión. Sustituye a "solo Android", y cambia la arquitectura (ver `03-arquitectura.md`) |
 | D-00c | Logo: vista explosionada de ensamblaje, ver `branding/` | Tu decisión |
 | D-00d | Gratis, sin anuncios, sin cuenta, sin conexión | Tu decisión; es también la ventaja frente a Fast STL Viewer |
@@ -61,7 +61,7 @@ Falta un dato: la exigencia de **12 testers durante 14 días** solo aplica a cue
 Decisión tuya: Dovexa no saldrá en la App Store. iOS se mantiene como plataforma **soportada en el código** (Flutter + núcleo C++ compartido), para uso propio y pruebas en simulador o en tu iPhone por cable con tu identidad "Apple Development". Quedan fuera TestFlight, la ficha de App Store y la cuenta de pago de Apple. Si algún día cambia, hay que revisar D-01 (la GPL choca con la App Store).
 
 ### D-06 · Identificadores de la app
-No se pueden cambiar una vez publicada. Propuesta: `app.datum.viewer` para Android y el mismo para iOS (Bundle ID), o uno ligado a un dominio tuyo si lo tienes.
+No se pueden cambiar una vez publicada. Propuesta: `app.datum.datum` para Android y el mismo para iOS (Bundle ID), o uno ligado a un dominio tuyo si lo tienes.
 
 ### D-07 · Repositorio
 GitHub **público o privado**. Con la GPL-3.0 (D-01) puede ser público para generar confianza ("nada sale de tu móvil" se puede comprobar).

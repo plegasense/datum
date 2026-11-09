@@ -5,13 +5,13 @@ import '../l10n/l10n.dart';
 import '../model/unit_system.dart';
 import 'language_sheet.dart';
 import 'licenses.dart';
-import 'stl_tools.dart' show datumSheet, sheetTitle;
+import 'stl_tools.dart' show dovexaSheet, sheetTitle;
 import 'theme.dart';
 import 'units_sheet.dart';
 
 /// Ajustes: unidades, idioma y «Acerca de».
 Future<void> showSettingsSheet(BuildContext context) {
-  return datumSheet(
+  return dovexaSheet(
     context,
     Column(
       mainAxisSize: MainAxisSize.min,
@@ -50,7 +50,7 @@ Future<void> showSettingsSheet(BuildContext context) {
 
 /// Acerca de: licencia de Dovexa, código fuente y licencias de terceros.
 Future<void> showAboutSheet(BuildContext context) {
-  return datumSheet(
+  return dovexaSheet(
     context,
     Builder(
       builder: (ctx) => Column(
@@ -79,7 +79,7 @@ Future<void> showAboutSheet(BuildContext context) {
           _Row(
             icon: Icons.description_outlined,
             title: tr('Licencias de código abierto'),
-            onTap: () => showDatumLicenses(ctx),
+            onTap: () => showDovexaLicenses(ctx),
           ),
         ],
       ),

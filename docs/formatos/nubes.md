@@ -38,7 +38,7 @@ Carencias reales: sólo hay fichas de tienda, no reseñas independientes; el mod
 - Vocabulario: «Sin clasificar», «Suelo», «Vegetación baja/media/alta», «Edificio», «Retorno único / primero / último».
 
 ## 6. Implementación
-`io/las_loader.dart` (cabecera, VLR/EVLR, GeoKeys y WKT, formatos 0–10, muestreo por tandas, estadísticas), `io/laz_glue.dart` + `core/src/datum_laz.cpp` + LASzip en `third_party/laszip` (Apache-2.0), `io/e57_loader.dart` (páginas con CRC, XML, paquetes, bits, pose), `io/mesh_data_extra.dart` (origen para coordenadas de mapa), `model/pointcloud.dart` (modos de color, filtros, muestra de 250 mil puntos para mover la vista), `model/cloud_info.dart`, `ui/cloud_tools.dart`.
+`io/las_loader.dart` (cabecera, VLR/EVLR, GeoKeys y WKT, formatos 0–10, muestreo por tandas, estadísticas), `io/laz_glue.dart` + `core/src/dovexa_laz.cpp` + LASzip en `third_party/laszip` (Apache-2.0), `io/e57_loader.dart` (páginas con CRC, XML, paquetes, bits, pose), `io/mesh_data_extra.dart` (origen para coordenadas de mapa), `model/pointcloud.dart` (modos de color, filtros, muestra de 250 mil puntos para mover la vista), `model/cloud_info.dart`, `ui/cloud_tools.dart`.
 
 ## 7. Validación
 | Origen | Archivos | Resultado |

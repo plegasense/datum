@@ -3,8 +3,8 @@
 import 'dart:io';
 import 'dart:math' as math;
 
-import 'package:datum/io/loader.dart';
-import 'package:datum/model/brep.dart';
+import 'package:dovexa/io/loader.dart';
+import 'package:dovexa/model/brep.dart';
 import 'package:vector_math/vector_math.dart' as vm;
 
 var failures = 0;

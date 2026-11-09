@@ -1,7 +1,7 @@
 import 'dart:typed_data';
 
-import 'package:datum/model/mesh.dart';
-import 'package:datum/ui/stl_tools.dart';
+import 'package:dovexa/model/mesh.dart';
+import 'package:dovexa/ui/stl_tools.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 Float32List tri(List<List<double>> p) {

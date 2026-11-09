@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import '../l10n/l10n.dart';
 import '../model/unit_system.dart';
-import 'stl_tools.dart' show datumSheet, sheetTitle;
+import 'stl_tools.dart' show dovexaSheet, sheetTitle;
 import 'theme.dart';
 
 /// Hoja para elegir el sistema de unidades de las medidas: Automático, Métrico o Imperial.
 Future<void> showUnitsSheet(BuildContext context) {
-  return datumSheet(
+  return dovexaSheet(
     context,
     ValueListenableBuilder<UnitSystem>(
       valueListenable: Units.notifier,

@@ -2,8 +2,8 @@
 //   dart run tool/bench_cad.dart "/ruta/a/carpeta" [maxMB]
 import 'dart:io';
 
-import 'package:datum/io/loader.dart';
-import 'package:datum/model/brep.dart';
+import 'package:dovexa/io/loader.dart';
+import 'package:dovexa/model/brep.dart';
 
 Future<void> main(List<String> args) async {
   final root = Directory(args.first);

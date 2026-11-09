@@ -1,11 +1,11 @@
 import 'dart:io';
 
-import 'package:datum/io/mesh_data.dart';
-import 'package:datum/io/ply_loader.dart';
-import 'package:datum/model/mesh_info.dart';
+import 'package:dovexa/io/mesh_data.dart';
+import 'package:dovexa/io/ply_loader.dart';
+import 'package:dovexa/model/mesh_info.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-File ply(String name, String s) => File('${Directory.systemTemp.path}/datum_ply_$name')..writeAsStringSync(s);
+File ply(String name, String s) => File('${Directory.systemTemp.path}/dovexa_ply_$name')..writeAsStringSync(s);
 
 void main() {
   test('PLY: escalar por cara pinta las caras con la rampa', () {

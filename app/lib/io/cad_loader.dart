@@ -7,7 +7,7 @@ import 'package:ffi/ffi.dart';
 import '../l10n/l10n.dart';
 import '../model/brep.dart';
 import '../model/pmi.dart';
-import '../src/datum_ffi.dart';
+import '../src/dovexa_ffi.dart';
 import 'mesh_builder.dart';
 import 'mesh_data.dart';
 
@@ -75,41 +75,41 @@ SceneData parseCad(String path, {String? cacheDir}) {
   final cPath = path.toNativeUtf8();
   Pointer<Void> scene;
   try {
-    datumCadSetLean(const bool.fromEnvironment('DATUM_LEAN') ? 1 : 0);
-    final cache = const bool.fromEnvironment('DATUM_NOCACHE')
+    dovexaCadSetLean(const bool.fromEnvironment('DOVEXA_LEAN') ? 1 : 0);
+    final cache = const bool.fromEnvironment('DOVEXA_NOCACHE')
         ? null
         : _cacheFileFor(path, dir0: cacheDir);
     if (cache != null) {
       final cc = cache.toNativeUtf8();
-      datumCadSetCacheFile(cc);
+      dovexaCadSetCacheFile(cc);
       malloc.free(cc);
     }
-    scene = datumCadOpen(cPath, 0.001);
+    scene = dovexaCadOpen(cPath, 0.001);
   } finally {
     malloc.free(cPath);
   }
   if (scene == nullptr) {
-    final err = datumLastError().toDartString();
+    final err = dovexaLastError().toDartString();
     throw Exception(err.isEmpty ? tr('No se pudo abrir el archivo') : _cppError(err));
   }
   var keep = false;
   try {
     final meshes = <MeshData>[];
     final brep = <PartBrepData>[];
-    final parts = datumPartCount(scene);
+    final parts = dovexaPartCount(scene);
     for (var i = 0; i < parts; i++) {
-      final n = datumPartVertexCount(scene, i);
-      final src = datumPartVertices(scene, i).asTypedList(n * 6);
+      final n = dovexaPartVertexCount(scene, i);
+      final src = dovexaPartVertices(scene, i).asTypedList(n * 6);
       final verts = Float32List.fromList(
         src,
       ); // copia: la memoria nativa se libera al final
       final b = boundsOf(verts);
-      final c = datumPartColor(scene, i);
+      final c = dovexaPartColor(scene, i);
       final tris = n ~/ 3;
-      final faceCount = datumPartFaceCount(scene, i);
-      final segN = datumPartEdgeSegmentCount(scene, i);
+      final faceCount = dovexaPartFaceCount(scene, i);
+      final segN = dovexaPartEdgeSegmentCount(scene, i);
       final dens = malloc<Double>(1);
-      final matName = datumPartMaterial(scene, i, dens).toDartString();
+      final matName = dovexaPartMaterial(scene, i, dens).toDartString();
       final matDens = dens.value;
       malloc.free(dens);
       brep.add(
@@ -117,27 +117,27 @@ SceneData parseCad(String path, {String? cacheDir}) {
           tris == 0
               ? Int32List(0)
               : Int32List.fromList(
-                  datumPartFaceOfTriangle(scene, i).asTypedList(tris),
+                  dovexaPartFaceOfTriangle(scene, i).asTypedList(tris),
                 ),
           faceCount,
           segN == 0
               ? Float32List(0)
               : Float32List.fromList(
-                  datumPartEdgeSegments(scene, i).asTypedList(segN * 6),
+                  dovexaPartEdgeSegments(scene, i).asTypedList(segN * 6),
                 ),
           segN == 0
               ? Int32List(0)
               : Int32List.fromList(
-                  datumPartEdgeOfSegment(scene, i).asTypedList(segN),
+                  dovexaPartEdgeOfSegment(scene, i).asTypedList(segN),
                 ),
-          datumPartEdgeCount(scene, i),
+          dovexaPartEdgeCount(scene, i),
           materialName: matName,
           materialDensity: matDens,
         ),
       );
       meshes.add(
         MeshData(
-          _cleanName(datumPartName(scene, i).toDartString()),
+          _cleanName(dovexaPartName(scene, i).toDartString()),
           verts,
           b.min,
           b.max,
@@ -146,15 +146,15 @@ SceneData parseCad(String path, {String? cacheDir}) {
       );
     }
     final nodes = <NodeData>[];
-    final count = datumNodeCount(scene);
+    final count = dovexaNodeCount(scene);
     for (var i = 0; i < count; i++) {
-      final m = datumNodeMatrix(scene, i).asTypedList(16);
-      final c = datumNodeColor(scene, i);
+      final m = dovexaNodeMatrix(scene, i).asTypedList(16);
+      final c = dovexaNodeColor(scene, i);
       nodes.add(
         NodeData(
-          _cleanName(datumNodeName(scene, i).toDartString()),
-          datumNodeParent(scene, i),
-          datumNodePart(scene, i),
+          _cleanName(dovexaNodeName(scene, i).toDartString()),
+          dovexaNodeParent(scene, i),
+          dovexaNodePart(scene, i),
           List<double>.of(m),
           c == 0 ? null : c,
         ),
@@ -168,16 +168,16 @@ SceneData parseCad(String path, {String? cacheDir}) {
       nodes: nodes,
       cad: CadData(
         scene.address,
-        datumFileUnit(scene).toDartString(),
-        datumFileOrigin(scene).toDartString(),
-        datumFileSchema(scene).toDartString(),
+        dovexaFileUnit(scene).toDartString(),
+        dovexaFileOrigin(scene).toDartString(),
+        dovexaFileSchema(scene).toDartString(),
         brep,
         _readPmi(scene),
       ),
     );
   } finally {
     // La geometría exacta se queda en memoria nativa mientras el documento esté abierto.
-    if (!keep) datumSceneFree(scene);
+    if (!keep) dovexaSceneFree(scene);
   }
 }
 
@@ -200,31 +200,31 @@ String _cleanName(String s) {
 
 List<PmiItem> _readPmi(Pointer<Void> scene) {
   final out = <PmiItem>[];
-  final n = datumPmiCount(scene);
+  final n = dovexaPmiCount(scene);
   final info = malloc<Double>(16);
   final ref = malloc<Int32>(3);
   try {
     for (var i = 0; i < n; i++) {
-      datumPmiInfo(scene, i, info);
+      dovexaPmiInfo(scene, i, info);
       final v = info.asTypedList(16).toList();
       final refs = <PmiRef>[];
-      for (var k = 0; k < datumPmiRefCount(scene, i); k++) {
-        datumPmiRef(scene, i, k, ref);
+      for (var k = 0; k < dovexaPmiRefCount(scene, i); k++) {
+        dovexaPmiRef(scene, i, k, ref);
         final r = ref.asTypedList(3);
         refs.add(PmiRef(r[0], r[1] == 1, r[2]));
       }
-      final segs = datumPmiSegmentCount(scene, i);
+      final segs = dovexaPmiSegmentCount(scene, i);
       out.add(
         PmiItem(
           kind: PmiKind.values[v[0].round().clamp(0, 2)],
           type: v[1].round(),
           v: v.sublist(2),
-          text: datumPmiText(scene, i).toDartString(),
+          text: dovexaPmiText(scene, i).toDartString(),
           refs: refs,
           segments: segs == 0
               ? Float32List(0)
               : Float32List.fromList(
-                  datumPmiSegments(scene, i).asTypedList(segs * 6),
+                  dovexaPmiSegments(scene, i).asTypedList(segs * 6),
                 ),
         ),
       );

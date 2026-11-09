@@ -17,7 +17,7 @@ void main(List<String> args) async {
     await buildShaderBundleJson(
       buildInput: input,
       buildOutput: output,
-      manifestFileName: 'datum.shaderbundle.json',
+      manifestFileName: 'dovexa.shaderbundle.json',
     );
 
     if (!input.config.buildCodeAssets) return;
@@ -30,13 +30,13 @@ void main(List<String> args) async {
     if (stub) {
       // El simulador de iOS en Intel no lleva Open CASCADE: API vacía para que enlace.
       await CBuilder.library(
-        name: 'datum_core',
-        assetName: 'src/datum_ffi.dart',
-        sources: ['../core/src/datum_stub.cpp'],
+        name: 'dovexa_core',
+        assetName: 'src/dovexa_ffi.dart',
+        sources: ['../core/src/dovexa_stub.cpp'],
         includes: ['../core/include'],
         language: Language.cpp,
         std: 'c++17',
-      ).run(input: input, output: output, logger: Logger('datum_core'));
+      ).run(input: input, output: output, logger: Logger('dovexa_core'));
       return;
     }
     final occt = _occtInstall(root, code);
@@ -57,12 +57,12 @@ void main(List<String> args) async {
           ..sort();
 
     final builder = CBuilder.library(
-      name: 'datum_core',
-      assetName: 'src/datum_ffi.dart',
+      name: 'dovexa_core',
+      assetName: 'src/dovexa_ffi.dart',
       sources: [
-        '../core/src/datum_cad.cpp',
-        '../core/src/datum_draco.cpp',
-        '../core/src/datum_laz.cpp',
+        '../core/src/dovexa_cad.cpp',
+        '../core/src/dovexa_draco.cpp',
+        '../core/src/dovexa_laz.cpp',
         for (final f in laszipSources) '../third_party/laszip/src/$f',
         for (final f in dracoSources) '../third_party/draco/src/$f',
       ],
@@ -87,14 +87,14 @@ void main(List<String> args) async {
     await builder.run(
       input: input,
       output: output,
-      logger: Logger('datum_core')
+      logger: Logger('dovexa_core')
         ..onRecord.listen((r) => stderr.writeln(r.message)),
     );
     output.dependencies.addAll([
-      input.packageRoot.resolve('../core/src/datum_cad.cpp'),
-      input.packageRoot.resolve('../core/src/datum_draco.cpp'),
-      input.packageRoot.resolve('../core/src/datum_laz.cpp'),
-      input.packageRoot.resolve('../core/include/datum.h'),
+      input.packageRoot.resolve('../core/src/dovexa_cad.cpp'),
+      input.packageRoot.resolve('../core/src/dovexa_draco.cpp'),
+      input.packageRoot.resolve('../core/src/dovexa_laz.cpp'),
+      input.packageRoot.resolve('../core/include/dovexa.h'),
     ]);
   });
 }

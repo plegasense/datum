@@ -1,6 +1,6 @@
-import 'package:datum/io/loader.dart';
-import 'package:datum/model/document.dart';
-import 'package:datum/render/camera.dart';
+import 'package:dovexa/io/loader.dart';
+import 'package:dovexa/model/document.dart';
+import 'package:dovexa/render/camera.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:vector_math/vector_math.dart' as vm;
 

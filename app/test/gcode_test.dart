@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:datum/io/gcode_loader.dart';
-import 'package:datum/model/print_summary.dart';
+import 'package:dovexa/io/gcode_loader.dart';
+import 'package:dovexa/model/print_summary.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 GcodeData parse(String s) =>

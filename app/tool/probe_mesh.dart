@@ -1,10 +1,10 @@
 import 'dart:io';
 
-import 'package:datum/io/mesh_data.dart';
-import 'package:datum/io/gltf_loader.dart';
-import 'package:datum/io/obj_loader.dart';
-import 'package:datum/io/ply_loader.dart';
-import 'package:datum/model/mesh_info.dart';
+import 'package:dovexa/io/mesh_data.dart';
+import 'package:dovexa/io/gltf_loader.dart';
+import 'package:dovexa/io/obj_loader.dart';
+import 'package:dovexa/io/ply_loader.dart';
+import 'package:dovexa/model/mesh_info.dart';
 
 /// Resume cómo se lee cada PLY: dart run tool/probe_mesh.dart <archivo|carpeta>...
 void main(List<String> args) {

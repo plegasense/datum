@@ -1,10 +1,10 @@
 import 'dart:io';
 
-import 'package:datum/io/mesh_data.dart';
-import 'package:datum/io/vrml_loader.dart';
+import 'package:dovexa/io/mesh_data.dart';
+import 'package:dovexa/io/vrml_loader.dart';
 import 'dart:convert';
 
-import 'package:datum/model/mesh_info.dart';
+import 'package:dovexa/model/mesh_info.dart';
 
 /// Resume cómo se lee cada VRML/X3D: dart run tool/probe_vrml.dart <archivo|carpeta>...
 void main(List<String> args) {

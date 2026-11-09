@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:datum/io/dxf_loader.dart';
+import 'package:dovexa/io/dxf_loader.dart';
 
 Future<void> main(List<String> args) async {
   for (final f in args) {
