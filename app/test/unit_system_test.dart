@@ -143,4 +143,13 @@ void main() {
       expect(Units.cloudFactor(m), 1);
     });
   });
+
+  test('piezas diminutas no salen como cero', () {
+    Units.system = UnitSystem.metric;
+    expect(Units.mass(0.004), contains('mg'));
+    expect(Units.len(0.003), isNot(startsWith('0.00 ')));
+    Units.system = UnitSystem.imperial;
+    expect(Units.mass(0.004), isNot('0.00 oz'));
+    Units.system = UnitSystem.auto;
+  });
 }

@@ -41,8 +41,11 @@ class LengthUnit {
   }
 
   /// Masa en g o kg con coma decimal.
-  static String mass(double grams) =>
-      grams >= 1000 ? '${_num(grams / 1000, 2)} kg' : '${_num(grams, 1)} g';
+  static String mass(double grams) {
+    if (grams >= 1000) return '${_num(grams / 1000, 2)} kg';
+    if (grams > 0 && grams < 1) return '${_num(grams * 1000, grams < 0.01 ? 2 : 1)} mg';
+    return '${_num(grams, 1)} g';
+  }
 
   /// Longitud con la cantidad justa de decimales: "8,00 mm", "1 234,5 mm".
   String length(double mmValue, {int? digits}) {
@@ -64,7 +67,7 @@ class LengthUnit {
   /// En imperial las pulgadas necesitan más decimales que los milímetros (0,0394 in).
   bool get _fineInch => identical(this, inch) && Units.isImperial;
 
-  int _digits(double a) => _fineInch ? Units.inDigits(a) : (a >= 1000 ? 1 : (a >= 100 ? 2 : 2));
+  int _digits(double a) => _fineInch ? Units.inDigits(a) : (a >= 1000 ? 1 : (a == 0 || a >= 0.1 ? 2 : (a >= 0.01 ? 3 : 4)));
 
   /// Número con los separadores del idioma y [digits] decimales (para [Units]).
   static String numText(double v, int digits) => _num(v, digits);

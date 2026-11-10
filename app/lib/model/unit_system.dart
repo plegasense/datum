@@ -217,7 +217,7 @@ class Units {
     if (!isImperial) return LengthUnit.mass(grams);
     if (grams >= kGramsPerPound) return '${LengthUnit.numText(grams / kGramsPerPound, 2)} lb';
     final oz = grams / kGramsPerOunce;
-    return '${LengthUnit.numText(oz, oz >= 10 ? 1 : 2)} oz';
+    return '${LengthUnit.numText(oz, oz >= 10 ? 1 : (oz >= 0.01 || oz == 0 ? 2 : 4))} oz';
   }
 
   /// Masa con `toStringAsFixed(d)` y la g pegada ("12 g"), como en los resúmenes de G-code.
@@ -225,7 +225,7 @@ class Units {
     if (!isImperial) return '${g.toStringAsFixed(d)} g';
     final oz = g / kGramsPerOunce;
     if (g >= kGramsPerPound) return '${(g / kGramsPerPound).toStringAsFixed(2)} lb';
-    return '${oz.toStringAsFixed(oz >= 10 ? 1 : 2)} oz';
+    return '${oz.toStringAsFixed(oz >= 10 ? 1 : (oz >= 0.01 || oz == 0 ? 2 : 4))} oz';
   }
 
   // ---- Velocidad
