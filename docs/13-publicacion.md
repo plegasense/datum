@@ -14,7 +14,7 @@
 | 1.0.8 | 11 | — | 9-nov-2026 | Correcciones de traducción en 8 idiomas |
 | 1.0.9 | 12 | — | 9-nov-2026 | Política de privacidad bilingüe en el repositorio como URL pública |
 | 1.0.10 | 13 | Prueba cerrada – Alpha | 9-nov-2026 (publicada) | Pantalla de licencias traducida. |
-| **1.0.11** | **14** | Prueba cerrada – Alpha | AAB compilado, pendiente de subir | Auditoría de uso: «Atrás» cierra el panel de piezas en vez de la app; mensajes de error sin prefijo técnico; STL con coordenadas absurdas se descartan |
+| **1.0.11** | **14** | Prueba cerrada – Alpha | AAB compilado, pendiente de subir | Auditoría de uso: «Atrás» cierra el panel de piezas en vez de la app; mensajes de error sin prefijo técnico; STL con coordenadas absurdas se descartan; barra de herramientas y pantalla de inicio con desplazamiento en horizontal; «Abrir con» y «Compartir» desde el gestor de archivos; protocolo STEP legible en la ficha |
 
 Las versiones 1.0.5 a 1.0.9 fueron pasos intermedios del mismo día; en `releases/android/` solo se conserva el AAB de la 1.0.10.
 

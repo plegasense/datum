@@ -200,7 +200,11 @@ class _HomeViewState extends State<HomeView>
             builder: (context, c) {
               final compact = c.maxHeight < 640;
               final recents = _recents.take(3).toList();
-              return Column(
+              return SingleChildScrollView(
+                  child: ConstrainedBox(
+                constraints: BoxConstraints(minHeight: c.maxHeight),
+                child: IntrinsicHeight(
+                    child: Column(
                 children: [
                   const Spacer(flex: 3),
                   AnimatedBuilder(
@@ -314,7 +318,7 @@ class _HomeViewState extends State<HomeView>
                   ),
                   const SizedBox(height: 8),
                 ],
-              );
+              ))));
             },
           ),
         ),

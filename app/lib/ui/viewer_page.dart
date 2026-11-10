@@ -7,6 +7,7 @@ import 'package:file_picker/file_picker.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart' show MethodChannel;
 import 'package:vector_math/vector_math.dart' as vm;
 
 import '../io/cad_loader.dart' show cadCacheHit;
@@ -233,6 +234,7 @@ class _ViewerPageState extends State<ViewerPage> {
   final List<vm.Vector2> _measure = [];
   List<Shape>? _shapes;
   Shape? _shape;
+  static const _intents = MethodChannel('dovexa/intent');
   int _repaint = 0;
   final ValueNotifier<int> _overlayTick = ValueNotifier(0);
 
@@ -242,10 +244,20 @@ class _ViewerPageState extends State<ViewerPage> {
     cam.addListener(() => _overlayTick.value++);
     Units.notifier.addListener(_onUnitsChanged);
     L.choice.addListener(_onUnitsChanged);
+    // Archivos recibidos desde "Abrir con" o "Compartir" (Android).
+    if (Platform.isAndroid) {
+      _intents.setMethodCallHandler((c) async {
+        if (c.method == 'open' && mounted) _open(c.arguments as String);
+      });
+    }
     DovexaRenderer.instance()
-        .then((r) {
+        .then((r) async {
           if (!mounted) return;
           setState(() => _renderer = r);
+          if (Platform.isAndroid) {
+            final shared = await _intents.invokeMethod<String>('initial');
+            if (shared != null && mounted) _open(shared);
+          }
           if (_kAutoOpen.isNotEmpty) _open(_kAutoOpen);
           if (_kHomeShot) _maybeShot(delay: 3600);
         })
@@ -1682,10 +1694,12 @@ class _ViewerPageState extends State<ViewerPage> {
             if (doc != null)
               Positioned(
                 right: 12,
-                top: 0,
-                bottom: doc is ToolpathDocument
-                    ? 250
-                    : (_tmf != null ? (_tmf!.multiPlate ? 140 : 70) : 0),
+                top: MediaQuery.paddingOf(context).top + 8,
+                bottom:
+                    8 +
+                    (doc is ToolpathDocument
+                        ? 250
+                        : (_tmf != null ? (_tmf!.multiPlate ? 140 : 70) : 0)),
                 child: Center(child: _toolbar(doc)),
               ),
             if (_draw != null)
@@ -2971,7 +2985,9 @@ class _ViewerPageState extends State<ViewerPage> {
     return Glass(
       radius: 24,
       padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 6),
-      child: Column(mainAxisSize: MainAxisSize.min, children: items),
+      child: SingleChildScrollView(
+        child: Column(mainAxisSize: MainAxisSize.min, children: items),
+      ),
     );
   }
 }

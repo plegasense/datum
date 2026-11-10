@@ -939,7 +939,7 @@ Future<void> showInfoSheet(
             row(tr('Unidad del archivo'), u.name),
             if (cad.origin.isNotEmpty) row(tr('Creado con'), cad.origin),
             if (cad.schema.isNotEmpty)
-              row(tr('Formato'), cad.schema.split(' ').first),
+              row(tr('Formato'), stepProtocol(cad.schema)),
             if (ok != null)
               row(
                 tr('Comprobación de volumen'),
