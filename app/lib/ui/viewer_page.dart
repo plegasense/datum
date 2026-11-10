@@ -96,6 +96,7 @@ class _ViewerPageState extends State<ViewerPage> {
   bool _showTravels = false;
   double _cncProg = 1.0;
   bool _showStock = false;
+  bool _drawerOpen = false;
   StockSim? _sim;
   Scene? _stockScene;
   DovexaRenderer? _renderer2;
@@ -1278,7 +1279,7 @@ class _ViewerPageState extends State<ViewerPage> {
       }
       if (_kShot.isNotEmpty && !_kHomeShot) _maybeShot();
     } catch (e) {
-      setState(() => _error = '$e'.replaceFirst('Exception: ', ''));
+      setState(() => _error = '$e'.replaceFirst(RegExp(r'^\w*Exception: '), ''));
     } finally {
       if (mounted) setState(() => _loading = false);
     }
@@ -1611,8 +1612,14 @@ class _ViewerPageState extends State<ViewerPage> {
   Widget build(BuildContext context) {
     final doc = _doc;
     final showHome = doc == null && !_kHomeShotSkip;
-    return Scaffold(
+    return PopScope(
+      canPop: !_drawerOpen,
+      onPopInvokedWithResult: (didPop, _) {
+        if (!didPop) _scaffold.currentState?.closeEndDrawer();
+      },
+      child: Scaffold(
       key: _scaffold,
+      onEndDrawerChanged: (open) => setState(() => _drawerOpen = open),
       endDrawer: switch (doc) {
         ModelDocument d when _isAssembly(d) => Drawer(
           width: 370,
@@ -1808,7 +1815,7 @@ class _ViewerPageState extends State<ViewerPage> {
           ],
         ),
       ),
-    );
+    ));
   }
 
   bool get _kHomeShotSkip => false;

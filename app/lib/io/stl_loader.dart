@@ -153,6 +153,9 @@ _Parsed _parse(Uint8List bytes) {
   );
 }
 
+/// Coordenada utilizable: finita y dentro de un rango físico razonable (1e9 mm = 1000 km).
+bool _sane(double v) => v.abs() < 1e9;
+
 (Float32List, int, bool, Uint16List?) _binary(Uint8List b, bool magicsColor) {
   final bd = ByteData.sublistView(b);
   var count = bd.getUint32(80, Endian.little);
@@ -175,15 +178,15 @@ _Parsed _parse(Uint8List bytes) {
     final cy = bd.getFloat32(base + 28, Endian.little);
     final cz = bd.getFloat32(base + 32, Endian.little);
     final attr = bd.getUint16(base + 36, Endian.little);
-    if (!(ax.isFinite &&
-        ay.isFinite &&
-        az.isFinite &&
-        bx.isFinite &&
-        by.isFinite &&
-        bz.isFinite &&
-        cx.isFinite &&
-        cy.isFinite &&
-        cz.isFinite)) {
+    if (!(_sane(ax) &&
+        _sane(ay) &&
+        _sane(az) &&
+        _sane(bx) &&
+        _sane(by) &&
+        _sane(bz) &&
+        _sane(cx) &&
+        _sane(cy) &&
+        _sane(cz))) {
       skipped++;
       continue;
     }
@@ -237,9 +240,9 @@ _Parsed _parse(Uint8List bytes) {
     if (x == null ||
         y == null ||
         z == null ||
-        !x.isFinite ||
-        !y.isFinite ||
-        !z.isFinite) {
+        !_sane(x) ||
+        !_sane(y) ||
+        !_sane(z)) {
       // se descarta el vértice y, al cerrar, el triángulo incompleto
       skipped++;
       pts.addAll([double.nan, double.nan, double.nan]);

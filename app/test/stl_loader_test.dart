@@ -32,7 +32,7 @@ Future<File> tmp(String name, List<int> bytes) async {
   return f;
 }
 
-Uint8List binaryOne({String header = 'solid exportado', bool nan = false}) {
+Uint8List binaryOne({String header = 'solid exportado', bool nan = false, double bad = double.nan}) {
   final b = BytesBuilder();
   final h = Uint8List(80)..setAll(0, utf8.encode(header));
   b.add(h);
@@ -51,7 +51,7 @@ Uint8List binaryOne({String header = 'solid exportado', bool nan = false}) {
       0,
       0,
       1,
-      nan && t == 1 ? double.nan : 0.0,
+      nan && t == 1 ? bad : 0.0,
     ];
     for (var i = 0; i < 12; i++) {
       d.setFloat32(i * 4, f[i].toDouble(), Endian.little);
@@ -84,6 +84,13 @@ void main() {
 
   test('coordenadas no finitas se descartan', () async {
     final f = await tmp('nan.stl', binaryOne(nan: true));
+    final m = await loadStl(f.path);
+    expect(m.triangleCount, 1);
+    expect(stlMetaOf[m]!.skipped, 1);
+  });
+
+  test('coordenadas absurdas (1e30) se descartan', () async {
+    final f = await tmp('huge.stl', binaryOne(nan: true, bad: 1e30));
     final m = await loadStl(f.path);
     expect(m.triangleCount, 1);
     expect(stlMetaOf[m]!.skipped, 1);
